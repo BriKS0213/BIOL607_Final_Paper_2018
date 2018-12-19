@@ -4,11 +4,8 @@ author: "Brianna Shaughnessy"
 date: "12/17/2018"
 output:
   word_document: default
-  pdf_document: default
   html_document:
     df_print: paged
-theme: spacelab
-always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -31,6 +28,7 @@ library(DHARMa)
 library(betareg)
 library(aod)
 library(cowplot)
+library(flextable)
 ```
 
 ##Abstract  
@@ -922,98 +920,98 @@ Valiela I, McClelland J, Hauxwell J, Behr PJ, Hersh D, Foreman K (1997) Macroalg
 #Tables
 **Table 1:** Summary of results from binomial logistic regression testing the odds of collection in Eelgrass vs. Fucus habitat compared to month collected
 ```{r Binomial Logistic Regression Field Season, echo = FALSE}
-knitr::kable(tidy(Anova(Season_Binomial)), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Anova(Season_Binomial)))
 ```
 
 **Table 2:** Post-Hoc contrasts for log odds ratio for monthly comparisons of each habitat. 
 ```{r Log Odds Ratios: Post-Hoc, echo = FALSE}
-knitr::kable(tidy(Season_tukey), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Season_tukey))
 ```
 
 **Table 3:** Analysis of Covariance with Dependent Variable: Isopod Color
 ```{r ANCOVA for Color, echo = FALSE}
-knitr::kable(tidy(Anova(color_lm)), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Anova(color_lm)))
 ```
 
 <br><br>
 **Table 4:** Tukey Post-Hoc Comparisons of Isopod Color Predicted by Habitat and Month Collected
 
 ```{r Post-Hocs for Color, echo = FALSE}
-knitr::kable(tidy(color_em), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(color_em))
 ```
 
 <br><br>
 **Table 5:** Summary of results from Analysis of Covariance of a Three-Way Interaction with Size Predicted by Isopod Color, Habitat, and Month Collected
 
 ```{r Three Way Interaction ANCOVA, echo = FALSE}
-knitr::kable(tidy(Size_Anova), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Size_Anova))
 ```
 
 <br><br>
 **Table 6:** Summary of results from Post-Hoc Compressed Trends for Isopod Size as predicted from a three-way interaction of Month, Habitat, and Isopod Color.
 
 ```{r Post-Hoc Comparisons for Three-Way ANCOVA, echo = FALSE}
-knitr::kable(tidy(Size_em), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Size_em))
 ```
 
 **Table 7:** Summary of results from a Generalized Least Squares analysis testing the effect of treatment (food source) on isopod growth rate.
 ```{r Rearing Growth Rate, echo = FALSE}
-knitr::kable(Growth_tukey, digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Growth_tukey))
 ```
 
 **Table 8:** Summary of results from binomial logistic regression testing the effect of treatment (food source) on isopod survivorship.
 ```{r Rearing Survivorship, echo = FALSE}
-knitr::kable(tidy(Anova(Rearing_logit)), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Anova(Rearing_logit)))
 ```
 
 **Table 9:** Summary of results from Tukey Post-Hoc Comparisons of effect of treatment (food source) on isopod survivorship.
 ```{r  , echo = FALSE}
-knitr::kable(tidy(Rearing_Tukey), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Rearing_Tukey))
 ```
 
 **Table 10** Summary of estimated means and standard error for each treatment group and odds of survivorship.
 ```{r  , echo = FALSE}
-knitr::kable(tidy(Rearing_em), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Rearing_em))
 ```
 
 **Table 11:** Summary of results from binomial logistic regression testing the effects of Isopod Size and Isopod Color on Survivorship in Eelgrass Habitat
 ```{r Eelgrass Tables, echo = FALSE}
-knitr::kable(tidy(eelgrass_logit), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(eelgrass_logit))
 ```
 
 **Table 12:** Summary of results from Analysis of Deviance from Eelgrass Habitat binomial logistic regression.
 ```{r Analysis of Deviance, echo = FALSE}
-knitr::kable(tidy(Anova(eelgrass_logit)), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Anova(eelgrass_logit)))
 ```
 
 **Table 13:** Summary of estimated means and standard error for isopod survivorship tetherd in eelgrass habitat.
 ```{r Estimated Means, echo = FALSE}
-knitr::kable(tidy(eelgrass_em), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(eelgrass_em))
 ```
 
 **Table 14:** Tukey HSD Contrasts for survivorship of Brown vs. Green isopods tethered in Eelgrass Habitat.
 ```{r Tukey HSD Eelgrass Tethers, echo = FALSE}
-knitr::kable(tidy(eelgrass_tukey), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(eelgrass_tukey))
 ```
 
 **Table 15:** Summary of results from binomial logistic regression testing the effects of Isopod Color on Survivorship tethered in Fucus Habitat
 ```{r Fucus BLR, echo = FALSE}
-knitr::kable(tidy(fucus_logit), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(fucus_logit))
 ```
 
 **Table 16:** Summary of results from Analysis of Deviance from binomial logistic regression of isopod survivorship tethered in Fucus habitat.
 ```{r Fucus Analysis of Deviance, echo = FALSE}
-knitr::kable(tidy(Anova(fucus_logit)), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(Anova(fucus_logit)))
 ```
 
 **Table 17:** Summary of estimated means and standard error for isopod survivorship tethered in Fucus habitat.
 ```{r Estimated Means Fucus, echo = FALSE}
-knitr::kable(tidy(fucus_em), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(fucus_em))
 ```
 
 **Table 18:** Tukey HSD constrasts for survivorship of Brown vs. Green Isopods tethered in Fucus habitat. 
 ```{r TUKEY HSD Fucus, echo = FALSE}
-knitr::kable(tidy(fucus_tukey), digits=3) %>% kableExtra::kable_styling("striped")
+regulartable(tidy(fucus_tukey))
 ```
 
 ```{r Loading Table Data, include = FALSE}
@@ -1025,24 +1023,20 @@ Mixed_Means <- read_csv("../Data/Beta_Means_Mixed.csv")
 
 **Table 19:** Summary of results from multiple beta regressions looking at variation in habitat use of brown and green isopods in Artificial Seagrass and Artificial Fucus Units. 
 ```{r Beta Regression Table, echo = FALSE}
-knitr::kable(First_Trial_Beta) %>%
-  kable_styling(bootstrap_options = c("striped", full_width = F))
+regulartable(First_Trial_Beta)
 ```
 
 **Table 20:** Estimated means and standard error for artificial habitat usage of brown and green isopods.
 ```{r Estimated Means First Trial, echo = FALSE}
-knitr::kable(First_Trial_Means) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+regulartable(First_Trial_Means)
 ```
 
 **Table 21:** Summary of results from multiple beta regressions looking at variation in habitat use of brown and green isopods in mixed artificial habitat trials. 
 ```{r Beta Regression Mixed Results, echo = FALSE}
-knitr::kable(Mixed_Beta_Results) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+regulartable(Mixed_Beta_Results)
 ```
 
 **Table 22:** Estimated means and standard error for artificial habitat usage of brown and green isopods in mixed artificial habitat trials. 
 ```{r Estimated Means Mixed Trial, echo = FALSE}
-knitr::kable(Mixed_Means) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+regulartable(Mixed_Means)
 ```
