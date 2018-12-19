@@ -1,0 +1,977 @@
+﻿Month,Isopod_ID,Field_Habitat,Color_Initial,Tank_ID,Trial_Type,Time_Interval,Time (h),Location,Location_Color,Location_Habitat,Sex,Weather,Date_of_Collection,Area (cmsq)
+May,BR2,Eelgrass,BR,C,BASU/BAFU,0,10:14,SB,NONE,SB,F,"70F, Sunny",Late April,0.435
+May,BR2,Eelgrass,BR,C,BASU/BAFU,1,11:41,SB,NONE,SB,F,"70F, Sunny",Late April,0.435
+May,BR2,Eelgrass,BR,C,BASU/BAFU,2,12:43,BASU,B,ASU,F,"70F, Sunny",Late April,0.435
+May,BR2,Eelgrass,BR,C,BASU/BAFU,,N/A,N/A,N/A,N/A,F,"70F, Sunny",Late April,0.435
+May,GR3,Eelgrass,GR,A,BASU/BAFU,0,9:33,SB,NONE,SB,M,"61F, Rainy, Cloudy",Late April,1.652
+May,GR3,Eelgrass,GR,A,BASU/BAFU,1,10:39,BASU,B,ASU,M,"61F, Rainy, Cloudy",Late April,1.652
+May,GR3,Eelgrass,GR,A,BASU/BAFU,2,11:33,TW,NONE,TW,M,"61F, Rainy, Cloudy",Late April,1.652
+May,GR3,Eelgrass,GR,A,BASU/BAFU,3,12:39,BASU,B,ASU,M,"61F, Rainy, Cloudy",Late April,1.652
+May,BR3,Eelgrass,BR,B,GASU/GAFU,0,9:36,Drain,NONE,Drain,F,"61F, Rainy, Cloudy",Late April,0.491
+May,BR3,Eelgrass,BR,B,GASU/GAFU,1,10:36,GASU,G,ASU,F,"61F, Rainy, Cloudy",Late April,0.491
+May,BR3,Eelgrass,BR,B,GASU/GAFU,2,11:36,GASU,G,ASU,F,"61F, Rainy, Cloudy",Late April,0.491
+May,BR3,Eelgrass,BR,B,GASU/GAFU,3,12:36,GASU,G,ASU,F,"61F, Rainy, Cloudy",Late April,0.491
+May,GR4,Eelgrass,GR,C,BASU/BAFU,0,9:45,BASU,B,ASU,M,"61F, Rainy, Cloudy",Late April,1.1
+May,GR4,Eelgrass,GR,C,BASU/BAFU,1,10:45,BAFU,B,AFU,M,"61F, Rainy, Cloudy",Late April,1.1
+May,GR4,Eelgrass,GR,C,BASU/BAFU,2,11:45,BAFU,B,AFU,M,"61F, Rainy, Cloudy",Late April,1.1
+May,GR4,Eelgrass,GR,C,BASU/BAFU,3,12:44,SW,B,AFU,M,"61F, Rainy, Cloudy",Late April,1.1
+May,BR4,Eelgrass,BR,D,GASU/GAFU,0,9:51,SB,NONE,SB,M,"61F, Rainy, Cloudy",Late April,1.512
+May,BR4,Eelgrass,BR,D,GASU/GAFU,1,10:51,GASU,G,ASU,M,"61F, Rainy, Cloudy",Late April,1.512
+May,BR4,Eelgrass,BR,D,GASU/GAFU,2,11:51,GASU,G,ASU,M,"61F, Rainy, Cloudy",Late April,1.512
+May,BR4,Eelgrass,BR,D,GASU/GAFU,3,12:49,GASU,G,ASU,M,"61F, Rainy, Cloudy",Late April,1.512
+May,BR5,Eelgrass,BR,A,BASU/BAFU,0,13:21,SB,NONE,SB,F,"66F, Sunny, Some Clouds",Late April,0.309
+May,BR5,Eelgrass,BR,A,BASU/BAFU,1,14:20,BASU,B,ASU,F,"66F, Sunny, Some Clouds",Late April,0.309
+May,BR5,Eelgrass,BR,A,BASU/BAFU,2,15:20,BASU,B,ASU,F,"66F, Sunny, Some Clouds",Late April,0.309
+May,BR5,Eelgrass,BR,A,BASU/BAFU,3,4:21,BASU,B,ASU,F,"66F, Sunny, Some Clouds",Late April,0.309
+May,GR5,Eelgrass,GR,B,GASU/GAFU,0,13:26,GASU,G,ASU,M,"66F, Sunny, Some Clouds",Late April,1.376
+May,GR5,Eelgrass,GR,B,GASU/GAFU,1,14:26,GASU,G,ASU,M,"66F, Sunny, Some Clouds",Late April,1.376
+May,GR5,Eelgrass,GR,B,GASU/GAFU,2,15:26,GASU,G,ASU,M,"66F, Sunny, Some Clouds",Late April,1.376
+May,GR5,Eelgrass,GR,B,GASU/GAFU,3,16:26,GASU,G,ASU,M,"66F, Sunny, Some Clouds",Late April,1.376
+May,BR6,Eelgrass,BR,C,BASU/BAFU,0,13:32,SW,NONE,Drain,M*,"66F, Sunny, Some Clouds",Late April,0.294
+May,BR6,Eelgrass,BR,C,BASU/BAFU,1,14:32,BASU,B,ASU,M*,"66F, Sunny, Some Clouds",Late April,0.294
+May,BR6,Eelgrass,BR,C,BASU/BAFU,2,15:32,BASU,B,ASU,M*,"66F, Sunny, Some Clouds",Late April,0.294
+May,BR6,Eelgrass,BR,C,BASU/BAFU,3,16:32,BASU,B,ASU,M*,"66F, Sunny, Some Clouds",Late April,0.294
+May,GR6,Eelgrass,GR,D,GASU/GAFU,0,13:40,GASU,G,ASU,M,"66F, Sunny, Some Clouds",Late April,1.091
+May,GR6,Eelgrass,GR,D,GASU/GAFU,1,14:43,Drain,NONE,Drain,M,"66F, Sunny, Some Clouds",Late April,1.091
+May,GR6,Eelgrass,GR,D,GASU/GAFU,2,15:39,TW,NONE,TW,M,"66F, Sunny, Some Clouds",Late April,1.091
+May,GR6,Eelgrass,GR,D,GASU/GAFU,3,16:39,SW,NONE,TW,M,"66F, Sunny, Some Clouds",Late April,1.091
+May,GR7,Eelgrass,GR,A,BASU/BAFU,0,9:17,BAFU,B,AFU,M,"60F, partly cloudy",Late April,0.469
+May,GR7,Eelgrass,GR,A,BASU/BAFU,1,10:17,BAFU,B,AFU,M,"60F, partly cloudy",Late April,0.469
+May,GR7,Eelgrass,GR,A,BASU/BAFU,2,11:17,BAFU,B,AFU,M,"60F, partly cloudy",Late April,0.469
+May,GR7,Eelgrass,GR,A,BASU/BAFU,3,12:17,BAFU,B,AFU,M,"60F, partly cloudy",Late April,0.469
+May,BR7,Eelgrass,BR,B,GASU/GAFU,0,9:19,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.261
+May,BR7,Eelgrass,BR,B,GASU/GAFU,1,10:19,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.261
+May,BR7,Eelgrass,BR,B,GASU/GAFU,2,11:19,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.261
+May,BR7,Eelgrass,BR,B,GASU/GAFU,3,12:19,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.261
+May,GR8,Eelgrass,GR,C,BASU/BAFU,0,9:28,SB,NONE,SB,M,"60F, partly cloudy",Late April,0.846
+May,GR8,Eelgrass,GR,C,BASU/BAFU,1,10:28,SW,NONE,TW,M,"60F, partly cloudy",Late April,0.846
+May,GR8,Eelgrass,GR,C,BASU/BAFU,2,11:31,BASU,B,ASU,M,"60F, partly cloudy",Late April,0.846
+May,GR8,Eelgrass,GR,C,BASU/BAFU,3,12:38,TW,NONE,TW,M,"60F, partly cloudy",Late April,0.846
+May,BR8,Eelgrass,BR,D,GASU/GAFU,0,9:29,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.294
+May,BR8,Eelgrass,BR,D,GASU/GAFU,1,10:29,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.294
+May,BR8,Eelgrass,BR,D,GASU/GAFU,2,11:38,TW,NONE,TW,M,"60F, partly cloudy",Late April,0.294
+May,BR8,Eelgrass,BR,D,GASU/GAFU,3,12:39,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.294
+May,BR9,Eelgrass,BR,A,BASU/BAFU,0,12:42,SW,NONE,Drain,M,"60F, partly cloudy",Late April,0.505
+May,BR9,Eelgrass,BR,A,BASU/BAFU,1,14:20,Drain,NONE,Drain,M,"60F, partly cloudy",Late April,0.505
+May,BR9,Eelgrass,BR,A,BASU/BAFU,2,14:57,BAFU,B,AFU,M,"60F, partly cloudy",Late April,0.505
+May,BR9,Eelgrass,BR,A,BASU/BAFU,3,15:57:00,TW,NONE,TW,M,"60F, partly cloudy",Late April,0.505
+May,GR9,Eelgrass,GR,B,GASU/GAFU,0,12:46,GASU,G,ASU,M,"60F, partly cloudy",Late April,0.195
+May,GR9,Eelgrass,GR,B,GASU/GAFU,1,N/A,N/A,N/A,N/A,M,"60F, partly cloudy",Late April,0.195
+May,GR9,Eelgrass,GR,B,GASU/GAFU,2,N/A,N/A,N/A,N/A,M,"60F, partly cloudy",Late April,0.195
+May,GR9,Eelgrass,GR,B,GASU/GAFU,3,N/A,N/A,N/A,N/A,M,"60F, partly cloudy",Late April,0.195
+May,BR10,Eelgrass,BR,C,BASU/BAFU,0,12:53,SB,NONE,SB,M,"60F, partly cloudy",Late April,0.493
+May,BR10,Eelgrass,BR,C,BASU/BAFU,1,13:53,SB,NONE,SB,M,"60F, partly cloudy",Late April,0.493
+May,BR10,Eelgrass,BR,C,BASU/BAFU,2,15:00,BASU,B,ASU,M,"60F, partly cloudy",Late April,0.493
+May,BR10,Eelgrass,BR,C,BASU/BAFU,3,16:01,BASU,B,ASU,M,"60F, partly cloudy",Late April,0.493
+May,GR10,Eelgrass,GR,D,GASU/GAFU,0,13:07,Drain,NONE,Drain,M,"60F, partly cloudy",Late April,0.497
+May,GR10,Eelgrass,GR,D,GASU/GAFU,1,14:17,Drain,NONE,Drain,M,"60F, partly cloudy",Late April,0.497
+May,GR10,Eelgrass,GR,D,GASU/GAFU,2,15:07,Drain,NONE,Drain,M,"60F, partly cloudy",Late April,0.497
+May,GR10,Eelgrass,GR,D,GASU/GAFU,3,16:07,Drain,NONE,Drain,M,"60F, partly cloudy",Late April,0.497
+May,GR11,Eelgrass,GR,A,BASU/BAFU,0,9:18,SB,NONE,SB,M,"60F, sunny",Late April,0.779
+May,GR11,Eelgrass,GR,A,BASU/BAFU,1,10:18,BASU,B,ASU,M,"60F, sunny",Late April,0.779
+May,GR11,Eelgrass,GR,A,BASU/BAFU,2,11:18,BASU,B,ASU,M,"60F, sunny",Late April,0.779
+May,GR11,Eelgrass,GR,A,BASU/BAFU,3,12:20,BASU,B,ASU,M,"60F, sunny",Late April,0.779
+May,BR11,Eelgrass,BR,B,GASU/GAFU,0,9:26,GASU,G,ASU,M,"60F, sunny",Late April,0.319
+May,BR11,Eelgrass,BR,B,GASU/GAFU,1,10:26,GASU,G,ASU,M,"60F, sunny",Late April,0.319
+May,BR11,Eelgrass,BR,B,GASU/GAFU,2,11:26,GASU,G,ASU,M,"60F, sunny",Late April,0.319
+May,BR11,Eelgrass,BR,B,GASU/GAFU,3,12:26,GASU,G,ASU,M,"60F, sunny",Late April,0.319
+May,GR12,Eelgrass,GR,C,BASU/BAFU,0,9:30,SW,NONE,TW,M,"60F, sunny",Late April,1.464
+May,GR12,Eelgrass,GR,C,BASU/BAFU,1,10:30,SW,NONE,TW,M,"60F, sunny",Late April,1.464
+May,GR12,Eelgrass,GR,C,BASU/BAFU,2,11:30,BASU,B,ASU,M,"60F, sunny",Late April,1.464
+May,GR12,Eelgrass,GR,C,BASU/BAFU,3,12:30,BASU,B,ASU,M,"60F, sunny",Late April,1.464
+May,BR12,Eelgrass,BR,D,GASU/GAFU,0,9:35,SB,NONE,SB,M,"60F, sunny",Late April,0.855
+May,BR12,Eelgrass,BR,D,GASU/GAFU,1,10:35,SB,NONE,SB,M,"60F, sunny",Late April,0.855
+May,BR12,Eelgrass,BR,D,GASU/GAFU,2,11:35,GASU,G,ASU,M,"60F, sunny",Late April,0.855
+May,BR12,Eelgrass,BR,D,GASU/GAFU,3,12:36,GASU,G,ASU,M,"60F, sunny",Late April,0.855
+May,BR13,Eelgrass,BR,A,BASU/BAFU,0,12:49,BAFU,B,AFU,F,"61F, Sunny",Late April,0.472
+May,BR13,Eelgrass,BR,A,BASU/BAFU,1,13:49,BASU,B,ASU,F,"61F, Sunny",Late April,0.472
+May,BR13,Eelgrass,BR,A,BASU/BAFU,2,14:49,BASU,B,ASU,F,"61F, Sunny",Late April,0.472
+May,BR13,Eelgrass,BR,A,BASU/BAFU,3,15:49,BASU,B,ASU,F,"61F, Sunny",Late April,0.472
+May,GR13,Eelgrass,GR,B,GASU/GAFU,0,13:07,SB,NONE,SB,M,"61F, Sunny",Late April,0.555
+May,GR13,Eelgrass,GR,B,GASU/GAFU,1,14:07,TW,NONE,TW,M,"61F, Sunny",Late April,0.555
+May,GR13,Eelgrass,GR,B,GASU/GAFU,2,15:07,TW,NONE,TW,M,"61F, Sunny",Late April,0.555
+May,GR13,Eelgrass,GR,B,GASU/GAFU,3,16:07,SW,NONE,TW,M,"61F, Sunny",Late April,0.555
+May,BR14,Eelgrass,BR,C,BASU/BAFU,0,12:57,SB,NONE,SB,F,"61F, Sunny",Late April,0.319
+May,BR14,Eelgrass,BR,C,BASU/BAFU,1,13:57,BAFU,B,AFU,F,"61F, Sunny",Late April,0.319
+May,BR14,Eelgrass,BR,C,BASU/BAFU,2,14:57,BAFU,B,AFU,F,"61F, Sunny",Late April,0.319
+May,BR14,Eelgrass,BR,C,BASU/BAFU,3,15:57,TW,NONE,TW,F,"61F, Sunny",Late April,0.319
+May,GR14,Eelgrass,GR,D,GASU/GAFU,0,13:03,SB,NONE,SB,M,"61F, Sunny",Late April,0.403
+May,GR14,Eelgrass,GR,D,GASU/GAFU,1,14:03,GASU,G,ASU,M,"61F, Sunny",Late April,0.403
+May,GR14,Eelgrass,GR,D,GASU/GAFU,2,15:03,SW,G,ASU,M,"61F, Sunny",Late April,0.403
+May,GR14,Eelgrass,GR,D,GASU/GAFU,3,16:03,TW,NONE,TW,M,"61F, Sunny",Late April,0.403
+May,GR15,Eelgrass,GR,A,BASU/BAFU,0,9:23,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.376
+May,GR15,Eelgrass,GR,A,BASU/BAFU,1,10:23,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.376
+May,GR15,Eelgrass,GR,A,BASU/BAFU,2,11:23,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.376
+May,GR15,Eelgrass,GR,A,BASU/BAFU,3,12:23,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.376
+May,BR15,Eelgrass,BR,B,GASU/GAFU,0,9:29,SB,NONE,SB,F*,"61F, Partly Cloudy",Early May,0.289
+May,BR15,Eelgrass,BR,B,GASU/GAFU,1,10:31,GAFU,G,AFU,F*,"61F, Partly Cloudy",Early May,0.289
+May,BR15,Eelgrass,BR,B,GASU/GAFU,2,11:29,GAFU,G,AFU,F*,"61F, Partly Cloudy",Early May,0.289
+May,BR15,Eelgrass,BR,B,GASU/GAFU,3,12:29,GAFU,G,AFU,F*,"61F, Partly Cloudy",Early May,0.289
+May,GR16,Eelgrass,GR,C,BASU/BAFU,0,9:36,SB,NONE,SB,M,"61F, Partly Cloudy",Early May,0.526
+May,GR16,Eelgrass,GR,C,BASU/BAFU,1,10:36,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.526
+May,GR16,Eelgrass,GR,C,BASU/BAFU,2,11:36,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.526
+May,GR16,Eelgrass,GR,C,BASU/BAFU,3,12:36,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.526
+May,BR16,Eelgrass,BR,D,GASU/GAFU,0,9:40,GAFU,G,AFU,F,"61F, Partly Cloudy",Early May,0.443
+May,BR16,Eelgrass,BR,D,GASU/GAFU,1,10:40,GAFU,G,AFU,F,"61F, Partly Cloudy",Early May,0.443
+May,BR16,Eelgrass,BR,D,GASU/GAFU,2,11:40,GAFU,G,AFU,F,"61F, Partly Cloudy",Early May,0.443
+May,BR16,Eelgrass,BR,D,GASU/GAFU,3,12:40,GAFU,G,AFU,F,"61F, Partly Cloudy",Early May,0.443
+May,BR17,Eelgrass,BR,A,BASU/BAFU,0,9:46,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.618
+May,BR17,Eelgrass,BR,A,BASU/BAFU,1,10:46,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.618
+May,BR17,Eelgrass,BR,A,BASU/BAFU,2,11:46,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.618
+May,BR17,Eelgrass,BR,A,BASU/BAFU,3,12:46,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.618
+May,GR17,Eelgrass,GR,B,GASU/GAFU,0,9:50,GASU,G,ASU,M,"54F, Cloudy",Early May,0.475
+May,GR17,Eelgrass,GR,B,GASU/GAFU,1,10:50,GASU,G,ASU,M,"54F, Cloudy",Early May,0.475
+May,GR17,Eelgrass,GR,B,GASU/GAFU,2,11:52,SW,NONE,TW,M,"54F, Cloudy",Early May,0.475
+May,GR17,Eelgrass,GR,B,GASU/GAFU,3,12:52,GASU,G,ASU,M,"54F, Cloudy",Early May,0.475
+May,BR18,Eelgrass,BR,C,BASU/BAFU,0,9:54,BASU,B,ASU,F,"54F, Cloudy",Early May,0.238
+May,BR18,Eelgrass,BR,C,BASU/BAFU,1,10:55,BASU,B,ASU,F,"54F, Cloudy",Early May,0.238
+May,BR18,Eelgrass,BR,C,BASU/BAFU,2,11:55,BASU,B,ASU,F,"54F, Cloudy",Early May,0.238
+May,BR18,Eelgrass,BR,C,BASU/BAFU,3,12:54,BASU,B,ASU,F,"54F, Cloudy",Early May,0.238
+May,GR18,Eelgrass,GR,D,GASU/GAFU,0,10:23,SB,NONE,SB,M,"54F, Cloudy",Early May,0.658
+May,GR18,Eelgrass,GR,D,GASU/GAFU,1,11:23,SB,NONE,SB,M,"54F, Cloudy",Early May,0.658
+May,GR18,Eelgrass,GR,D,GASU/GAFU,2,12:26,SB,NONE,SB,M,"54F, Cloudy",Early May,0.658
+May,GR18,Eelgrass,GR,D,GASU/GAFU,3,1:23,SB,NONE,SB,M,"54F, Cloudy",Early May,0.658
+May,GR19,Eelgrass,GR,A,BASU/BAFU,0,12:55,BASU,B,ASU,M,"54F, Cloudy",Early May,0.299
+May,GR19,Eelgrass,GR,A,BASU/BAFU,1,13:55,BASU,B,ASU,M,"54F, Cloudy",Early May,0.299
+May,GR19,Eelgrass,GR,A,BASU/BAFU,2,14:55,BASU,B,ASU,M,"54F, Cloudy",Early May,0.299
+May,GR19,Eelgrass,GR,A,BASU/BAFU,3,15:55,BASU,B,ASU,M,"54F, Cloudy",Early May,0.299
+May,BR19,Eelgrass,BR,B,GASU/GAFU,0,13:00,GASU,G,ASU,M,"54F, Cloudy",Early May,0.532
+May,BR19,Eelgrass,BR,B,GASU/GAFU,1,14:00,GASU,G,ASU,M,"54F, Cloudy",Early May,0.532
+May,BR19,Eelgrass,BR,B,GASU/GAFU,2,15:00,GASU,G,ASU,M,"54F, Cloudy",Early May,0.532
+May,BR19,Eelgrass,BR,B,GASU/GAFU,3,16:00,GASU,G,ASU,M,"54F, Cloudy",Early May,0.532
+May,GR20,Eelgrass,GR,C,BASU/BAFU,0,13:05,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.504
+May,GR20,Eelgrass,GR,C,BASU/BAFU,1,14:20,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.504
+May,GR20,Eelgrass,GR,C,BASU/BAFU,2,15:05,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.504
+May,GR20,Eelgrass,GR,C,BASU/BAFU,3,16:05,BAFU,B,AFU,M,"54F, Cloudy",Early May,0.504
+May,BR20,Eelgrass,BR,D,GASU/GAFU,0,13:48,TW,NONE,TW,F,"54F, Cloudy",Early May,0.24
+May,BR20,Eelgrass,BR,D,GASU/GAFU,1,14:48,TW,NONE,TW,F,"54F, Cloudy",Early May,0.24
+May,BR20,Eelgrass,BR,D,GASU/GAFU,2,15:48,SB,NONE,SB,F,"54F, Cloudy",Early May,0.24
+May,BR20,Eelgrass,BR,D,GASU/GAFU,3,16:50,GASU,G,ASU,F,"54F, Cloudy",Early May,0.24
+May,BR21,Fucus,BR,A,BASU/BAFU,0,9:45,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.417
+May,BR21,Fucus,BR,A,BASU/BAFU,1,10:47,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.417
+May,BR21,Fucus,BR,A,BASU/BAFU,2,11:45,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.417
+May,BR21,Fucus,BR,A,BASU/BAFU,3,12:45,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.417
+May,GR21,Fucus,GR,B,GASU/GAFU,0,9:58,GAFU,G,AFU,M,"61F, Partly Cloudy",Early May,0.458
+May,GR21,Fucus,GR,B,GASU/GAFU,1,11:16,GASU,G,ASU,M,"61F, Partly Cloudy",Early May,0.458
+May,GR21,Fucus,GR,B,GASU/GAFU,2,11:58,GASU,G,ASU,M,"61F, Partly Cloudy",Early May,0.458
+May,GR21,Fucus,GR,B,GASU/GAFU,3,12:58,GASU,G,ASU,M,"61F, Partly Cloudy",Early May,0.458
+May,BR22,Fucus,BR,C,BASU/BAFU,0,10:06,BAFU,B,AFU,M,"61F, Partly Cloudy",Early May,0.314
+May,BR22,Fucus,BR,C,BASU/BAFU,1,11:06,BAFU,B,AFU,M,"61F, Partly Cloudy",Early May,0.314
+May,BR22,Fucus,BR,C,BASU/BAFU,2,12:08,BAFU,B,AFU,M,"61F, Partly Cloudy",Early May,0.314
+May,BR22,Fucus,BR,C,BASU/BAFU,3,13:10,BASU,G,ASU,M,"61F, Partly Cloudy",Early May,0.314
+May,GR22,Fucus,GR,D,GASU/GAFU,0,10:12,GAFU,B,AFU,M,"61F, Partly Cloudy",Early May,0.793
+May,GR22,Fucus,GR,D,GASU/GAFU,1,11:12,GASU,G,ASU,M,"61F, Partly Cloudy",Early May,0.793
+May,GR22,Fucus,GR,D,GASU/GAFU,2,12:12,GASU,G,ASU,M,"61F, Partly Cloudy",Early May,0.793
+May,GR22,Fucus,GR,D,GASU/GAFU,3,13:12,GASU,G,ASU,M,"61F, Partly Cloudy",Early May,0.793
+May,GR23,Fucus,GR,A,BASU/BAFU,0,13:23,TW,NONE,TW,M,"61F, Partly Cloudy",Early May,0.603
+May,GR23,Fucus,GR,A,BASU/BAFU,1,N/A,N/A,N/A,N/A,M,"61F, Partly Cloudy",Early May,0.603
+May,GR23,Fucus,GR,A,BASU/BAFU,2,15:31,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.603
+May,GR23,Fucus,GR,A,BASU/BAFU,3,16:18,BAFU,B,AFU,M,"61F, Partly Cloudy",Early May,0.603
+May,BR23,Fucus,BR,B,GASU/GAFU,0,13:36,GAFU,G,AFU,F,"61F, Partly Cloudy",Early May,0.376
+May,BR23,Fucus,BR,B,GASU/GAFU,1,N/A,N/A,N/A,N/A,F,"61F, Partly Cloudy",Early May,0.376
+May,BR23,Fucus,BR,B,GASU/GAFU,2,16:07,GAFU,G,AFU,F,"61F, Partly Cloudy",Early May,0.376
+May,BR23,Fucus,BR,B,GASU/GAFU,3,16:39,GAFU,G,AFU,F,"61F, Partly Cloudy",Early May,0.376
+May,GR24,Fucus,GR,C,BASU/BAFU,0,13:27,SB,NONE,SB,M,"61F, Partly Cloudy",Early May,0.644
+May,GR24,Fucus,GR,C,BASU/BAFU,1,N/A,N/A,N/A,N/A,M,"61F, Partly Cloudy",Early May,0.644
+May,GR24,Fucus,GR,C,BASU/BAFU,2,16:10,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.644
+May,GR24,Fucus,GR,C,BASU/BAFU,3,16:27,BASU,B,ASU,M,"61F, Partly Cloudy",Early May,0.644
+May,BR24,Fucus,BR,D,GASU/GAFU,0,13:31,SB,NONE,SB,F,"61F, Partly Cloudy",Early May,0.57
+May,BR24,Fucus,BR,D,GASU/GAFU,1,14:32,GASU,G,ASU,F,"61F, Partly Cloudy",Early May,0.57
+May,BR24,Fucus,BR,D,GASU/GAFU,2,15:31,GASU,G,ASU,F,"61F, Partly Cloudy",Early May,0.57
+May,BR24,Fucus,BR,D,GASU/GAFU,3,16:31,GASU,G,ASU,F,"61F, Partly Cloudy",Early May,0.57
+May,BR23B,Eelgrass,BR,A,BASU/BAFU,0,9:12,BASU,B,ASU,M,"55F, Sunny",Early May,0.345
+May,BR23B,Eelgrass,BR,A,BASU/BAFU,1,10:12,BASU,B,ASU,M,"55F, Sunny",Early May,0.345
+May,BR23B,Eelgrass,BR,A,BASU/BAFU,2,11:12,BASU,B,ASU,M,"55F, Sunny",Early May,0.345
+May,BR23B,Eelgrass,BR,A,BASU/BAFU,3,12:12,BASU,B,ASU,M,"55F, Sunny",Early May,0.345
+May,GR23B,Eelgrass,GR,B,GASU/GAFU,0,9:14,TW,NONE,TW,M,"55F, Sunny",Early May,0.781
+May,GR23B,Eelgrass,GR,B,GASU/GAFU,1,10:14,SW,G,ASU,M,"55F, Sunny",Early May,0.781
+May,GR23B,Eelgrass,GR,B,GASU/GAFU,2,11:14,GASU,G,ASU,M,"55F, Sunny",Early May,0.781
+May,GR23B,Eelgrass,GR,B,GASU/GAFU,3,12:14,GASU,G,ASU,M,"55F, Sunny",Early May,0.781
+May,BR24B,Eelgrass,BR,C,BASU/BAFU,0,9:19,Drain,NONE,Drain,M,"55F, Sunny",Early May,0.399
+May,BR24B,Eelgrass,BR,C,BASU/BAFU,1,10:20,BASU,B,ASU,M,"55F, Sunny",Early May,0.399
+May,BR24B,Eelgrass,BR,C,BASU/BAFU,2,11:20,SW,NONE,TW,M,"55F, Sunny",Early May,0.399
+May,BR24B,Eelgrass,BR,C,BASU/BAFU,3,12:19,SW,NONE,TW,M,"55F, Sunny",Early May,0.399
+May,GR24B,Eelgrass,GR,D,GASU/GAFU,0,9:24,GASU,G,ASU,M,"55F, Sunny",Early May,0.532
+May,GR24B,Eelgrass,GR,D,GASU/GAFU,1,10:24,GASU,G,ASU,M,"55F, Sunny",Early May,0.532
+May,GR24B,Eelgrass,GR,D,GASU/GAFU,2,11:25,GASU,G,ASU,M,"55F, Sunny",Early May,0.532
+May,GR24B,Eelgrass,GR,D,GASU/GAFU,3,12:24,GASU,G,ASU,M,"55F, Sunny",Early May,0.532
+June,BR25,Fucus,BR,A,BASU/BAFU,0,13:22,BAFU,B,AFU,F*,"70F, Partly Cloudy",Early May,0.448
+June,BR25,Fucus,BR,A,BASU/BAFU,1,14:22,BAFU,B,AFU,F*,"70F, Partly Cloudy",Early May,0.448
+June,BR25,Fucus,BR,A,BASU/BAFU,2,15:22,BAFU,B,AFU,F*,"70F, Partly Cloudy",Early May,0.448
+June,BR25,Fucus,BR,A,BASU/BAFU,3,16:22,BAFU,B,AFU,F*,"70F, Partly Cloudy",Early May,0.448
+June,GR25,Fucus,GR,B,GASU/GAFU,0,13:28,GASU,G,ASU,M,"70F, Partly Cloudy",Early May,1.102
+June,GR25,Fucus,GR,B,GASU/GAFU,1,14:28,SW,G,ASU,M,"70F, Partly Cloudy",Early May,1.102
+June,GR25,Fucus,GR,B,GASU/GAFU,2,15:28,GAFU,G,AFU,M,"70F, Partly Cloudy",Early May,1.102
+June,GR25,Fucus,GR,B,GASU/GAFU,3,16:28,SW,NONE,Drain,M,"70F, Partly Cloudy",Early May,1.102
+June,BR26,Fucus,BR,C,BASU/BAFU,0,13:32,BAFU,B,AFU,F,"70F, Partly Cloudy",Early May,0.378
+June,BR26,Fucus,BR,C,BASU/BAFU,1,14:32,Drain,NONE,Drain,F,"70F, Partly Cloudy",Early May,0.378
+June,BR26,Fucus,BR,C,BASU/BAFU,2,15:32,BASU,B,ASU,F,"70F, Partly Cloudy",Early May,0.378
+June,BR26,Fucus,BR,C,BASU/BAFU,3,16:32,BASU,B,ASU,F,"70F, Partly Cloudy",Early May,0.378
+June,GR26,Fucus,GR,D,GASU/GAFU,0,13:40,SB,NONE,SB,M,"70F, Partly Cloudy",Early May,1.084
+June,GR26,Fucus,GR,D,GASU/GAFU,1,14:40,GASU,G,ASU,M,"70F, Partly Cloudy",Early May,1.084
+June,GR26,Fucus,GR,D,GASU/GAFU,2,15:40,GASU,G,ASU,M,"70F, Partly Cloudy",Early May,1.084
+June,GR26,Fucus,GR,D,GASU/GAFU,3,16:40,GASU,G,ASU,M,"70F, Partly Cloudy",Early May,1.084
+June,GR27,Fucus,GR,A,BASU/BAFU,0,10:01,SW,NONE,TW,M,"63F, Overcast",Mid June,0.301
+June,GR27,Fucus,GR,A,BASU/BAFU,1,11:01,BASU,B,ASU,M,"63F, Overcast",Mid June,0.301
+June,GR27,Fucus,GR,A,BASU/BAFU,2,12:05,BASU,B,ASU,M,"63F, Overcast",Mid June,0.301
+June,GR27,Fucus,GR,A,BASU/BAFU,3,13:01,BASU,B,ASU,M,"63F, Overcast",Mid June,0.301
+June,BR27,Fucus,BR,B,GASU/GAFU,0,10:06,GASU,G,ASU,F,"63F, Overcast",Mid June,0.507
+June,BR27,Fucus,BR,B,GASU/GAFU,1,11:06,GAFU,G,AFU,F,"63F, Overcast",Mid June,0.507
+June,BR27,Fucus,BR,B,GASU/GAFU,2,12:08,GAFU,G,AFU,F,"63F, Overcast",Mid June,0.507
+June,BR27,Fucus,BR,B,GASU/GAFU,3,13:06,GASU,G,ASU,F,"63F, Overcast",Mid June,0.507
+June,GR28,Fucus,GR,C,BASU/BAFU,0,10:12,TW,NONE,TW,M,"63F, Overcast",Mid June,0.202
+June,GR28,Fucus,GR,C,BASU/BAFU,1,11:12,TW,NONE,TW,M,"63F, Overcast",Mid June,0.202
+June,GR28,Fucus,GR,C,BASU/BAFU,2,12:12,TW,NONE,TW,M,"63F, Overcast",Mid June,0.202
+June,GR28,Fucus,GR,C,BASU/BAFU,3,13:12,TW,NONE,TW,M,"63F, Overcast",Mid June,0.202
+June,BR28,Fucus,BR,D,GASU/GAFU,0,10:16,TW,NONE,TW,F,"63F, Overcast",Mid June,0.387
+June,BR28,Fucus,BR,D,GASU/GAFU,1,11:16,GASU,G,ASU,F,"63F, Overcast",Mid June,0.387
+June,BR28,Fucus,BR,D,GASU/GAFU,2,12:16,GASU,G,ASU,F,"63F, Overcast",Mid June,0.387
+June,BR28,Fucus,BR,D,GASU/GAFU,3,13:16,GASU,G,ASU,F,"63F, Overcast",Mid June,0.387
+June,BR29,Fucus,BR,A,BASU/BAFU,0,9:37,BASU,B,ASU,F,"55F, Cloudy",Mid June,0.269
+June,BR29,Fucus,BR,A,BASU/BAFU,1,10:37,BASU,B,ASU,F,"55F, Cloudy",Mid June,0.269
+June,BR29,Fucus,BR,A,BASU/BAFU,2,11:42,BASU,B,ASU,F,"55F, Cloudy",Mid June,0.269
+June,BR29,Fucus,BR,A,BASU/BAFU,3,12:37,BASU,B,ASU,F,"55F, Cloudy",Mid June,0.269
+June,GR29,Fucus,GR,B,GASU/GAFU,0,9:40,GAFU,G,AFU,M,"55F, Cloudy",Mid June,0.26
+June,GR29,Fucus,GR,B,GASU/GAFU,1,10:40,GASU,G,ASU,M,"55F, Cloudy",Mid June,0.26
+June,GR29,Fucus,GR,B,GASU/GAFU,2,11:40,GASU,G,ASU,M,"55F, Cloudy",Mid June,0.26
+June,GR29,Fucus,GR,B,GASU/GAFU,3,12:40,GASU,G,ASU,M,"55F, Cloudy",Mid June,0.26
+June,BR30,Fucus,BR,C,BASU/BAFU,0,9:44,BASU,B,ASU,M,"55F, Cloudy",Mid June,0.672
+June,BR30,Fucus,BR,C,BASU/BAFU,1,10:44,BASU,B,ASU,M,"55F, Cloudy",Mid June,0.672
+June,BR30,Fucus,BR,C,BASU/BAFU,2,11:44,BASU,B,ASU,M,"55F, Cloudy",Mid June,0.672
+June,BR30,Fucus,BR,C,BASU/BAFU,3,12:44,BASU,B,ASU,M,"55F, Cloudy",Mid June,0.672
+June,GR30,Fucus,GR,D,GASU/GAFU,0,9:49,GAFU,G,AFU,F,"55F, Cloudy",Mid June,0.411
+June,GR30,Fucus,GR,D,GASU/GAFU,1,10:49,GAFU,G,AFU,F,"55F, Cloudy",Mid June,0.411
+June,GR30,Fucus,GR,D,GASU/GAFU,2,11:49,GAFU,G,AFU,F,"55F, Cloudy",Mid June,0.411
+June,GR30,Fucus,GR,D,GASU/GAFU,3,12:49,GAFU,G,AFU,F,"55F, Cloudy",Mid June,0.411
+June,GR31,Fucus,GR,A,BASU/BAFU,0,12:51,BAFU,B,AFU,M,"66F, Mostly Cloudy",Mid June,1.464
+June,GR31,Fucus,GR,A,BASU/BAFU,1,13:51,BAFU,B,AFU,M,"66F, Mostly Cloudy",Mid June,1.464
+June,GR31,Fucus,GR,A,BASU/BAFU,2,14:51,BAFU,B,AFU,M,"66F, Mostly Cloudy",Mid June,1.464
+June,GR31,Fucus,GR,A,BASU/BAFU,3,15:51,BAFU,B,AFU,M,"66F, Mostly Cloudy",Mid June,1.464
+June,BR31,Fucus,BR,B,GASU/GAFU,0,12:55,Drain,NONE,Drain,F,"66F, Mostly Cloudy",Mid June,0.457
+June,BR31,Fucus,BR,B,GASU/GAFU,1,13:55,Drain,NONE,Drain,F,"66F, Mostly Cloudy",Mid June,0.457
+June,BR31,Fucus,BR,B,GASU/GAFU,2,14:55,Drain,NONE,Drain,F,"66F, Mostly Cloudy",Mid June,0.457
+June,BR31,Fucus,BR,B,GASU/GAFU,3,15:55,Drain,NONE,Drain,F,"66F, Mostly Cloudy",Mid June,0.457
+June,GR32,Fucus,GR,C,BASU/BAFU,0,13:00,BASU,B,ASU,F,"66F, Mostly Cloudy",Mid June,0.43
+June,GR32,Fucus,GR,C,BASU/BAFU,1,14:00,BASU,B,ASU,F,"66F, Mostly Cloudy",Mid June,0.43
+June,GR32,Fucus,GR,C,BASU/BAFU,2,15:00,BASU,B,ASU,F,"66F, Mostly Cloudy",Mid June,0.43
+June,GR32,Fucus,GR,C,BASU/BAFU,3,16:00,BASU,B,ASU,F,"66F, Mostly Cloudy",Mid June,0.43
+June,BR32,Fucus,BR,D,GASU/GAFU,0,13:03,GASU,G,ASU,F,"66F, Mostly Cloudy",Mid June,0.347
+June,BR32,Fucus,BR,D,GASU/GAFU,1,14:03,TW,NONE,TW,F,"66F, Mostly Cloudy",Mid June,0.347
+June,BR32,Fucus,BR,D,GASU/GAFU,2,15:03,SW,G,ASU,F,"66F, Mostly Cloudy",Mid June,0.347
+June,BR32,Fucus,BR,D,GASU/GAFU,3,16:03,SW,NONE,TW,F,"66F, Mostly Cloudy",Mid June,0.347
+June,BR33,Fucus,BR,A,BASU/BAFU,0,9:39,BASU,B,ASU,F,"64F, Sunny",Mid June,0.289
+June,BR33,Fucus,BR,A,BASU/BAFU,1,10:39,SW,NONE,TW,F,"64F, Sunny",Mid June,0.289
+June,BR33,Fucus,BR,A,BASU/BAFU,2,11:39,BASU,B,ASU,F,"64F, Sunny",Mid June,0.289
+June,BR33,Fucus,BR,A,BASU/BAFU,3,N/A,N/A,N/A,N/A,F,"64F, Sunny",Mid June,0.289
+June,GR33,Fucus,GR,B,GASU/GAFU,0,9:44,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.596
+June,GR33,Fucus,GR,B,GASU/GAFU,1,10:44,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.596
+June,GR33,Fucus,GR,B,GASU/GAFU,2,11:44,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.596
+June,GR33,Fucus,GR,B,GASU/GAFU,3,12:44,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.596
+June,BR34,Fucus,BR,C,BASU/BAFU,0,9:49,Drain,NONE,Drain,F,"64F, Sunny",Mid June,0.33
+June,BR34,Fucus,BR,C,BASU/BAFU,1,10:49,BASU,B,ASU,F,"64F, Sunny",Mid June,0.33
+June,BR34,Fucus,BR,C,BASU/BAFU,2,11:49,BASU,B,ASU,F,"64F, Sunny",Mid June,0.33
+June,BR34,Fucus,BR,C,BASU/BAFU,3,12:49,BASU,B,ASU,F,"64F, Sunny",Mid June,0.33
+June,GR34,Fucus,GR,D,GASU/GAFU,0,9:54,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.45
+June,GR34,Fucus,GR,D,GASU/GAFU,1,10:54,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.45
+June,GR34,Fucus,GR,D,GASU/GAFU,2,11:54,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.45
+June,GR34,Fucus,GR,D,GASU/GAFU,3,12:54,GAFU,G,AFU,M,"64F, Sunny",Mid June,0.45
+June,GR35,Fucus,GR,A,BASU/BAFU,0,13:06,SB,NONE,SB,M,"64F, Sunny",Mid June,1.43
+June,GR35,Fucus,GR,A,BASU/BAFU,1,14:06,BAFU,B,AFU,M,"64F, Sunny",Mid June,1.43
+June,GR35,Fucus,GR,A,BASU/BAFU,2,15:06,BAFU,B,AFU,M,"64F, Sunny",Mid June,1.43
+June,GR35,Fucus,GR,A,BASU/BAFU,3,16:06,BAFU,B,AFU,M,"64F, Sunny",Mid June,1.43
+June,BR35,Fucus,BR,B,GASU/GAFU,0,13:10,SB,NONE,SB,F,"64F, Sunny",Mid June,0.481
+June,BR35,Fucus,BR,B,GASU/GAFU,1,14:10,GASU,G,ASU,F,"64F, Sunny",Mid June,0.481
+June,BR35,Fucus,BR,B,GASU/GAFU,2,15:10,GASU,G,ASU,F,"64F, Sunny",Mid June,0.481
+June,BR35,Fucus,BR,B,GASU/GAFU,3,16:10,GASU,G,ASU,F,"64F, Sunny",Mid June,0.481
+June,GR36,Fucus,GR,C,BASU/BAFU,0,13:14,SB,NONE,SB,M,"64F, Sunny",Mid June,1.312
+June,GR36,Fucus,GR,C,BASU/BAFU,1,14:14,BASU,B,ASU,M,"64F, Sunny",Mid June,1.312
+June,GR36,Fucus,GR,C,BASU/BAFU,2,15:14,BASU,B,ASU,M,"64F, Sunny",Mid June,1.312
+June,GR36,Fucus,GR,C,BASU/BAFU,3,16:14,BASU,B,ASU,M,"64F, Sunny",Mid June,1.312
+June,BR36,Fucus,BR,D,GASU/GAFU,0,13:18,GASU,G,ASU,M,"64F, Sunny",Mid June,1.496
+June,BR36,Fucus,BR,D,GASU/GAFU,1,14:18,GASU,G,ASU,M,"64F, Sunny",Mid June,1.496
+June,BR36,Fucus,BR,D,GASU/GAFU,2,15:18,GASU,G,ASU,M,"64F, Sunny",Mid June,1.496
+June,BR36,Fucus,BR,D,GASU/GAFU,3,16:18,GASU,G,ASU,M,"64F, Sunny",Mid June,1.496
+July,BR37,Fucus,BR,A,BASU/BAFU,0,9:46,Drain,NONE,Drain,F,"63F, Raining",Mid June,0.32
+July,BR37,Fucus,BR,A,BASU/BAFU,1,10:46,BASU,B,ASU,F,"63F, Raining",Mid June,0.32
+July,BR37,Fucus,BR,A,BASU/BAFU,2,11:46,BASU,B,ASU,F,"63F, Raining",Mid June,0.32
+July,BR37,Fucus,BR,A,BASU/BAFU,3,12:46,BASU,B,ASU,F,"63F, Raining",Mid June,0.32
+July,GR37,Fucus,GR,B,GASU/GAFU,0,9:50,GAFU,G,AFU,M,"63F, Raining",Mid June,0.584
+July,GR37,Fucus,GR,B,GASU/GAFU,1,10:50,GAFU,G,AFU,M,"63F, Raining",Mid June,0.584
+July,GR37,Fucus,GR,B,GASU/GAFU,2,11:50,GAFU,G,AFU,M,"63F, Raining",Mid June,0.584
+July,GR37,Fucus,GR,B,GASU/GAFU,3,12:50,GAFU,G,AFU,M,"63F, Raining",Mid June,0.584
+July,BR38,Fucus,BR,C,BASU/BAFU,0,9:54,BASU,B,ASU,F,"63F, Raining",Mid June,0.33
+July,BR38,Fucus,BR,C,BASU/BAFU,1,10:54,BASU,B,ASU,F,"63F, Raining",Mid June,0.33
+July,BR38,Fucus,BR,C,BASU/BAFU,2,11:54,BASU,B,ASU,F,"63F, Raining",Mid June,0.33
+July,BR38,Fucus,BR,C,BASU/BAFU,3,12:54,BASU,B,ASU,F,"63F, Raining",Mid June,0.33
+July,GR38,Fucus,GR,D,GASU/GAFU,0,9:57,Drain,NONE,Drain,M,"63F, Raining",Mid June,0.261
+July,GR38,Fucus,GR,D,GASU/GAFU,1,10:57,GASU,G,ASU,M,"63F, Raining",Mid June,0.261
+July,GR38,Fucus,GR,D,GASU/GAFU,2,11:57,GASU,G,ASU,M,"63F, Raining",Mid June,0.261
+July,GR38,Fucus,GR,D,GASU/GAFU,3,12:57,GASU,G,ASU,M,"63F, Raining",Mid June,0.261
+July,GR39,Fucus,GR,A,BASU/BAFU,0,12:58,Drain,NONE,Drain,M,"66F, Cloudy",Mid June,0.265
+July,GR39,Fucus,GR,A,BASU/BAFU,1,14:00,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.265
+July,GR39,Fucus,GR,A,BASU/BAFU,2,14:58,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.265
+July,GR39,Fucus,GR,A,BASU/BAFU,3,15:58,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.265
+July,BR39,Fucus,BR,B,GASU/GAFU,0,13:02,GASU,G,ASU,M,"66F, Cloudy",Mid June,0.33
+July,BR39,Fucus,BR,B,GASU/GAFU,1,14:02,GASU,G,ASU,M,"66F, Cloudy",Mid June,0.33
+July,BR39,Fucus,BR,B,GASU/GAFU,2,15:02,GASU,G,ASU,M,"66F, Cloudy",Mid June,0.33
+July,BR39,Fucus,BR,B,GASU/GAFU,3,16:02,GASU,G,ASU,M,"66F, Cloudy",Mid June,0.33
+July,GR40,Fucus,GR,C,BASU/BAFU,0,13:06,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.26
+July,GR40,Fucus,GR,C,BASU/BAFU,1,14:06,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.26
+July,GR40,Fucus,GR,C,BASU/BAFU,2,15:06,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.26
+July,GR40,Fucus,GR,C,BASU/BAFU,3,16:06,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.26
+July,BR40,Fucus,BR,D,GASU/GAFU,0,13:09,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.464
+July,BR40,Fucus,BR,D,GASU/GAFU,1,14:12,GAFU,G,AFU,F,"66F, Cloudy",Mid June,0.464
+July,BR40,Fucus,BR,D,GASU/GAFU,2,15:09,GAFU,G,AFU,F,"66F, Cloudy",Mid June,0.464
+July,BR40,Fucus,BR,D,GASU/GAFU,3,16:09,GAFU,G,AFU,F,"66F, Cloudy",Mid June,0.464
+July,BR41,Fucus,BR,A,BASU/BAFU,0,9:45,TW,NONE,TW,F,"66F, Partly Cloudy",Mid June,0.391
+July,BR41,Fucus,BR,A,BASU/BAFU,1,10:45,SW,NONE,TW,F,"66F, Partly Cloudy",Mid June,0.391
+July,BR41,Fucus,BR,A,BASU/BAFU,2,11:45,BASU,B,ASU,F,"66F, Partly Cloudy",Mid June,0.391
+July,BR41,Fucus,BR,A,BASU/BAFU,3,12:45,BASU,B,ASU,F,"66F, Partly Cloudy",Mid June,0.391
+July,GR41,Fucus,GR,B,GASU/GAFU,0,9:48,GAFU,G,AFU,M,"66F, Partly Cloudy",Mid June,0.821
+July,GR41,Fucus,GR,B,GASU/GAFU,1,10:48,GAFU,G,AFU,M,"66F, Partly Cloudy",Mid June,0.821
+July,GR41,Fucus,GR,B,GASU/GAFU,2,11:48,GAFU,G,AFU,M,"66F, Partly Cloudy",Mid June,0.821
+July,GR41,Fucus,GR,B,GASU/GAFU,3,1:03,GASU,G,ASU,M,"66F, Partly Cloudy",Mid June,0.821
+July,BR42,Fucus,BR,C,BASU/BAFU,0,9:53,BASU,B,ASU,F,"66F, Partly Cloudy",Mid June,0.447
+July,BR42,Fucus,BR,C,BASU/BAFU,1,10:53,BASU,B,ASU,F,"66F, Partly Cloudy",Mid June,0.447
+July,BR42,Fucus,BR,C,BASU/BAFU,2,11:53,BASU,B,ASU,F,"66F, Partly Cloudy",Mid June,0.447
+July,BR42,Fucus,BR,C,BASU/BAFU,3,12:54,BASU,B,ASU,F,"66F, Partly Cloudy",Mid June,0.447
+July,GR42,Fucus,GR,D,GASU/GAFU,0,9:55,GAFU,G,AFU,M,"66F, Partly Cloudy",Mid June,1.146
+July,GR42,Fucus,GR,D,GASU/GAFU,1,10:55,GAFU,G,AFU,M,"66F, Partly Cloudy",Mid June,1.146
+July,GR42,Fucus,GR,D,GASU/GAFU,2,11:55,GAFU,G,AFU,M,"66F, Partly Cloudy",Mid June,1.146
+July,GR42,Fucus,GR,D,GASU/GAFU,3,12:55,GAFU,G,AFU,M,"66F, Partly Cloudy",Mid June,1.146
+July,GR43,Fucus,GR,A,BASU/BAFU,0,9:43,BASU,B,ASU,M,"66F, Cloudy",Early July,1.151
+July,GR43,Fucus,GR,A,BASU/BAFU,1,10:44,BASU,B,ASU,M,"66F, Cloudy",Early July,1.151
+July,GR43,Fucus,GR,A,BASU/BAFU,2,11:43,BASU,B,ASU,M,"66F, Cloudy",Early July,1.151
+July,GR43,Fucus,GR,A,BASU/BAFU,3,12:46,BAFU,B,AFU,M,"66F, Cloudy",Early July,1.151
+July,BR43,Fucus,BR,B,GASU/GAFU,0,9:45,GAFU,G,AFU,F,"66F, Cloudy",Early July,0.628
+July,BR43,Fucus,BR,B,GASU/GAFU,1,10:45,GAFU,G,AFU,F,"66F, Cloudy",Early July,0.628
+July,BR43,Fucus,BR,B,GASU/GAFU,2,11:45,GAFU,G,AFU,F,"66F, Cloudy",Early July,0.628
+July,BR43,Fucus,BR,B,GASU/GAFU,3,12:46,GAFU,G,AFU,F,"66F, Cloudy",Early July,0.628
+July,GR44,Fucus,GR,C,BASU/BAFU,0,9:47,TW,NONE,TW,F,"66F, Cloudy",Early July,0.376
+July,GR44,Fucus,GR,C,BASU/BAFU,1,10:47,BAFU,B,AFU,F,"66F, Cloudy",Early July,0.376
+July,GR44,Fucus,GR,C,BASU/BAFU,2,11:47,BASU,B,ASU,F,"66F, Cloudy",Early July,0.376
+July,GR44,Fucus,GR,C,BASU/BAFU,3,12:47,BASU,B,ASU,F,"66F, Cloudy",Early July,0.376
+July,BR44,Fucus,BR,D,GASU/GAFU,0,9:49,TW,NONE,TW,F,"66F, Cloudy",Early July,0.376
+July,BR44,Fucus,BR,D,GASU/GAFU,1,10:49,GASU,G,ASU,F,"66F, Cloudy",Early July,0.376
+July,BR44,Fucus,BR,D,GASU/GAFU,2,11:49,GASU,G,ASU,F,"66F, Cloudy",Early July,0.376
+July,BR44,Fucus,BR,D,GASU/GAFU,3,12:55,GAFU,G,AFU,F,"66F, Cloudy",Early July,0.376
+July,BR45,Fucus,BR,A,BASU/BAFU,0,12:58,TW,NONE,TW,M,"64F, Partly Cloudy",Mid June,1.685
+July,BR45,Fucus,BR,A,BASU/BAFU,1,13:58,TW,NONE,TW,M,"64F, Partly Cloudy",Mid June,1.685
+July,BR45,Fucus,BR,A,BASU/BAFU,2,14:58,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,1.685
+July,BR45,Fucus,BR,A,BASU/BAFU,3,15:58,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,1.685
+July,GR45,Fucus,GR,B,GASU/GAFU,0,13:01,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.821
+July,GR45,Fucus,GR,B,GASU/GAFU,1,14:01,TW,NONE,TW,M,"64F, Partly Cloudy",Mid June,0.821
+July,GR45,Fucus,GR,B,GASU/GAFU,2,15:01,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.821
+July,GR45,Fucus,GR,B,GASU/GAFU,3,16:01,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.821
+July,BR46,Fucus,BR,C,BASU/BAFU,0,13:06,BAFU,B,AFU,F,"64F, Partly Cloudy",Mid June,0.315
+July,BR46,Fucus,BR,C,BASU/BAFU,1,14:06,BAFU,B,AFU,F,"64F, Partly Cloudy",Mid June,0.315
+July,BR46,Fucus,BR,C,BASU/BAFU,2,15:06,BAFU,B,AFU,F,"64F, Partly Cloudy",Mid June,0.315
+July,BR46,Fucus,BR,C,BASU/BAFU,3,16:06,BAFU,B,AFU,F,"64F, Partly Cloudy",Mid June,0.315
+July,GR46,Fucus,GR,D,GASU/GAFU,0,13:08,GAFU,G,AFU,M,"64F, Partly Cloudy",Mid June,0.452
+July,GR46,Fucus,GR,D,GASU/GAFU,1,14:08,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.452
+July,GR46,Fucus,GR,D,GASU/GAFU,2,15:08,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.452
+July,GR46,Fucus,GR,D,GASU/GAFU,3,16:08,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.452
+July,GR47,Fucus,GR,A,BASU/BAFU,0,9:43,BAFU,B,AFU,F,"63F, Cloudy",Early May,0.471
+July,GR47,Fucus,GR,A,BASU/BAFU,1,10:43,SW,NONE,SB,F,"63F, Cloudy",Early May,0.471
+July,GR47,Fucus,GR,A,BASU/BAFU,2,11:44,BASU,B,ASU,F,"63F, Cloudy",Early May,0.471
+July,GR47,Fucus,GR,A,BASU/BAFU,3,12:44,BASU,B,ASU,F,"63F, Cloudy",Early May,0.471
+July,BR47,Fucus,BR,B,GASU/GAFU,0,9:47,TW,NONE,TW,F,"63F, Cloudy",Early May,0.497
+July,BR47,Fucus,BR,B,GASU/GAFU,1,10:47,GASU,G,ASU,F,"63F, Cloudy",Early May,0.497
+July,BR47,Fucus,BR,B,GASU/GAFU,2,11:48,GASU,G,ASU,F,"63F, Cloudy",Early May,0.497
+July,BR47,Fucus,BR,B,GASU/GAFU,3,12:47,GASU,G,ASU,F,"63F, Cloudy",Early May,0.497
+July,GR48,Fucus,GR,C,BASU/BAFU,0,9:52,BASU,B,ASU,F,"63F, Cloudy",Early May,0.686
+July,GR48,Fucus,GR,C,BASU/BAFU,1,10:52,BASU,B,ASU,F,"63F, Cloudy",Early May,0.686
+July,GR48,Fucus,GR,C,BASU/BAFU,2,11:52,BASU,B,ASU,F,"63F, Cloudy",Early May,0.686
+July,GR48,Fucus,GR,C,BASU/BAFU,3,12:52,SW,B,ASU,F,"63F, Cloudy",Early May,0.686
+July,BR48,Fucus,BR,D,GASU/GAFU,0,9:57,GAFU,G,AFU,F,"63F, Cloudy",Early May,0.323
+July,BR48,Fucus,BR,D,GASU/GAFU,1,10:57,GAFU,G,AFU,F,"63F, Cloudy",Early May,0.323
+July,BR48,Fucus,BR,D,GASU/GAFU,2,11:57,GAFU,G,AFU,F,"63F, Cloudy",Early May,0.323
+July,BR48,Fucus,BR,D,GASU/GAFU,3,12:57,GAFU,G,AFU,F,"63F, Cloudy",Early May,0.323
+July,GR49,Eelgrass,GR,A,BASU/BAFU,0,12:59,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,1.148
+July,GR49,Eelgrass,GR,A,BASU/BAFU,1,13:59,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,1.148
+July,GR49,Eelgrass,GR,A,BASU/BAFU,2,14:59,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,1.148
+July,GR49,Eelgrass,GR,A,BASU/BAFU,3,15:59,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,1.148
+July,BR49,Eelgrass,BR,B,GASU/GAFU,0,13:01,SB,NONE,SB,M,"70F, Mostly Cloudy",Early July,1.462
+July,BR49,Eelgrass,BR,B,GASU/GAFU,1,14:01,GAFU,G,AFU,M,"70F, Mostly Cloudy",Early July,1.462
+July,BR49,Eelgrass,BR,B,GASU/GAFU,2,15:01,GAFU,G,AFU,M,"70F, Mostly Cloudy",Early July,1.462
+July,BR49,Eelgrass,BR,B,GASU/GAFU,3,16:04,GASU,G,ASU,M,"70F, Mostly Cloudy",Early July,1.462
+July,GR50,Eelgrass,GR,C,BASU/BAFU,0,13:04,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,0.188
+July,GR50,Eelgrass,GR,C,BASU/BAFU,1,14:04,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,0.188
+July,GR50,Eelgrass,GR,C,BASU/BAFU,2,15:04,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,0.188
+July,GR50,Eelgrass,GR,C,BASU/BAFU,3,16:05,BAFU,B,AFU,M,"70F, Mostly Cloudy",Early July,0.188
+July,BR50,Eelgrass,BR,D,GASU/GAFU,0,13:06,GAFU,G,AFU,F,"70F, Mostly Cloudy",Early July,0.409
+July,BR50,Eelgrass,BR,D,GASU/GAFU,1,14:06,GAFU,G,AFU,F,"70F, Mostly Cloudy",Early July,0.409
+July,BR50,Eelgrass,BR,D,GASU/GAFU,2,15:06,GAFU,G,AFU,F,"70F, Mostly Cloudy",Early July,0.409
+July,BR50,Eelgrass,BR,D,GASU/GAFU,3,16:06,GAFU,G,AFU,F,"70F, Mostly Cloudy",Early July,0.409
+July,BR51,Eelgrass,BR,A,GASU/BAFU,0,12:42,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.554
+July,BR51,Eelgrass,BR,A,GASU/BAFU,1,13:45,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.554
+July,BR51,Eelgrass,BR,A,GASU/BAFU,2,14:42,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.554
+July,BR51,Eelgrass,BR,A,GASU/BAFU,3,15:42,GASU,G,ASU,F,"66F, Cloudy",Mid June,0.554
+July,GR51,Eelgrass,GR,B,BASU/GAFU,0,12:46,TW,NONE,TW,F,"66F, Cloudy",Mid June,0.25
+July,GR51,Eelgrass,GR,B,BASU/GAFU,1,13:46,BASU,B,ASU,F,"66F, Cloudy",Mid June,0.25
+July,GR51,Eelgrass,GR,B,BASU/GAFU,2,14:46,BASU,B,ASU,F,"66F, Cloudy",Mid June,0.25
+July,GR51,Eelgrass,GR,B,BASU/GAFU,3,15:46,BASU,B,ASU,F,"66F, Cloudy",Mid June,0.25
+July,BR52,Eelgrass,BR,C,GASU/BAFU,0,12:50,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.678
+July,BR52,Eelgrass,BR,C,GASU/BAFU,1,13:50,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.678
+July,BR52,Eelgrass,BR,C,GASU/BAFU,2,14:50,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.678
+July,BR52,Eelgrass,BR,C,GASU/BAFU,3,15:50,SB,NONE,SB,F,"66F, Cloudy",Mid June,0.678
+July,GR52,Eelgrass,GR,D,BASU/GAFU,0,12:53,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.41
+July,GR52,Eelgrass,GR,D,BASU/GAFU,1,13:53,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.41
+July,GR52,Eelgrass,GR,D,BASU/GAFU,2,14:53,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.41
+July,GR52,Eelgrass,GR,D,BASU/GAFU,3,15:53,BASU,B,ASU,M,"66F, Cloudy",Mid June,0.41
+July,BR53,Fucus,BR,A,GASU/BAFU,0,9:47,GASU,G,ASU,F,"66F, Partly Cloudy",Early July,0.388
+July,BR53,Fucus,BR,A,GASU/BAFU,1,10:47,GASU,G,ASU,F,"66F, Partly Cloudy",Early July,0.388
+July,BR53,Fucus,BR,A,GASU/BAFU,2,11:47,GASU,G,ASU,F,"66F, Partly Cloudy",Early July,0.388
+July,BR53,Fucus,BR,A,GASU/BAFU,3,12:46,BAFU,B,AFU,F,"66F, Partly Cloudy",Early July,0.388
+July,GR53,Fucus,GR,B,BASU/GAFU,0,9:48,BASU,B,ASU,M,"66F, Partly Cloudy",Early July,0.826
+July,GR53,Fucus,GR,B,BASU/GAFU,1,10:48,BASU,B,ASU,M,"66F, Partly Cloudy",Early July,0.826
+July,GR53,Fucus,GR,B,BASU/GAFU,2,11:48,BASU,B,ASU,M,"66F, Partly Cloudy",Early July,0.826
+July,GR53,Fucus,GR,B,BASU/GAFU,3,12:50,GAFU,G,AFU,M,"66F, Partly Cloudy",Early July,0.826
+July,BR54,Fucus,BR,C,GASU/BAFU,0,9:50,BAFU,B,AFU,F,"66F, Partly Cloudy",Early July,0.352
+July,BR54,Fucus,BR,C,GASU/BAFU,1,10:50,BAFU,B,AFU,F,"66F, Partly Cloudy",Early July,0.352
+July,BR54,Fucus,BR,C,GASU/BAFU,2,11:50,BAFU,B,AFU,F,"66F, Partly Cloudy",Early July,0.352
+July,BR54,Fucus,BR,C,GASU/BAFU,3,13:00,BAFU,B,AFU,F,"66F, Partly Cloudy",Early July,0.352
+July,GR54,Fucus,GR,D,BASU/GAFU,0,9:52,GAFU,G,AFU,F,"66F, Partly Cloudy",Early July,0.398
+July,GR54,Fucus,GR,D,BASU/GAFU,1,11:00,GAFU,G,AFU,F,"66F, Partly Cloudy",Early July,0.398
+July,GR54,Fucus,GR,D,BASU/GAFU,2,11:52,BASU,B,ASU,F,"66F, Partly Cloudy",Early July,0.398
+July,GR54,Fucus,GR,D,BASU/GAFU,3,12:54,BASU,B,ASU,F,"66F, Partly Cloudy",Early July,0.398
+July,BR55,Eelgrass,BR,A,GASU/BAFU,0,13:01,SB,NONE,SB,F,"70F, Cloudy",Mid June,0.377
+July,BR55,Eelgrass,BR,A,GASU/BAFU,1,14:01,SB,NONE,SB,F,"70F, Cloudy",Mid June,0.377
+July,BR55,Eelgrass,BR,A,GASU/BAFU,2,15:01,SB,NONE,SB,F,"70F, Cloudy",Mid June,0.377
+July,BR55,Eelgrass,BR,A,GASU/BAFU,3,16:01,GASU,G,ASU,F,"70F, Cloudy",Mid June,0.377
+July,GR55,Eelgrass,GR,B,BASU/GAFU,0,13:05,SB,NONE,SB,M,"70F, Cloudy",Mid June,0.564
+July,GR55,Eelgrass,GR,B,BASU/GAFU,1,14:05,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.564
+July,GR55,Eelgrass,GR,B,BASU/GAFU,2,15:05,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.564
+July,GR55,Eelgrass,GR,B,BASU/GAFU,3,16:05,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.564
+July,BR56,Eelgrass,BR,C,GASU/BAFU,0,13:08,SB,NONE,SB,F,"70F, Cloudy",Mid June,0.367
+July,BR56,Eelgrass,BR,C,GASU/BAFU,1,14:08,BAFU,B,AFU,F,"70F, Cloudy",Mid June,0.367
+July,BR56,Eelgrass,BR,C,GASU/BAFU,2,15:08,BAFU,B,AFU,F,"70F, Cloudy",Mid June,0.367
+July,BR56,Eelgrass,BR,C,GASU/BAFU,3,16:08,BAFU,B,AFU,F,"70F, Cloudy",Mid June,0.367
+July,GR56,Eelgrass,GR,D,BASU/GAFU,0,13:11,GAFU,G,AFU,M,"70F, Cloudy",Mid June,0.482
+July,GR56,Eelgrass,GR,D,BASU/GAFU,1,14:11,GAFU,G,AFU,M,"70F, Cloudy",Mid June,0.482
+July,GR56,Eelgrass,GR,D,BASU/GAFU,2,15:11,GAFU,G,AFU,M,"70F, Cloudy",Mid June,0.482
+July,GR56,Eelgrass,GR,D,BASU/GAFU,3,16:11,GAFU,G,AFU,M,"70F, Cloudy",Mid June,0.482
+July,BR57,Fucus,BR,A,GASU/BAFU,0,11:37,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.636
+July,BR57,Fucus,BR,A,GASU/BAFU,1,12:37,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.636
+July,BR57,Fucus,BR,A,GASU/BAFU,2,13:39,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.636
+July,BR57,Fucus,BR,A,GASU/BAFU,3,14:37,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.636
+July,GR57,Fucus,GR,B,BASU/GAFU,0,11:40,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.701
+July,GR57,Fucus,GR,B,BASU/GAFU,1,12:40,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.701
+July,GR57,Fucus,GR,B,BASU/GAFU,2,13:41,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.701
+July,GR57,Fucus,GR,B,BASU/GAFU,3,14:40,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.701
+July,BR58,Fucus,BR,C,GASU/BAFU,0,11:43,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.598
+July,BR58,Fucus,BR,C,GASU/BAFU,1,12:43,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.598
+July,BR58,Fucus,BR,C,GASU/BAFU,2,13:43,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.598
+July,BR58,Fucus,BR,C,GASU/BAFU,3,14:43,GASU,G,ASU,M,"70F, Cloudy",Mid June,0.598
+July,GR58,Fucus,GR,D,BASU/GAFU,0,11:47,SW,NONE,TW,M,"70F, Cloudy",Mid June,0.812
+July,GR58,Fucus,GR,D,BASU/GAFU,1,12:51,GAFU,G,AFU,M,"70F, Cloudy",Mid June,0.812
+July,GR58,Fucus,GR,D,BASU/GAFU,2,13:48,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.812
+July,GR58,Fucus,GR,D,BASU/GAFU,3,14:47,BASU,B,ASU,M,"70F, Cloudy",Mid June,0.812
+July,BR59,Eelgrass,BR,A,GASU/BAFU,0,9:46,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.34
+July,BR59,Eelgrass,BR,A,GASU/BAFU,1,10:46,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.34
+July,BR59,Eelgrass,BR,A,GASU/BAFU,2,11:46,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.34
+July,BR59,Eelgrass,BR,A,GASU/BAFU,3,12:46,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.34
+July,GR59,Eelgrass,GR,B,BASU/GAFU,0,9:47,BASU,B,ASU,M,"63F, Partly Cloudy",Mid June,0.34
+July,GR59,Eelgrass,GR,B,BASU/GAFU,1,10:47,GAFU,G,AFU,M,"63F, Partly Cloudy",Mid June,0.34
+July,GR59,Eelgrass,GR,B,BASU/GAFU,2,11:47,GAFU,G,AFU,M,"63F, Partly Cloudy",Mid June,0.34
+July,GR59,Eelgrass,GR,B,BASU/GAFU,3,12:47,GAFU,G,AFU,M,"63F, Partly Cloudy",Mid June,0.34
+July,BR60,Eelgrass,BR,C,GASU/BAFU,0,9:48,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.329
+July,BR60,Eelgrass,BR,C,GASU/BAFU,1,10:48,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.329
+July,BR60,Eelgrass,BR,C,GASU/BAFU,2,11:48,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.329
+July,BR60,Eelgrass,BR,C,GASU/BAFU,3,12:48,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.329
+July,GR60,Eelgrass,GR,D,BASU/GAFU,0,9:49,BASU,B,ASU,M,"63F, Partly Cloudy",Mid June,0.205
+July,GR60,Eelgrass,GR,D,BASU/GAFU,1,10:52,SW,NONE,TW,M,"63F, Partly Cloudy",Mid June,0.205
+July,GR60,Eelgrass,GR,D,BASU/GAFU,2,11:50,BASU,G,ASU,M,"63F, Partly Cloudy",Mid June,0.205
+July,GR60,Eelgrass,GR,D,BASU/GAFU,3,12:49,BASU,G,ASU,M,"63F, Partly Cloudy",Mid June,0.205
+July,BR61,Fucus,BR,A,GASU/BAFU,0,12:49,BAFU,B,AFU,F,"63F, Partly Cloudy",Mid June,0.269
+July,BR61,Fucus,BR,A,GASU/BAFU,1,13:50,BAFU,B,AFU,F,"63F, Partly Cloudy",Mid June,0.269
+July,BR61,Fucus,BR,A,GASU/BAFU,2,14:50,Drain,NONE,Drain,F,"63F, Partly Cloudy",Mid June,0.269
+July,BR61,Fucus,BR,A,GASU/BAFU,3,15:49,Drain,NONE,Drain,F,"63F, Partly Cloudy",Mid June,0.269
+July,GR61,Fucus,GR,B,BASU/GAFU,0,12:50,Drain,NONE,Drain,M,"63F, Partly Cloudy",Mid June,0.582
+July,GR61,Fucus,GR,B,BASU/GAFU,1,14:20,BASU,B,ASU,M,"63F, Partly Cloudy",Mid June,0.582
+July,GR61,Fucus,GR,B,BASU/GAFU,2,14:58,BASU,B,ASU,M,"63F, Partly Cloudy",Mid June,0.582
+July,GR61,Fucus,GR,B,BASU/GAFU,3,15:50,BASU,B,ASU,M,"63F, Partly Cloudy",Mid June,0.582
+July,BR62,Fucus,BR,C,GASU/BAFU,0,12:51,GASU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.319
+July,BR62,Fucus,BR,C,GASU/BAFU,1,14:15,BAFU,G,ASU,F,"63F, Partly Cloudy",Mid June,0.319
+July,BR62,Fucus,BR,C,GASU/BAFU,2,14:57,BAFU,B,AFU,F,"63F, Partly Cloudy",Mid June,0.319
+July,BR62,Fucus,BR,C,GASU/BAFU,3,15:51,BAFU,B,AFU,F,"63F, Partly Cloudy",Mid June,0.319
+July,GR62,Fucus,GR,D,BASU/GAFU,0,12:53,GAFU,G,AFU,M,"63F, Partly Cloudy",Mid June,1.419
+July,GR62,Fucus,GR,D,BASU/GAFU,1,13:55,GAFU,G,AFU,M,"63F, Partly Cloudy",Mid June,1.419
+July,GR62,Fucus,GR,D,BASU/GAFU,2,14:56,GAFU,G,AFU,M,"63F, Partly Cloudy",Mid June,1.419
+July,GR62,Fucus,GR,D,BASU/GAFU,3,15:53,GAFU,G,AFU,M,"63F, Partly Cloudy",Mid June,1.419
+July,BR63,Eelgrass,BR,A,GASU/BAFU,0,9:37,SB,NONE,SB,F,"64F, Partly Cloudy",Mid June,0.365
+July,BR63,Eelgrass,BR,A,GASU/BAFU,1,10:37,SB,NONE,SB,F,"64F, Partly Cloudy",Mid June,0.365
+July,BR63,Eelgrass,BR,A,GASU/BAFU,2,11:37,SB,NONE,SB,F,"64F, Partly Cloudy",Mid June,0.365
+July,BR63,Eelgrass,BR,A,GASU/BAFU,3,12:37,SB,NONE,SB,F,"64F, Partly Cloudy",Mid June,0.365
+July,GR63,Eelgrass,GR,B,BASU/GAFU,0,9:39,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.615
+July,GR63,Eelgrass,GR,B,BASU/GAFU,1,10:39,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.615
+July,GR63,Eelgrass,GR,B,BASU/GAFU,2,11:39,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.615
+July,GR63,Eelgrass,GR,B,BASU/GAFU,3,12:39,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.615
+July,BR64,Eelgrass,BR,C,GASU/BAFU,0,9:41,TW,NONE,TW,M,"64F, Partly Cloudy",Mid June,0.31
+July,BR64,Eelgrass,BR,C,GASU/BAFU,1,10:53,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.31
+July,BR64,Eelgrass,BR,C,GASU/BAFU,2,11:41,TW,NONE,TW,M,"64F, Partly Cloudy",Mid June,0.31
+July,BR64,Eelgrass,BR,C,GASU/BAFU,3,12:41,GASU,G,ASU,M,"64F, Partly Cloudy",Mid June,0.31
+July,GR64,Eelgrass,GR,D,BASU/GAFU,0,9:43,GAFU,B,AFU,M,"64F, Partly Cloudy",Mid June,0.57
+July,GR64,Eelgrass,GR,D,BASU/GAFU,1,10:43,GAFU,B,AFU,M,"64F, Partly Cloudy",Mid June,0.57
+July,GR64,Eelgrass,GR,D,BASU/GAFU,2,11:43,GAFU,B,AFU,M,"64F, Partly Cloudy",Mid June,0.57
+July,GR64,Eelgrass,GR,D,BASU/GAFU,3,12:43,GAFU,B,AFU,M,"64F, Partly Cloudy",Mid June,0.57
+July,BR65,Fucus,BR,A,GASU/BAFU,0,12:44,GASU,G,ASU,F,"64F, Partly Cloudy",Mid June,0.364
+July,BR65,Fucus,BR,A,GASU/BAFU,1,13:44,GASU,G,ASU,F,"64F, Partly Cloudy",Mid June,0.364
+July,BR65,Fucus,BR,A,GASU/BAFU,2,14:44,GASU,G,ASU,F,"64F, Partly Cloudy",Mid June,0.364
+July,BR65,Fucus,BR,A,GASU/BAFU,3,15:44,GASU,G,ASU,F,"64F, Partly Cloudy",Mid June,0.364
+July,GR65,Fucus,GR,B,BASU/GAFU,0,12:46,GAFU,B,AFU,M,"64F, Partly Cloudy",Mid June,0.395
+July,GR65,Fucus,GR,B,BASU/GAFU,1,13:47,SB,NONE,SB,M,"64F, Partly Cloudy",Mid June,0.395
+July,GR65,Fucus,GR,B,BASU/GAFU,2,14:46,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.395
+July,GR65,Fucus,GR,B,BASU/GAFU,3,15:46,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.395
+July,BR66,Fucus,BR,C,GASU/BAFU,0,12:48,SB,NONE,SB,F,"64F, Partly Cloudy",Mid June,0.313
+July,BR66,Fucus,BR,C,GASU/BAFU,1,13:48,BAFU,B,AFU,F,"64F, Partly Cloudy",Mid June,0.313
+July,BR66,Fucus,BR,C,GASU/BAFU,2,14:48,BAFU,B,AFU,F,"64F, Partly Cloudy",Mid June,0.313
+July,BR66,Fucus,BR,C,GASU/BAFU,3,15:48,BAFU,B,AFU,F,"64F, Partly Cloudy",Mid June,0.313
+July,GR66,Fucus,GR,D,BASU/GAFU,0,12:50,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.814
+July,GR66,Fucus,GR,D,BASU/GAFU,1,13:50,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.814
+July,GR66,Fucus,GR,D,BASU/GAFU,2,14:50,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.814
+July,GR66,Fucus,GR,D,BASU/GAFU,3,15:50,BASU,B,ASU,M,"64F, Partly Cloudy",Mid June,0.814
+July,BR67,Fucus,BR,A,GASU/BAFU,0,10:08,GASU,G,ASU,F,"79F, Mostly Sunny",Mid June,0.344
+July,BR67,Fucus,BR,A,GASU/BAFU,1,11:08,GASU,G,ASU,F,"79F, Mostly Sunny",Mid June,0.344
+July,BR67,Fucus,BR,A,GASU/BAFU,2,12:08,GASU,G,ASU,F,"79F, Mostly Sunny",Mid June,0.344
+July,BR67,Fucus,BR,A,GASU/BAFU,3,13:08,GASU,G,ASU,F,"79F, Mostly Sunny",Mid June,0.344
+July,GR67,Fucus,GR,B,BASU/GAFU,0,10:10,TW,NONE,TW,M,"79F, Mostly Sunny",Mid June,0.926
+July,GR67,Fucus,GR,B,BASU/GAFU,1,11:10,BASU,B,ASU,M,"79F, Mostly Sunny",Mid June,0.926
+July,GR67,Fucus,GR,B,BASU/GAFU,2,12:10,BASU,B,ASU,M,"79F, Mostly Sunny",Mid June,0.926
+July,GR67,Fucus,GR,B,BASU/GAFU,3,13:10,BASU,B,ASU,M,"79F, Mostly Sunny",Mid June,0.926
+July,BR68,Fucus,BR,C,GASU/BAFU,0,10:13,SB,NONE,SB,F,"79F, Mostly Sunny",Early May,0.57
+July,BR68,Fucus,BR,C,GASU/BAFU,1,11:13,SB,NONE,SB,F,"79F, Mostly Sunny",Early May,0.57
+July,BR68,Fucus,BR,C,GASU/BAFU,2,12:13,GASU,G,ASU,F,"79F, Mostly Sunny",Early May,0.57
+July,BR68,Fucus,BR,C,GASU/BAFU,3,13:13,GASU,G,ASU,F,"79F, Mostly Sunny",Early May,0.57
+July,GR68,Fucus,GR,D,BASU/GAFU,0,10:16,SB,NONE,SB,M,"79F, Mostly Sunny",Early May,1.924
+July,GR68,Fucus,GR,D,BASU/GAFU,1,11:16,GAFU,G,AFU,M,"79F, Mostly Sunny",Early May,1.924
+July,GR68,Fucus,GR,D,BASU/GAFU,2,12:16,GAFU,G,AFU,M,"79F, Mostly Sunny",Early May,1.924
+July,GR68,Fucus,GR,D,BASU/GAFU,3,13:13,GAFU,G,AFU,M,"79F, Mostly Sunny",Early May,1.924
+July,BR69,Eelgrass,BR,A,GASU/BAFU,0,13:17,SB,NONE,SB,M,"80's F, Mostly Sunny",Mid June,1.007
+July,BR69,Eelgrass,BR,A,GASU/BAFU,1,14:17,GASU,G,ASU,M,"80's F, Mostly Sunny",Mid June,1.007
+July,BR69,Eelgrass,BR,A,GASU/BAFU,2,15:17,GASU,G,ASU,M,"80's F, Mostly Sunny",Mid June,1.007
+July,BR69,Eelgrass,BR,A,GASU/BAFU,3,16:17,GASU,G,ASU,M,"80's F, Mostly Sunny",Mid June,1.007
+July,GR69,Eelgrass,GR,B,BASU/GAFU,0,13:21,GAFU,G,AFU,M,"80's F, Mostly Sunny",Mid June,0.443
+July,GR69,Eelgrass,GR,B,BASU/GAFU,1,14:40,GAFU,G,AFU,M,"80's F, Mostly Sunny",Mid June,0.443
+July,GR69,Eelgrass,GR,B,BASU/GAFU,2,15:21,BASU,B,ASU,M,"80's F, Mostly Sunny",Mid June,0.443
+July,GR69,Eelgrass,GR,B,BASU/GAFU,3,16:22,BASU,B,ASU,M,"80's F, Mostly Sunny",Mid June,0.443
+July,BR70,Eelgrass,BR,C,GASU/BAFU,0,13:24,BAFU,B,AFU,M,"80's F, Mostly Sunny",Mid June,0.587
+July,BR70,Eelgrass,BR,C,GASU/BAFU,1,14:25,BAFU,B,AFU,M,"80's F, Mostly Sunny",Mid June,0.587
+July,BR70,Eelgrass,BR,C,GASU/BAFU,2,15:25,BAFU,B,AFU,M,"80's F, Mostly Sunny",Mid June,0.587
+July,BR70,Eelgrass,BR,C,GASU/BAFU,3,16:24,BAFU,B,AFU,M,"80's F, Mostly Sunny",Mid June,0.587
+July,GR70,Eelgrass,GR,D,BASU/GAFU,0,13:26,TW,NONE,TW,M,"80's F, Mostly Sunny",Mid June,0.384
+July,GR70,Eelgrass,GR,D,BASU/GAFU,1,14:30,GAFU,G,AFU,M,"80's F, Mostly Sunny",Mid June,0.384
+July,GR70,Eelgrass,GR,D,BASU/GAFU,2,15:26,BASU,B,ASU,M,"80's F, Mostly Sunny",Mid June,0.384
+July,GR70,Eelgrass,GR,D,BASU/GAFU,3,16:26,BASU,B,ASU,M,"80's F, Mostly Sunny",Mid June,0.384
+July,BR71,Eelgrass,BR,A,GASU/BAFU,0,12:56,SB,NONE,SB,F*,"68F, Mostly Cloudy",Mid June,0.265
+July,BR71,Eelgrass,BR,A,GASU/BAFU,1,13:56,BAFU,B,AFU,F*,"68F, Mostly Cloudy",Mid June,0.265
+July,BR71,Eelgrass,BR,A,GASU/BAFU,2,14:56,BAFU,B,AFU,F*,"68F, Mostly Cloudy",Mid June,0.265
+July,BR71,Eelgrass,BR,A,GASU/BAFU,3,15:56,BAFU,B,AFU,F*,"68F, Mostly Cloudy",Mid June,0.265
+July,GR71,Eelgrass,GR,B,BASU/GAFU,0,13:01,GAFU,G,AFU,F,"68F, Mostly Cloudy",Mid June,0.34
+July,GR71,Eelgrass,GR,B,BASU/GAFU,1,14:01,BASU,B,ASU,F,"68F, Mostly Cloudy",Mid June,0.34
+July,GR71,Eelgrass,GR,B,BASU/GAFU,2,15:01,BASU,B,ASU,F,"68F, Mostly Cloudy",Mid June,0.34
+July,GR71,Eelgrass,GR,B,BASU/GAFU,3,16:01,BASU,B,ASU,F,"68F, Mostly Cloudy",Mid June,0.34
+July,BR72,Eelgrass,BR,C,GASU/BAFU,0,13:06,BAFU,B,AFU,F,"68F, Mostly Cloudy",Mid June,0.444
+July,BR72,Eelgrass,BR,C,GASU/BAFU,1,14:06,GASU,G,ASU,F,"68F, Mostly Cloudy",Mid June,0.444
+July,BR72,Eelgrass,BR,C,GASU/BAFU,2,15:06,GASU,G,ASU,F,"68F, Mostly Cloudy",Mid June,0.444
+July,BR72,Eelgrass,BR,C,GASU/BAFU,3,16:06,GASU,G,ASU,F,"68F, Mostly Cloudy",Mid June,0.444
+July,GR72,Eelgrass,GR,D,BASU/GAFU,0,13:11,BASU,B,ASU,M,"68F, Mostly Cloudy",Mid June,0.437
+July,GR72,Eelgrass,GR,D,BASU/GAFU,1,14:11,Drain,NONE,Drain,M,"68F, Mostly Cloudy",Mid June,0.437
+July,GR72,Eelgrass,GR,D,BASU/GAFU,2,15:11,BASU,B,ASU,M,"68F, Mostly Cloudy",Mid June,0.437
+July,GR72,Eelgrass,GR,D,BASU/GAFU,3,16:11,BASU,B,ASU,M,"68F, Mostly Cloudy",Mid June,0.437
+July,BR73,Fucus,BR,A,GASU/BAFU,0,9:43,GASU,NONE,SB,F,"73F, Sunny",Early July,0.37
+July,BR73,Fucus,BR,A,GASU/BAFU,1,10:43,GASU,G,ASU,F,"73F, Sunny",Early July,0.37
+July,BR73,Fucus,BR,A,GASU/BAFU,2,11:43,GASU,G,ASU,F,"73F, Sunny",Early July,0.37
+July,BR73,Fucus,BR,A,GASU/BAFU,3,12:43,GASU,G,ASU,F,"73F, Sunny",Early July,0.37
+July,GR73,Fucus,GR,B,BASU/GAFU,0,9:45,SB,NONE,SB,F,"73F, Sunny",Early July,0.264
+July,GR73,Fucus,GR,B,BASU/GAFU,1,10:45,SW,NONE,TW,F,"73F, Sunny",Early July,0.264
+July,GR73,Fucus,GR,B,BASU/GAFU,2,11:45,BASU,B,ASU,F,"73F, Sunny",Early July,0.264
+July,GR73,Fucus,GR,B,BASU/GAFU,3,12:45,SW,NONE,TW,F,"73F, Sunny",Early July,0.264
+July,BR74,Fucus,BR,C,GASU/BAFU,0,9:48,TW,NONE,TW,F,"73F, Sunny",Early July,0.474
+July,BR74,Fucus,BR,C,GASU/BAFU,1,10:48,BAFU,B,AFU,F,"73F, Sunny",Early July,0.474
+July,BR74,Fucus,BR,C,GASU/BAFU,2,11:48,GASU,G,ASU,F,"73F, Sunny",Early July,0.474
+July,BR74,Fucus,BR,C,GASU/BAFU,3,12:48,GASU,G,ASU,F,"73F, Sunny",Early July,0.474
+July,GR74,Fucus,GR,D,BASU/GAFU,0,9:50,BASU,B,ASU,M,"73F, Sunny",Early July,0.147
+July,GR74,Fucus,GR,D,BASU/GAFU,1,10:50,BASU,B,ASU,M,"73F, Sunny",Early July,0.147
+July,GR74,Fucus,GR,D,BASU/GAFU,2,11:50,BASU,B,ASU,M,"73F, Sunny",Early July,0.147
+July,GR74,Fucus,GR,D,BASU/GAFU,3,12:50,BASU,B,ASU,M,"73F, Sunny",Early July,0.147
+July,BR75,Eelgrass,BR,A,GASU/BAFU,0,12:52,TW,NONE,TW,F,"75F, Mostly Sunny",Early May,0.291
+July,BR75,Eelgrass,BR,A,GASU/BAFU,1,13:52,TW,NONE,TW,F,"75F, Mostly Sunny",Early May,0.291
+July,BR75,Eelgrass,BR,A,GASU/BAFU,2,14:52,GASU,G,ASU,F,"75F, Mostly Sunny",Early May,0.291
+July,BR75,Eelgrass,BR,A,GASU/BAFU,3,15:52,GASU,G,ASU,F,"75F, Mostly Sunny",Early May,0.291
+July,GR75,Eelgrass,GR,B,BASU/GAFU,0,12:54,BASU,B,ASU,F,"75F, Mostly Sunny",Early May,0.314
+July,GR75,Eelgrass,GR,B,BASU/GAFU,1,13:54,BASU,B,ASU,F,"75F, Mostly Sunny",Early May,0.314
+July,GR75,Eelgrass,GR,B,BASU/GAFU,2,14:54,BASU,B,ASU,F,"75F, Mostly Sunny",Early May,0.314
+July,GR75,Eelgrass,GR,B,BASU/GAFU,3,15:54,BASU,B,ASU,F,"75F, Mostly Sunny",Early May,0.314
+July,BR76,Eelgrass,BR,C,GASU/BAFU,0,12:57,Drain,NONE,Drain,F,"75F, Mostly Sunny",Early May,0.391
+July,BR76,Eelgrass,BR,C,GASU/BAFU,1,13:57,Drain,NONE,Drain,F,"75F, Mostly Sunny",Early May,0.391
+July,BR76,Eelgrass,BR,C,GASU/BAFU,2,14:57,SB,NONE,SB,F,"75F, Mostly Sunny",Early May,0.391
+July,BR76,Eelgrass,BR,C,GASU/BAFU,3,15:57,BAFU,B,AFU,F,"75F, Mostly Sunny",Early May,0.391
+July,GR76,Eelgrass,GR,D,BASU/GAFU,0,12:59,SB,NONE,SB,M,"75F, Mostly Sunny",Early May,1.104
+July,GR76,Eelgrass,GR,D,BASU/GAFU,1,13:59,BASU,B,ASU,M,"75F, Mostly Sunny",Early May,1.104
+July,GR76,Eelgrass,GR,D,BASU/GAFU,2,14:59,BASU,B,ASU,M,"75F, Mostly Sunny",Early May,1.104
+July,GR76,Eelgrass,GR,D,BASU/GAFU,3,15:59,BASU,B,ASU,M,"75F, Mostly Sunny",Early May,1.104
+July,BR77,Eelgrass,BR,A,GASU/BAFU,0,9:51,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.397
+July,BR77,Eelgrass,BR,A,GASU/BAFU,1,10:51,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.397
+July,BR77,Eelgrass,BR,A,GASU/BAFU,2,11:51,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.397
+July,BR77,Eelgrass,BR,A,GASU/BAFU,3,12:51,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.397
+July,GR77,Eelgrass,GR,B,BASU/GAFU,0,9:52,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.293
+July,GR77,Eelgrass,GR,B,BASU/GAFU,1,10:52,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.293
+July,GR77,Eelgrass,GR,B,BASU/GAFU,2,11:52,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.293
+July,GR77,Eelgrass,GR,B,BASU/GAFU,3,12:52,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.293
+July,BR78,Eelgrass,BR,C,GASU/BAFU,0,9:54,SB,NONE,SB,F,"72F, Partly Cloudy",Mid June,0.46
+July,BR78,Eelgrass,BR,C,GASU/BAFU,1,10:54,SB,NONE,SB,F,"72F, Partly Cloudy",Mid June,0.46
+July,BR78,Eelgrass,BR,C,GASU/BAFU,2,11:54,SB,NONE,SB,F,"72F, Partly Cloudy",Mid June,0.46
+July,BR78,Eelgrass,BR,C,GASU/BAFU,3,12:54,SB,NONE,SB,F,"72F, Partly Cloudy",Mid June,0.46
+July,GR78,Eelgrass,GR,D,BASU/GAFU,0,9:56,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.328
+July,GR78,Eelgrass,GR,D,BASU/GAFU,1,10:56,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.328
+July,GR78,Eelgrass,GR,D,BASU/GAFU,2,11:56,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.328
+July,GR78,Eelgrass,GR,D,BASU/GAFU,3,12:56,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.328
+July,BR79,Fucus,BR,A,GASU/BAFU,0,12:57,TW,NONE,TW,F,"72F, Partly Cloudy",Mid June,0.321
+July,BR79,Fucus,BR,A,GASU/BAFU,1,13:57,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.321
+July,BR79,Fucus,BR,A,GASU/BAFU,2,14:59,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.321
+July,BR79,Fucus,BR,A,GASU/BAFU,3,15:57,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.321
+July,GR79,Fucus,GR,B,BASU/GAFU,0,12:59,BASU,B,ASU,M,"72F, Partly Cloudy",Mid June,1.053
+July,GR79,Fucus,GR,B,BASU/GAFU,1,13:59,BASU,B,ASU,M,"72F, Partly Cloudy",Mid June,1.053
+July,GR79,Fucus,GR,B,BASU/GAFU,2,15:06,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,1.053
+July,GR79,Fucus,GR,B,BASU/GAFU,3,15:59,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,1.053
+July,BR80,Fucus,BR,C,GASU/BAFU,0,13:01,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.326
+July,BR80,Fucus,BR,C,GASU/BAFU,1,14:03,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.326
+July,BR80,Fucus,BR,C,GASU/BAFU,2,15:02,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.326
+July,BR80,Fucus,BR,C,GASU/BAFU,3,16:01,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.326
+July,GR80,Fucus,GR,D,BASU/GAFU,0,13:03,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,1.285
+July,GR80,Fucus,GR,D,BASU/GAFU,1,14:03,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,1.285
+July,GR80,Fucus,GR,D,BASU/GAFU,2,15:03,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,1.285
+July,GR80,Fucus,GR,D,BASU/GAFU,3,16:03,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,1.285
+July,BR81,Eelgrass,BR,A,GASU/BAFU,0,9:21,Drain,NONE,Drain,F,"72F, Partly Cloudy",Mid June,0.32
+July,BR81,Eelgrass,BR,A,GASU/BAFU,1,10:21,GASU,G,ASU,F,"72F, Partly Cloudy",Mid June,0.32
+July,BR81,Eelgrass,BR,A,GASU/BAFU,2,11:21,GASU,G,ASU,F,"72F, Partly Cloudy",Mid June,0.32
+July,BR81,Eelgrass,BR,A,GASU/BAFU,3,12:21,GASU,G,ASU,F,"72F, Partly Cloudy",Mid June,0.32
+July,GR81,Fucus,GR,B,BASU/GAFU,0,9:23,GAFU,G,AFU,F,"72F, Partly Cloudy",Mid June,0.281
+July,GR81,Fucus,GR,B,BASU/GAFU,1,10:23,GAFU,G,AFU,F,"72F, Partly Cloudy",Mid June,0.281
+July,GR81,Fucus,GR,B,BASU/GAFU,2,11:23,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.281
+July,GR81,Fucus,GR,B,BASU/GAFU,3,12:19,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.281
+July,BR82,Eelgrass,BR,C,GASU/BAFU,0,9:27,GASU,G,ASU,F,"72F, Partly Cloudy",Mid June,0.313
+July,BR82,Eelgrass,BR,C,GASU/BAFU,1,10:27,GASU,G,ASU,F,"72F, Partly Cloudy",Mid June,0.313
+July,BR82,Eelgrass,BR,C,GASU/BAFU,2,11:27,GASU,G,ASU,F,"72F, Partly Cloudy",Mid June,0.313
+July,BR82,Eelgrass,BR,C,GASU/BAFU,3,12:27,GASU,G,ASU,F,"72F, Partly Cloudy",Mid June,0.313
+July,GR82,Eelgrass,GR,D,BASU/GAFU,0,9:29,BASU,B,ASU,M,"72F, Partly Cloudy",Mid June,0.596
+July,GR82,Eelgrass,GR,D,BASU/GAFU,1,10:29,BASU,B,ASU,M,"72F, Partly Cloudy",Mid June,0.596
+July,GR82,Eelgrass,GR,D,BASU/GAFU,2,11:29,BASU,B,ASU,M,"72F, Partly Cloudy",Mid June,0.596
+July,GR82,Eelgrass,GR,D,BASU/GAFU,3,12:29,BASU,B,ASU,M,"72F, Partly Cloudy",Mid June,0.596
+July,BR83,Eelgrass,BR,A,GASU/BAFU,0,12:39,TW,NONE,TW,F,"72F, Partly Cloudy",Mid June,0.276
+July,BR83,Eelgrass,BR,A,GASU/BAFU,1,13:39,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.276
+July,BR83,Eelgrass,BR,A,GASU/BAFU,2,14:39,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.276
+July,BR83,Eelgrass,BR,A,GASU/BAFU,3,15:39,BAFU,B,AFU,F,"72F, Partly Cloudy",Mid June,0.276
+July,GR83,Eelgrass,GR,B,BASU/GAFU,0,12:43,GAFU,G,AFU,F,"72F, Partly Cloudy",Early May,0.402
+July,GR83,Eelgrass,GR,B,BASU/GAFU,1,13:43,BASU,B,ASU,F,"72F, Partly Cloudy",Early May,0.402
+July,GR83,Eelgrass,GR,B,BASU/GAFU,2,14:43,BASU,B,ASU,F,"72F, Partly Cloudy",Early May,0.402
+July,GR83,Eelgrass,GR,B,BASU/GAFU,3,15:43,BASU,B,ASU,F,"72F, Partly Cloudy",Early May,0.402
+July,BR84,Eelgrass,BR,C,GASU/BAFU,0,12:46,GASU,G,ASU,F,"72F, Partly Cloudy",Early May,0.339
+July,BR84,Eelgrass,BR,C,GASU/BAFU,1,13:46,GASU,G,ASU,F,"72F, Partly Cloudy",Early May,0.339
+July,BR84,Eelgrass,BR,C,GASU/BAFU,2,14:46,GASU,G,ASU,F,"72F, Partly Cloudy",Early May,0.339
+July,BR84,Eelgrass,BR,C,GASU/BAFU,3,15:46,GASU,G,ASU,F,"72F, Partly Cloudy",Early May,0.339
+July,GR84,Eelgrass,GR,D,BASU/GAFU,0,12:48,SB,NONE,SB,M,"72F, Partly Cloudy",Early May,0.235
+July,GR84,Eelgrass,GR,D,BASU/GAFU,1,14:00,BASU,B,ASU,M,"72F, Partly Cloudy",Early May,0.235
+July,GR84,Eelgrass,GR,D,BASU/GAFU,2,14:48,BASU,B,ASU,M,"72F, Partly Cloudy",Early May,0.235
+July,GR84,Eelgrass,GR,D,BASU/GAFU,3,15:48,BASU,B,ASU,M,"72F, Partly Cloudy",Early May,0.235
+July,GR85,Fucus,GR,A,GASU/BAFU,0,12:19,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.743
+July,GR85,Fucus,GR,A,GASU/BAFU,1,13:19,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.743
+July,GR85,Fucus,GR,A,GASU/BAFU,2,14:21,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.743
+July,GR85,Fucus,GR,A,GASU/BAFU,3,15:19,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.743
+July,BR85,Fucus,BR,B,BASU/GAFU,0,12:22,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.399
+July,BR85,Fucus,BR,B,BASU/GAFU,1,13:22,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.399
+July,BR85,Fucus,BR,B,BASU/GAFU,2,14:22,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.399
+July,BR85,Fucus,BR,B,BASU/GAFU,3,15:22,BASU,B,ASU,F,"72F, Partly Cloudy",Mid June,0.399
+July,GR86,Fucus,GR,C,GASU/BAFU,0,12:27,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.778
+July,GR86,Fucus,GR,C,GASU/BAFU,1,13:27,SB,NONE,SB,M,"72F, Partly Cloudy",Mid June,0.778
+July,GR86,Fucus,GR,C,GASU/BAFU,2,14:38,GASU,G,ASU,M,"72F, Partly Cloudy",Mid June,0.778
+July,GR86,Fucus,GR,C,GASU/BAFU,3,15:27,BAFU,B,AFU,M,"72F, Partly Cloudy",Mid June,0.778
+July,BR86,Fucus,BR,D,BASU/GAFU,0,12:30,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,0.674
+July,BR86,Fucus,BR,D,BASU/GAFU,1,13:30,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,0.674
+July,BR86,Fucus,BR,D,BASU/GAFU,2,14:30,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,0.674
+July,BR86,Fucus,BR,D,BASU/GAFU,3,15:30,GAFU,G,AFU,M,"72F, Partly Cloudy",Mid June,0.674
+July,GR87,Fucus,GR,A,GASU/BAFU,0,9:53,GASU,G,ASU,M,"75F, Partly Cloudy",Mid June,0.281
+July,GR87,Fucus,GR,A,GASU/BAFU,1,10:53,GASU,G,ASU,M,"75F, Partly Cloudy",Mid June,0.281
+July,GR87,Fucus,GR,A,GASU/BAFU,2,11:53,BAFU,B,AFU,M,"75F, Partly Cloudy",Mid June,0.281
+July,GR87,Fucus,GR,A,GASU/BAFU,3,13:05,GASU,G,ASU,M,"75F, Partly Cloudy",Mid June,0.281
+July,BR87,Fucus,BR,B,BASU/GAFU,0,9:54,SW,NONE,TW,M,"75F, Partly Cloudy",Mid June,1.108
+July,BR87,Fucus,BR,B,BASU/GAFU,1,10:55,BASU,B,ASU,M,"75F, Partly Cloudy",Mid June,1.108
+July,BR87,Fucus,BR,B,BASU/GAFU,2,11:54,BASU,B,ASU,M,"75F, Partly Cloudy",Mid June,1.108
+July,BR87,Fucus,BR,B,BASU/GAFU,3,12:56,BASU,B,ASU,M,"75F, Partly Cloudy",Mid June,1.108
+July,GR88,Fucus,GR,C,GASU/BAFU,0,9:56,GASU,G,ASU,M,"75F, Partly Cloudy",Mid June,1.151
+July,GR88,Fucus,GR,C,GASU/BAFU,1,10:56,GASU,G,ASU,M,"75F, Partly Cloudy",Mid June,1.151
+July,GR88,Fucus,GR,C,GASU/BAFU,2,11:56,GASU,G,ASU,M,"75F, Partly Cloudy",Mid June,1.151
+July,GR88,Fucus,GR,C,GASU/BAFU,3,12:57,GASU,G,ASU,M,"75F, Partly Cloudy",Mid June,1.151
+July,BR88,Fucus,BR,D,BASU/GAFU,0,9:57,BASU,B,ASU,M,"75F, Partly Cloudy",Mid June,0.314
+July,BR88,Fucus,BR,D,BASU/GAFU,1,10:58,BASU,B,ASU,M,"75F, Partly Cloudy",Mid June,0.314
+July,BR88,Fucus,BR,D,BASU/GAFU,2,11:57,BASU,B,ASU,M,"75F, Partly Cloudy",Mid June,0.314
+July,BR88,Fucus,BR,D,BASU/GAFU,3,12:57,BASU,B,ASU,M,"75F, Partly Cloudy",Mid June,0.314
+July,GR89,Fucus,GR,A,GASU/BAFU,0,13:07,BAFU,B,AFU,F,"79F, Partly Cloudy",Early July,0.365
+July,GR89,Fucus,GR,A,GASU/BAFU,1,14:07,GASU,G,ASU,F,"79F, Partly Cloudy",Early July,0.365
+July,GR89,Fucus,GR,A,GASU/BAFU,2,15:07,BAFU,B,AFU,F,"79F, Partly Cloudy",Early July,0.365
+July,GR89,Fucus,GR,A,GASU/BAFU,3,16:07,BAFU,B,AFU,F,"79F, Partly Cloudy",Early July,0.365
+July,BR89,Fucus,BR,B,BASU/GAFU,0,13:08,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.388
+July,BR89,Fucus,BR,B,BASU/GAFU,1,14:09,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.388
+July,BR89,Fucus,BR,B,BASU/GAFU,2,15:09,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.388
+July,BR89,Fucus,BR,B,BASU/GAFU,3,16:09,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.388
+July,GR90,Fucus,GR,C,GASU/BAFU,0,13:11,BAFU,B,AFU,M,"79F, Partly Cloudy",Early July,1.103
+July,GR90,Fucus,GR,C,GASU/BAFU,1,14:11,BAFU,B,AFU,M,"79F, Partly Cloudy",Early July,1.103
+July,GR90,Fucus,GR,C,GASU/BAFU,2,15:11,BAFU,B,AFU,M,"79F, Partly Cloudy",Early July,1.103
+July,GR90,Fucus,GR,C,GASU/BAFU,3,16:11,GASU,G,ASU,M,"79F, Partly Cloudy",Early July,1.103
+July,BR90,Fucus,BR,D,BASU/GAFU,0,13:12,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.473
+July,BR90,Fucus,BR,D,BASU/GAFU,1,14:12,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.473
+July,BR90,Fucus,BR,D,BASU/GAFU,2,15:12,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.473
+July,BR90,Fucus,BR,D,BASU/GAFU,3,16:12,GAFU,G,AFU,F,"79F, Partly Cloudy",Early July,0.473
+July,GR91,Fucus,GR,A,GASU/BAFU,0,9:49,BAFU,B,AFU,M,"75F, Partly Cloudy",Early May,0.46
+July,GR91,Fucus,GR,A,GASU/BAFU,1,10:49,BAFU,B,AFU,M,"75F, Partly Cloudy",Early May,0.46
+July,GR91,Fucus,GR,A,GASU/BAFU,2,11:49,BAFU,B,AFU,M,"75F, Partly Cloudy",Early May,0.46
+July,GR91,Fucus,GR,A,GASU/BAFU,3,12:51,GASU,G,ASU,M,"75F, Partly Cloudy",Early May,0.46
+July,BR91,Fucus,BR,B,BASU/GAFU,0,9:50,GAFU,G,AFU,F,"75F, Partly Cloudy",Early May,0.279
+July,BR91,Fucus,BR,B,BASU/GAFU,1,10:50,GAFU,G,AFU,F,"75F, Partly Cloudy",Early May,0.279
+July,BR91,Fucus,BR,B,BASU/GAFU,2,11:50,GAFU,G,AFU,F,"75F, Partly Cloudy",Early May,0.279
+July,BR91,Fucus,BR,B,BASU/GAFU,3,12:52,GAFU,G,AFU,F,"75F, Partly Cloudy",Early May,0.279
+July,GR92,Fucus,GR,C,GASU/BAFU,0,9:52,GASU,G,ASU,M,"75F, Partly Cloudy",Early May,0.473
+July,GR92,Fucus,GR,C,GASU/BAFU,1,11:03,GASU,G,ASU,M,"75F, Partly Cloudy",Early May,0.473
+July,GR92,Fucus,GR,C,GASU/BAFU,2,11:52,BAFU,B,AFU,M,"75F, Partly Cloudy",Early May,0.473
+July,GR92,Fucus,GR,C,GASU/BAFU,3,12:55,TW,NONE,TW,M,"75F, Partly Cloudy",Early May,0.473
+July,BR92,Fucus,BR,D,BASU/GAFU,0,9:53,Drain,NONE,Drain,F,"75F, Partly Cloudy",Mid June,0.31
+July,BR92,Fucus,BR,D,BASU/GAFU,1,10:53,BASU,B,ASU,F,"75F, Partly Cloudy",Mid June,0.31
+July,BR92,Fucus,BR,D,BASU/GAFU,2,11:53,BASU,B,ASU,F,"75F, Partly Cloudy",Mid June,0.31
+July,BR92,Fucus,BR,D,BASU/GAFU,3,12:54,BASU,B,ASU,F,"75F, Partly Cloudy",Mid June,0.31
+July,GR93,Fucus,GR,A,GASU/BAFU,0,12:56,BAFU,B,AFU,F,"81F, Partly Cloudy",Mid June,0.269
+July,GR93,Fucus,GR,A,GASU/BAFU,1,14:11,BAFU,B,AFU,F,"81F, Partly Cloudy",Mid June,0.269
+July,GR93,Fucus,GR,A,GASU/BAFU,2,14:56,GASU,G,ASU,F,"81F, Partly Cloudy",Mid June,0.269
+July,GR93,Fucus,GR,A,GASU/BAFU,3,15:56,GASU,G,ASU,F,"81F, Partly Cloudy",Mid June,0.269
+July,BR93,Fucus,BR,B,BASU/GAFU,0,12:58,BASU,B,ASU,F,"81F, Partly Cloudy",Mid June,0.343
+July,BR93,Fucus,BR,B,BASU/GAFU,1,14:00,BASU,B,ASU,F,"81F, Partly Cloudy",Mid June,0.343
+July,BR93,Fucus,BR,B,BASU/GAFU,2,14:58,BASU,B,ASU,F,"81F, Partly Cloudy",Mid June,0.343
+July,BR93,Fucus,BR,B,BASU/GAFU,3,15:58,BASU,B,ASU,F,"81F, Partly Cloudy",Mid June,0.343
+July,GR94,Fucus,GR,C,GASU/BAFU,0,12:59,GASU,G,ASU,F*,"81F, Partly Cloudy",Mid June,0.253
+July,GR94,Fucus,GR,C,GASU/BAFU,1,14:01,GASU,G,ASU,F*,"81F, Partly Cloudy",Mid June,0.253
+July,GR94,Fucus,GR,C,GASU/BAFU,2,14:59,GASU,G,ASU,F*,"81F, Partly Cloudy",Mid June,0.253
+July,GR94,Fucus,GR,C,GASU/BAFU,3,15:59,GASU,G,ASU,F*,"81F, Partly Cloudy",Mid June,0.253
+July,BR94,Fucus,BR,D,BASU/GAFU,0,13:00,GAFU,G,AFU,F,"81F, Partly Cloudy",Mid June,0.307
+July,BR94,Fucus,BR,D,BASU/GAFU,1,14:02,GAFU,G,AFU,F,"81F, Partly Cloudy",Mid June,0.307
+July,BR94,Fucus,BR,D,BASU/GAFU,2,15:04,GAFU,G,AFU,F,"81F, Partly Cloudy",Mid June,0.307
+July,BR94,Fucus,BR,D,BASU/GAFU,3,16:05,BASU,B,ASU,F,"81F, Partly Cloudy",Mid June,0.307
+July,GR95,Fucus,GR,A,GASU/BAFU,0,9:43,GASU,G,ASU,M,"75F, Cloudy",Early July,0.298
+July,GR95,Fucus,GR,A,GASU/BAFU,1,10:43,GASU,G,ASU,M,"75F, Cloudy",Early July,0.298
+July,GR95,Fucus,GR,A,GASU/BAFU,2,11:43,GASU,G,ASU,M,"75F, Cloudy",Early July,0.298
+July,GR95,Fucus,GR,A,GASU/BAFU,3,12:43,GASU,G,ASU,M,"75F, Cloudy",Early July,0.298
+July,BR95,Fucus,BR,B,BASU/GAFU,0,9:44,SW,NONE,TW,M,"75F, Cloudy",Early July,0.203
+July,BR95,Fucus,BR,B,BASU/GAFU,1,10:44,SW,NONE,TW,M,"75F, Cloudy",Early July,0.203
+July,BR95,Fucus,BR,B,BASU/GAFU,2,11:44,BASU,B,ASU,M,"75F, Cloudy",Early July,0.203
+July,BR95,Fucus,BR,B,BASU/GAFU,3,12:44,BASU,B,ASU,M,"75F, Cloudy",Early July,0.203
+July,GR96,Fucus,GR,C,GASU/BAFU,0,9:46,TW,NONE,TW,F,"75F, Cloudy",Early July,0.441
+July,GR96,Fucus,GR,C,GASU/BAFU,1,10:46,TW,NONE,TW,F,"75F, Cloudy",Early July,0.441
+July,GR96,Fucus,GR,C,GASU/BAFU,2,11:46,GASU,G,ASU,F,"75F, Cloudy",Early July,0.441
+July,GR96,Fucus,GR,C,GASU/BAFU,3,12:46,GASU,G,ASU,F,"75F, Cloudy",Early July,0.441
+July,BR96,Fucus,BR,D,BASU/GAFU,0,9:47,GAFU,G,AFU,F,"75F, Cloudy",Early July,0.351
+July,BR96,Fucus,BR,D,BASU/GAFU,1,10:47,GAFU,G,AFU,F,"75F, Cloudy",Early July,0.351
+July,BR96,Fucus,BR,D,BASU/GAFU,2,11:47,GAFU,G,AFU,F,"75F, Cloudy",Early July,0.351
+July,BR96,Fucus,BR,D,BASU/GAFU,3,12:47,GAFU,G,AFU,F,"75F, Cloudy",Early July,0.351
+July,GR97,Fucus,GR,A,GASU/BAFU,0,12:48,GASU,G,ASU,M,"81F, Cloudy",Early May,0.259
+July,GR97,Fucus,GR,A,GASU/BAFU,1,13:48,GASU,G,ASU,M,"81F, Cloudy",Early May,0.259
+July,GR97,Fucus,GR,A,GASU/BAFU,2,14:48,GASU,G,ASU,M,"81F, Cloudy",Early May,0.259
+July,GR97,Fucus,GR,A,GASU/BAFU,3,15:48,GASU,G,ASU,M,"81F, Cloudy",Early May,0.259
+July,BR97,Fucus,BR,B,BASU/GAFU,0,12:49,GAFU,G,AFU,F,"81F, Cloudy",Early May,0.32
+July,BR97,Fucus,BR,B,BASU/GAFU,1,13:49,GAFU,G,AFU,F,"81F, Cloudy",Early May,0.32
+July,BR97,Fucus,BR,B,BASU/GAFU,2,14:49,GAFU,G,AFU,F,"81F, Cloudy",Early May,0.32
+July,BR97,Fucus,BR,B,BASU/GAFU,3,15:49,GAFU,G,AFU,F,"81F, Cloudy",Early May,0.32
+July,GR98,Fucus,GR,C,GASU/BAFU,0,12:51,GASU,G,ASU,M,"81F, Cloudy",Early May,0.314
+July,GR98,Fucus,GR,C,GASU/BAFU,1,13:51,GASU,G,ASU,M,"81F, Cloudy",Early May,0.314
+July,GR98,Fucus,GR,C,GASU/BAFU,2,14:51,GASU,G,ASU,M,"81F, Cloudy",Early May,0.314
+July,GR98,Fucus,GR,C,GASU/BAFU,3,15:51,GASU,G,ASU,M,"81F, Cloudy",Early May,0.314
+July,BR98,Fucus,BR,D,BASU/GAFU,0,12:52,SB,NONE,SB,F,"81F, Cloudy",Early May,0.276
+July,BR98,Fucus,BR,D,BASU/GAFU,1,N/A,N/A,N/A,N/A,F,"81F, Cloudy",Early May,0.276
+July,BR98,Fucus,BR,D,BASU/GAFU,2,N/A,N/A,N/A,N/A,F,"81F, Cloudy",Early May,0.276
+July,BR98,Fucus,BR,D,BASU/GAFU,3,N/A,N/A,N/A,N/A,F,"81F, Cloudy",Early May,0.276
+August,GR99,Eelgrass,GR,A,GASU/GAFU,0,9:33,GAFU,G,AFU,M,"66F, Mostly Sunny",Early August,0.378
+August,GR99,Eelgrass,GR,A,GASU/GAFU,1,10:33,GAFU,G,AFU,M,"66F, Mostly Sunny",Early August,0.378
+August,GR99,Eelgrass,GR,A,GASU/GAFU,2,11:33,GAFU,G,AFU,M,"66F, Mostly Sunny",Early August,0.378
+August,GR99,Eelgrass,GR,A,GASU/GAFU,3,12:33,GAFU,G,AFU,M,"66F, Mostly Sunny",Early August,0.378
+August,BR99,Eelgrass,BR,B,BASU/BAFU,0,9:34,BASU,B,ASU,F,"66F, Mostly Sunny",Early August,0.259
+August,BR99,Eelgrass,BR,B,BASU/BAFU,1,10:34,BASU,B,ASU,F,"66F, Mostly Sunny",Early August,0.259
+August,BR99,Eelgrass,BR,B,BASU/BAFU,2,11:34,BASU,B,ASU,F,"66F, Mostly Sunny",Early August,0.259
+August,BR99,Eelgrass,BR,B,BASU/BAFU,3,12:34,BASU,B,ASU,F,"66F, Mostly Sunny",Early August,0.259
+August,GR100,Eelgrass,GR,C,GASU/GAFU,0,9:36,TW,NONE,TW,M,"66F, Mostly Sunny",Early August,0.37
+August,GR100,Eelgrass,GR,C,GASU/GAFU,1,10:37,GASU,G,ASU,M,"66F, Mostly Sunny",Early August,0.37
+August,GR100,Eelgrass,GR,C,GASU/GAFU,2,11:36,GASU,G,ASU,M,"66F, Mostly Sunny",Early August,0.37
+August,GR100,Eelgrass,GR,C,GASU/GAFU,3,12:36,GASU,G,ASU,M,"66F, Mostly Sunny",Early August,0.37
+August,BR100,Eelgrass,BR,D,BASU/BAFU,0,9:37,BAFU,B,AFU,F,"66F, Mostly Sunny",Early July,0.24
+August,BR100,Eelgrass,BR,D,BASU/BAFU,1,10:38,BAFU,B,AFU,F,"66F, Mostly Sunny",Early July,0.24
+August,BR100,Eelgrass,BR,D,BASU/BAFU,2,11:37,BAFU,B,AFU,F,"66F, Mostly Sunny",Early July,0.24
+August,BR100,Eelgrass,BR,D,BASU/BAFU,3,12:37,BAFU,B,AFU,F,"66F, Mostly Sunny",Early July,0.24
+August,BR101,Eelgrass,BR,A,GASU/GAFU,0,12:38,Drain,NONE,Drain,F,"75F, Sunny",Mid June,0.315
+August,BR101,Eelgrass,BR,A,GASU/GAFU,1,13:38,Drain,NONE,Drain,F,"75F, Sunny",Mid June,0.315
+August,BR101,Eelgrass,BR,A,GASU/GAFU,2,14:38,Drain,NONE,Drain,F,"75F, Sunny",Mid June,0.315
+August,BR101,Eelgrass,BR,A,GASU/GAFU,3,15:38,Drain,NONE,Drain,F,"75F, Sunny",Mid June,0.315
+August,GR101,Eelgrass,GR,B,BASU/BAFU,0,12:39,BAFU,B,AFU,M,"75F, Sunny",Early August,0.274
+August,GR101,Eelgrass,GR,B,BASU/BAFU,1,13:39,BAFU,B,AFU,M,"75F, Sunny",Early August,0.274
+August,GR101,Eelgrass,GR,B,BASU/BAFU,2,14:40,BAFU,B,AFU,M,"75F, Sunny",Early August,0.274
+August,GR101,Eelgrass,GR,B,BASU/BAFU,3,15:39,BASU,B,ASU,M,"75F, Sunny",Early August,0.274
+August,BR102,Eelgrass,BR,C,GASU/GAFU,0,12:41,GAFU,G,AFU,F*,"75F, Sunny",Mid June,0.402
+August,BR102,Eelgrass,BR,C,GASU/GAFU,1,13:41,GAFU,G,AFU,F*,"75F, Sunny",Mid June,0.402
+August,BR102,Eelgrass,BR,C,GASU/GAFU,2,14:41,GAFU,G,AFU,F*,"75F, Sunny",Mid June,0.402
+August,BR102,Eelgrass,BR,C,GASU/GAFU,3,15:44,TW,NONE,TW,F*,"75F, Sunny",Mid June,0.402
+August,GR102,Eelgrass,GR,D,BASU/BAFU,0,12:42,BASU,B,ASU,M,"75F, Sunny",Early August,0.208
+August,GR102,Eelgrass,GR,D,BASU/BAFU,1,13:42,BASU,B,ASU,M,"75F, Sunny",Early August,0.208
+August,GR102,Eelgrass,GR,D,BASU/BAFU,2,14:42,BASU,B,ASU,M,"75F, Sunny",Early August,0.208
+August,GR102,Eelgrass,GR,D,BASU/BAFU,3,15:43,BASU,B,ASU,M,"75F, Sunny",Early August,0.208
+August,GR103,Eelgrass,GR,A,GASU/GAFU,0,9:43,GASU,G,ASU,M,"70F, Partly Cloudy",Early August,0.304
+August,GR103,Eelgrass,GR,A,GASU/GAFU,1,10:43,GASU,G,ASU,M,"70F, Partly Cloudy",Early August,0.304
+August,GR103,Eelgrass,GR,A,GASU/GAFU,2,11:43,GASU,G,ASU,M,"70F, Partly Cloudy",Early August,0.304
+August,GR103,Eelgrass,GR,A,GASU/GAFU,3,12:43,GASU,G,ASU,M,"70F, Partly Cloudy",Early August,0.304
+August,BR103,Eelgrass,BR,B,BASU/BAFU,0,9:45,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.453
+August,BR103,Eelgrass,BR,B,BASU/BAFU,1,10:45,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.453
+August,BR103,Eelgrass,BR,B,BASU/BAFU,2,11:45,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.453
+August,BR103,Eelgrass,BR,B,BASU/BAFU,3,12:45,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.453
+August,GR104,Eelgrass,GR,C,GASU/GAFU,0,9:47,Drain,NONE,Drain,M,"70F, Partly Cloudy",Early August,0.347
+August,GR104,Eelgrass,GR,C,GASU/GAFU,1,10:47,Drain,NONE,Drain,M,"70F, Partly Cloudy",Early August,0.347
+August,GR104,Eelgrass,GR,C,GASU/GAFU,2,11:47,Drain,NONE,Drain,M,"70F, Partly Cloudy",Early August,0.347
+August,GR104,Eelgrass,GR,C,GASU/GAFU,3,12:47,Drain,NONE,Drain,M,"70F, Partly Cloudy",Early August,0.347
+August,BR104,Eelgrass,BR,D,BASU/BAFU,0,9:49,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.353
+August,BR104,Eelgrass,BR,D,BASU/BAFU,1,10:49,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.353
+August,BR104,Eelgrass,BR,D,BASU/BAFU,2,11:49,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.353
+August,BR104,Eelgrass,BR,D,BASU/BAFU,3,12:49,BASU,B,ASU,F,"70F, Partly Cloudy",Mid June,0.353
+August,BR105,Eelgrass,BR,A,GASU/GAFU,0,12:50,Drain,NONE,Drain,F,"73F, Partly Cloudy",Early August,0.275
+August,BR105,Eelgrass,BR,A,GASU/GAFU,1,1:50,Drain,NONE,Drain,F,"73F, Partly Cloudy",Early August,0.275
+August,BR105,Eelgrass,BR,A,GASU/GAFU,2,2:50,Drain,NONE,Drain,F,"73F, Partly Cloudy",Early August,0.275
+August,BR105,Eelgrass,BR,A,GASU/GAFU,3,3:50,Drain,NONE,Drain,F,"73F, Partly Cloudy",Early August,0.275
+August,GR105,Eelgrass,GR,B,BASU/BAFU,0,12:51,BASU,B,ASU,F,"73F, Partly Cloudy",Early May,0.215
+August,GR105,Eelgrass,GR,B,BASU/BAFU,1,1:51,Drain,NONE,Drain,F,"73F, Partly Cloudy",Early May,0.215
+August,GR105,Eelgrass,GR,B,BASU/BAFU,2,2:51,BASU,B,ASU,F,"73F, Partly Cloudy",Early May,0.215
+August,GR105,Eelgrass,GR,B,BASU/BAFU,3,3:51,BASU,B,ASU,F,"73F, Partly Cloudy",Early May,0.215
+August,BR106,Eelgrass,BR,C,GASU/GAFU,0,12:53,SB,NONE,SB,M,"73F, Partly Cloudy",Early August,0.213
+August,BR106,Eelgrass,BR,C,GASU/GAFU,1,1:53,GAFU,G,AFU,M,"73F, Partly Cloudy",Early August,0.213
+August,BR106,Eelgrass,BR,C,GASU/GAFU,2,2:53,GAFU,G,AFU,M,"73F, Partly Cloudy",Early August,0.213
+August,BR106,Eelgrass,BR,C,GASU/GAFU,3,3:53,GAFU,G,AFU,M,"73F, Partly Cloudy",Early August,0.213
+August,GR106,Eelgrass,GR,D,BASU/BAFU,0,12:54,BASU,B,ASU,M,"73F, Partly Cloudy",Early May,0.237
+August,GR106,Eelgrass,GR,D,BASU/BAFU,1,1:54,BASU,B,ASU,M,"73F, Partly Cloudy",Early May,0.237
+August,GR106,Eelgrass,GR,D,BASU/BAFU,2,2:54,BASU,B,ASU,M,"73F, Partly Cloudy",Early May,0.237
+August,GR106,Eelgrass,GR,D,BASU/BAFU,3,4:02,TW,NONE,TW,M,"73F, Partly Cloudy",Early May,0.237
+August,GR107,Eelgrass,GR,A,GASU/GAFU,0,10:07,SB,NONE,SB,M,"66F, Rainy",Early May,0.337
+August,GR107,Eelgrass,GR,A,GASU/GAFU,1,11:07,GASU,G,ASU,M,"66F, Rainy",Early May,0.337
+August,GR107,Eelgrass,GR,A,GASU/GAFU,2,12:09,GASU,G,ASU,M,"66F, Rainy",Early May,0.337
+August,GR107,Eelgrass,GR,A,GASU/GAFU,3,13:07,GASU,G,ASU,M,"66F, Rainy",Early May,0.337
+August,BR107,Eelgrass,BR,B,BASU/BAFU,0,10:08,BASU,B,ASU,M,"66F, Rainy",Early May,0.311
+August,BR107,Eelgrass,BR,B,BASU/BAFU,1,11:08,BASU,B,ASU,M,"66F, Rainy",Early May,0.311
+August,BR107,Eelgrass,BR,B,BASU/BAFU,2,12:10,BASU,B,ASU,M,"66F, Rainy",Early May,0.311
+August,BR107,Eelgrass,BR,B,BASU/BAFU,3,13:08,BASU,B,ASU,M,"66F, Rainy",Early May,0.311
+August,GR108,Eelgrass,GR,C,GASU/GAFU,0,10:09,GASU,G,ASU,M,"66F, Rainy",Early May,0.356
+August,GR108,Eelgrass,GR,C,GASU/GAFU,1,11:09,GASU,G,ASU,M,"66F, Rainy",Early May,0.356
+August,GR108,Eelgrass,GR,C,GASU/GAFU,2,12:12,GASU,G,ASU,M,"66F, Rainy",Early May,0.356
+August,GR108,Eelgrass,GR,C,GASU/GAFU,3,13:09,GASU,G,ASU,M,"66F, Rainy",Early May,0.356
+August,BR108,Eelgrass,BR,D,BASU/BAFU,0,10:10,BAFU,B,AFU,M,"66F, Rainy",Early May,0.313
+August,BR108,Eelgrass,BR,D,BASU/BAFU,1,11:17,TW,NONE,TW,M,"66F, Rainy",Early May,0.313
+August,BR108,Eelgrass,BR,D,BASU/BAFU,2,12:14,BAFU,B,AFU,M,"66F, Rainy",Early May,0.313
+August,BR108,Eelgrass,BR,D,BASU/BAFU,3,13:10,BASU,B,ASU,M,"66F, Rainy",Early May,0.313
+August,BR109,Eelgrass,BR,A,GASU/GAFU,0,13:11,GAFU,G,AFU,M,"66F, Raining",Mid June,0.229
+August,BR109,Eelgrass,BR,A,GASU/GAFU,1,14:11,GAFU,G,AFU,M,"66F, Raining",Mid June,0.229
+August,BR109,Eelgrass,BR,A,GASU/GAFU,2,15:11,GAFU,G,AFU,M,"66F, Raining",Mid June,0.229
+August,BR109,Eelgrass,BR,A,GASU/GAFU,3,16:11,GAFU,G,AFU,M,"66F, Raining",Mid June,0.229
+August,GR109,Eelgrass,GR,B,BASU/BAFU,0,13:12,Drain,NONE,Drain,M,"66F, Raining",Early July,0.43
+August,GR109,Eelgrass,GR,B,BASU/BAFU,1,14:12,Drain,NONE,Drain,M,"66F, Raining",Early July,0.43
+August,GR109,Eelgrass,GR,B,BASU/BAFU,2,15:12,Drain,NONE,Drain,M,"66F, Raining",Early July,0.43
+August,GR109,Eelgrass,GR,B,BASU/BAFU,3,16:12,Drain,NONE,Drain,M,"66F, Raining",Early July,0.43
+August,BR110,Eelgrass,BR,C,GASU/GAFU,0,13:13,GAFU,G,AFU,F,"66F, Raining",Mid June,0.369
+August,BR110,Eelgrass,BR,C,GASU/GAFU,1,14:13,GAFU,G,AFU,F,"66F, Raining",Mid June,0.369
+August,BR110,Eelgrass,BR,C,GASU/GAFU,2,15:13,GAFU,G,AFU,F,"66F, Raining",Mid June,0.369
+August,BR110,Eelgrass,BR,C,GASU/GAFU,3,16:14,GAFU,G,AFU,F,"66F, Raining",Mid June,0.369
+August,GR110,Eelgrass,GR,D,BASU/BAFU,0,13:14,BAFU,B,AFU,M,"66F, Raining",Early July,0.219
+August,GR110,Eelgrass,GR,D,BASU/BAFU,1,14:14,BAFU,B,AFU,M,"66F, Raining",Early July,0.219
+August,GR110,Eelgrass,GR,D,BASU/BAFU,2,15:14,BAFU,B,AFU,M,"66F, Raining",Early July,0.219
+August,GR110,Eelgrass,GR,D,BASU/BAFU,3,16:15,BAFU,B,AFU,M,"66F, Raining",Early July,0.219
+August,GR111,Eelgrass,GR,A,GASU/GAFU,0,11:31,TW,NONE,TW,M,"75F, Mostly Cloudy",Mid June,0.163
+August,GR111,Eelgrass,GR,A,GASU/GAFU,1,12:31,SB,NONE,SB,M,"75F, Mostly Cloudy",Mid June,0.163
+August,GR111,Eelgrass,GR,A,GASU/GAFU,2,13:31,SB,NONE,SB,M,"75F, Mostly Cloudy",Mid June,0.163
+August,GR111,Eelgrass,GR,A,GASU/GAFU,3,14:31,SB,NONE,SB,M,"75F, Mostly Cloudy",Mid June,0.163
+August,BR111,Eelgrass,BR,B,BASU/BAFU,0,11:33,TW,NONE,TW,M,"75F, Mostly Cloudy",Mid June,0.145
+August,BR111,Eelgrass,BR,B,BASU/BAFU,1,12:33,BASU,B,ASU,M,"75F, Mostly Cloudy",Mid June,0.145
+August,BR111,Eelgrass,BR,B,BASU/BAFU,2,13:33,BASU,B,ASU,M,"75F, Mostly Cloudy",Mid June,0.145
+August,BR111,Eelgrass,BR,B,BASU/BAFU,3,14:33,BASU,B,ASU,M,"75F, Mostly Cloudy",Mid June,0.145
+August,GR112,Eelgrass,GR,C,GASU/GAFU,0,11:35,GASU,G,ASU,M,"75F, Mostly Cloudy",Mid June,0.417
+August,GR112,Eelgrass,GR,C,GASU/GAFU,1,12:35,GASU,G,ASU,M,"75F, Mostly Cloudy",Mid June,0.417
+August,GR112,Eelgrass,GR,C,GASU/GAFU,2,13:35,GASU,G,ASU,M,"75F, Mostly Cloudy",Mid June,0.417
+August,GR112,Eelgrass,GR,C,GASU/GAFU,3,14:35,GASU,G,ASU,M,"75F, Mostly Cloudy",Mid June,0.417
+August,BR112,Eelgrass,BR,D,BASU/BAFU,0,11:37,TW,NONE,TW,M,"75F, Mostly Cloudy",Mid June,0.235
+August,BR112,Eelgrass,BR,D,BASU/BAFU,1,12:37,BASU,B,ASU,M,"75F, Mostly Cloudy",Mid June,0.235
+August,BR112,Eelgrass,BR,D,BASU/BAFU,2,13:37,SB,NONE,SB,M,"75F, Mostly Cloudy",Mid June,0.235
+August,BR112,Eelgrass,BR,D,BASU/BAFU,3,14:37,BASU,B,ASU,M,"75F, Mostly Cloudy",Mid June,0.235
+August,BR113,Eelgrass,BR,A,GASU/GAFU,0,9:52,GASU,G,ASU,M,"70F, Sunny",Mid June,0.252
+August,BR113,Eelgrass,BR,A,GASU/GAFU,1,10:52,GASU,G,ASU,M,"70F, Sunny",Mid June,0.252
+August,BR113,Eelgrass,BR,A,GASU/GAFU,2,11:52,GASU,G,ASU,M,"70F, Sunny",Mid June,0.252
+August,BR113,Eelgrass,BR,A,GASU/GAFU,3,12:52,GASU,G,ASU,M,"70F, Sunny",Mid June,0.252
+August,GR113,Eelgrass,GR,B,BASU/BAFU,0,9:53,BASU,B,ASU,M,"70F, Sunny",Mid June,0.238
+August,GR113,Eelgrass,GR,B,BASU/BAFU,1,10:53,BASU,B,ASU,M,"70F, Sunny",Mid June,0.238
+August,GR113,Eelgrass,GR,B,BASU/BAFU,2,11:53,BASU,B,ASU,M,"70F, Sunny",Mid June,0.238
+August,GR113,Eelgrass,GR,B,BASU/BAFU,3,12:53,BASU,B,ASU,M,"70F, Sunny",Mid June,0.238
+August,GR114,Eelgrass,GR,D,BASU/BAFU,0,9:56,BAFU,B,AFU,M,"70F, Sunny",Early May,0.292
+August,GR114,Eelgrass,GR,D,BASU/BAFU,1,10:56,BAFU,B,AFU,M,"70F, Sunny",Early May,0.292
+August,GR114,Eelgrass,GR,D,BASU/BAFU,2,11:56,BASU,B,ASU,M,"70F, Sunny",Early May,0.292
+August,GR114,Eelgrass,GR,D,BASU/BAFU,3,12:57,BASU,B,ASU,M,"70F, Sunny",Early May,0.292
+August,GR115,Eelgrass,GR,A,GASU/GAFU,0,13:01,GAFU,G,AFU,M,"70F, Mostly Sunny",Early May,0.32
+August,GR115,Eelgrass,GR,A,GASU/GAFU,1,14:01,GAFU,G,AFU,M,"70F, Mostly Sunny",Early May,0.32
+August,GR115,Eelgrass,GR,A,GASU/GAFU,2,15:01,GAFU,G,AFU,M,"70F, Mostly Sunny",Early May,0.32
+August,GR115,Eelgrass,GR,A,GASU/GAFU,3,16:01,GAFU,G,AFU,M,"70F, Mostly Sunny",Early May,0.32
+August,BR115,Eelgrass,BR,B,BASU/BAFU,0,13:05,BAFU,B,AFU,M,"70F, Mostly Sunny",Early May,0.23
+August,BR115,Eelgrass,BR,B,BASU/BAFU,1,14:05,BAFU,B,AFU,M,"70F, Mostly Sunny",Early May,0.23
+August,BR115,Eelgrass,BR,B,BASU/BAFU,2,15:05,BASU,B,ASU,M,"70F, Mostly Sunny",Early May,0.23
+August,BR115,Eelgrass,BR,B,BASU/BAFU,3,16:05,BASU,B,ASU,M,"70F, Mostly Sunny",Early May,0.23
+August,GR116,Eelgrass,GR,C,GASU/GAFU,0,13:06,TW,NONE,TW,M,"70F, Mostly Sunny",Early May,0.414
+August,GR116,Eelgrass,GR,C,GASU/GAFU,1,14:06,TW,NONE,TW,M,"70F, Mostly Sunny",Early May,0.414
+August,GR116,Eelgrass,GR,C,GASU/GAFU,2,15:14,GASU,G,ASU,M,"70F, Mostly Sunny",Early May,0.414
+August,GR116,Eelgrass,GR,C,GASU/GAFU,3,16:06,GASU,G,ASU,M,"70F, Mostly Sunny",Early May,0.414
+August,BR116,Eelgrass,BR,D,BASU/BAFU,0,13:07,BAFU,B,AFU,M,"70F, Mostly Sunny",Early May,0.251
+August,BR116,Eelgrass,BR,D,BASU/BAFU,1,14:11,BAFU,B,AFU,M,"70F, Mostly Sunny",Early May,0.251
+August,BR116,Eelgrass,BR,D,BASU/BAFU,2,15:16,TW,NONE,TW,M,"70F, Mostly Sunny",Early May,0.251
+August,BR116,Eelgrass,BR,D,BASU/BAFU,3,16:07,BASU,B,ASU,M,"70F, Mostly Sunny",Early May,0.251
+August,BR117,Eelgrass,BR,A,GASU/GAFU,0,11:11,Drain,NONE,Drain,M,"72F, Sunny",Mid June,0.265
+August,BR117,Eelgrass,BR,A,GASU/GAFU,1,12:11,GAFU,G,AFU,M,"72F, Sunny",Mid June,0.265
+August,BR117,Eelgrass,BR,A,GASU/GAFU,2,13:26,TW,NONE,TW,M,"72F, Sunny",Mid June,0.265
+August,BR117,Eelgrass,BR,A,GASU/GAFU,3,14:11,TW,NONE,TW,M,"72F, Sunny",Mid June,0.265
+August,GR117,Eelgrass,GR,B,BASU/BAFU,0,11:13,BASU,B,ASU,M,"72F, Sunny",Mid June,0.205
+August,GR117,Eelgrass,GR,B,BASU/BAFU,1,12:13,BASU,B,ASU,M,"72F, Sunny",Mid June,0.205
+August,GR117,Eelgrass,GR,B,BASU/BAFU,2,13:15,BASU,B,ASU,M,"72F, Sunny",Mid June,0.205
+August,GR117,Eelgrass,GR,B,BASU/BAFU,3,14:13,BASU,B,ASU,M,"72F, Sunny",Mid June,0.205
+August,BR118,Eelgrass,BR,C,GASU/GAFU,0,11:15,TW,NONE,TW,F,"72F, Sunny",Early May,0.431
+August,BR118,Eelgrass,BR,C,GASU/GAFU,1,12:16,GAFU,G,AFU,F,"72F, Sunny",Early May,0.431
+August,BR118,Eelgrass,BR,C,GASU/GAFU,2,13:17,GAFU,G,AFU,F,"72F, Sunny",Early May,0.431
+August,BR118,Eelgrass,BR,C,GASU/GAFU,3,14:15,GAFU,G,AFU,F,"72F, Sunny",Early May,0.431
+August,GR118,Eelgrass,GR,D,BASU/BAFU,0,11:17,BASU,B,ASU,M,"72F, Sunny",Early May,0.333
+August,GR118,Eelgrass,GR,D,BASU/BAFU,1,12:17,TW,NONE,TW,M,"72F, Sunny",Early May,0.333
+August,GR118,Eelgrass,GR,D,BASU/BAFU,2,13:20,BAFU,B,AFU,M,"72F, Sunny",Early May,0.333
+August,GR118,Eelgrass,GR,D,BASU/BAFU,3,14:17,BAFU,B,AFU,M,"72F, Sunny",Early May,0.333
+August,GR119,Eelgrass,GR,A,GASU/GAFU,0,9:43,GASU,G,ASU,M,"75F, Sunny",Early August,0.212
+August,GR119,Eelgrass,GR,A,GASU/GAFU,1,10:43,GASU,G,ASU,M,"75F, Sunny",Early August,0.212
+August,GR119,Eelgrass,GR,A,GASU/GAFU,2,11:53,GASU,G,ASU,M,"75F, Sunny",Early August,0.212
+August,GR119,Eelgrass,GR,A,GASU/GAFU,3,12:42,GASU,G,ASU,M,"75F, Sunny",Early August,0.212
+August,BR119,Eelgrass,BR,B,BASU/BAFU,0,9:45,BAFU,B,AFU,M,"75F, Sunny",Early August,0.171
+August,BR119,Eelgrass,BR,B,BASU/BAFU,1,10:45,BAFU,B,AFU,M,"75F, Sunny",Early August,0.171
+August,BR119,Eelgrass,BR,B,BASU/BAFU,2,11:45,BAFU,B,AFU,M,"75F, Sunny",Early August,0.171
+August,BR119,Eelgrass,BR,B,BASU/BAFU,3,12:45,BAFU,B,AFU,M,"75F, Sunny",Early August,0.171
+August,GR120,Eelgrass,GR,C,GASU/GAFU,0,9:46,GASU,G,ASU,M,"75F, Sunny",Early May,0.173
+August,GR120,Eelgrass,GR,C,GASU/GAFU,1,10:46,GASU,G,ASU,M,"75F, Sunny",Early May,0.173
+August,GR120,Eelgrass,GR,C,GASU/GAFU,2,11:46,GASU,G,ASU,M,"75F, Sunny",Early May,0.173
+August,GR120,Eelgrass,GR,C,GASU/GAFU,3,12:46,GASU,G,ASU,M,"75F, Sunny",Early May,0.173
+August,BR120,Eelgrass,BR,D,BASU/BAFU,0,9:47,BASU,B,ASU,M,"75F, Sunny",Early May,0.212
+August,BR120,Eelgrass,BR,D,BASU/BAFU,1,10:47,BASU,B,ASU,M,"75F, Sunny",Early May,0.212
+August,BR120,Eelgrass,BR,D,BASU/BAFU,2,11:48,BASU,B,ASU,M,"75F, Sunny",Early May,0.212
+August,BR120,Eelgrass,BR,D,BASU/BAFU,3,12:47,BASU,B,ASU,M,"75F, Sunny",Early May,0.212
+August,BR121,Eelgrass,BR,A,GASU/GAFU,0,12:48,Drain,NONE,Drain,M,"82F, Partly Cloudy",Early May,0.226
+August,BR121,Eelgrass,BR,A,GASU/GAFU,1,1:48,TW,NONE,TW,M,"82F, Partly Cloudy",Early May,0.226
+August,BR121,Eelgrass,BR,A,GASU/GAFU,2,2:48,TW,NONE,TW,M,"82F, Partly Cloudy",Early May,0.226
+August,BR121,Eelgrass,BR,A,GASU/GAFU,3,3:48,TW,NONE,TW,M,"82F, Partly Cloudy",Early May,0.226
+August,GR121,Eelgrass,GR,B,BASU/BAFU,0,12:49,BASU,B,ASU,M,"82F, Partly Cloudy",Early May,0.137
+August,GR121,Eelgrass,GR,B,BASU/BAFU,1,1:49,BASU,B,ASU,M,"82F, Partly Cloudy",Early May,0.137
+August,GR121,Eelgrass,GR,B,BASU/BAFU,2,2:49,BASU,B,ASU,M,"82F, Partly Cloudy",Early May,0.137
+August,GR121,Eelgrass,GR,B,BASU/BAFU,3,3:49,BASU,B,ASU,M,"82F, Partly Cloudy",Early May,0.137
+August,BR122,Eelgrass,BR,C,GASU/GAFU,0,12:51,GAFU,G,AFU,M,"82F, Partly Cloudy",Early May,0.177
+August,BR122,Eelgrass,BR,C,GASU/GAFU,1,1:51,GAFU,G,AFU,M,"82F, Partly Cloudy",Early May,0.177
+August,BR122,Eelgrass,BR,C,GASU/GAFU,2,2:51,GAFU,G,AFU,M,"82F, Partly Cloudy",Early May,0.177
+August,BR122,Eelgrass,BR,C,GASU/GAFU,3,3:51,GAFU,G,AFU,M,"82F, Partly Cloudy",Early May,0.177
+August,GR122,Eelgrass,GR,D,BASU/BAFU,0,12:52,BASU,B,ASU,M,"82F, Partly Cloudy",Mid June,0.262
+August,GR122,Eelgrass,GR,D,BASU/BAFU,1,1:52,BASU,B,ASU,M,"82F, Partly Cloudy",Mid June,0.262
+August,GR122,Eelgrass,GR,D,BASU/BAFU,2,2:52,BASU,B,ASU,M,"82F, Partly Cloudy",Mid June,0.262
+August,GR122,Eelgrass,GR,D,BASU/BAFU,3,3:52,BASU,B,ASU,M,"82F, Partly Cloudy",Mid June,0.262

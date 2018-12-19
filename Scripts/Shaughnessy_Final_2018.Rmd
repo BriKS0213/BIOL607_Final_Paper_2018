@@ -1,0 +1,732 @@
+---
+title: "Final Paper BIOL 607"
+author: "Brianna Shaughnessy"
+date: "11/27/2018"
+output: html_document
+---
+
+#Field Survey for Size and Color
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(car)
+library(ggplot2)
+library(emmeans)
+library(readr)
+library(broom)
+library(dplyr)
+library(nlme)
+library(lattice)
+library(ggthemes)
+library(multcompView)
+library(lmtest)
+library(visreg)
+library(kableExtra)
+library(DHARMa)
+library(betareg)
+```
+
+```{r}
+Survey <- read_csv("../Data/Field_Survey.csv")
+str(Survey)
+head(Survey)
+#The following is the data transformation:
+#Restrict isopod size for outliers that were inherently very small or very large (not representative of this sample population with not enough others in similar size range)
+Survey <- Survey %>%
+  filter(Area < 1.5) %>%
+  filter(Area > 0.05)
+
+#Check the data
+Survey %>%
+  group_by(Habitat, Sex, Month) %>%
+  tally
+#We essentially have the same tallies for each habitat and sex.
+#Variation is in month, Sex did not have an effect.
+```
+
+
+```{r, Size by Habitat}
+
+#This data has something up with it. After playing around with it, a log Transformation seems to remedy the issue of a non-normal distribution of residuals and a funky QQ Plot. 
+Survey_no_outlier <- Survey[-368,]
+
+Survey_Final <- Survey_no_outlier %>%
+  mutate(Month = fct_relevel(Survey_no_outlier$Month,
+                              "May", "June", "July", "August"))
+Survey_Final <- Survey_Final %>%
+  mutate(Areasq1 = (1/(sqrt(Area)))) %>%
+  mutate(lnArea = log(Area))
+
+#Test it
+Size_lm <- lm(Areasq1 ~ Habitat*Green*Month, data = Survey_Final)
+Size_Anova <- Anova(Size_lm)
+#Tables - report these
+knitr::kable(broom::tidy(Size_lm))
+#Coefficients
+Coefficients_Table <- knitr::kable(coef(summary(Size_lm)))
+
+#Test assumptions
+plot(Size_lm, which = c(1, 2, 4, 5))
+res_Size <- residuals(Size_lm)
+hist(res_Size)
+#Trends
+Size_tr <- emtrends(Size_lm, ~Habitat | Month, "Green")
+Size_tr 
+contrast(Size_tr) %>% tidy
+contrast(Size_tr, "tukey") %>% tidy()
+
+#Tukey's HSD
+Size_em <- contrast(emmeans(Size_lm, ~Habitat | Month), method = "tukey",
+         adjust = "none")
+
+
+
+####Color####
+#Test it
+Color_lm <- lm(Green ~ Habitat * Month, data = Survey_Final)
+Anova(Color_lm)
+summary(Color_lm)
+
+#Test assumptions -- They look great.
+plot(Color_lm, which = c(1, 2, 4, 5))
+res_Color <- residuals(Color_lm)
+hist(res_Color)
+
+Size_oneway <- lm(Areasq1 ~ Habitat * Month, data = Survey_Final)
+Anova(Size_oneway)
+
+Size_lm <- lm(Areasq1 ~ Habitat*Green*Month, 
+              data = Survey_Final)
+```
+
+
+```{r Potential Visualization Interaction Model}
+size_predict <- predict(Size_lm, interval = "confidence")
+head(size_predict)
+
+Size_Final <- cbind(Survey_Final, size_predict)
+head(Size_Final)
+
+ggplot(data = Size_Final) +
+  geom_point(mapping = aes(x = Green, y = Areasq1, color = Habitat),
+             alpha = 0.5) +
+    geom_ribbon(data = Size_Final, aes(x = Green,
+                                 ymin = lwr,
+                                 ymax = upr,
+                                 group = Habitat,
+                                 alpha = 0.5),
+              fill = "lightgrey") +
+  geom_line(mapping = aes(x = Green, y = fit, color = Habitat, linetype = Habitat), size = 1) +
+  scale_color_manual(values = c("tan4", "chartreuse4")) +
+  facet_grid(rows = "Month") +
+  ggtitle("Three Way Interaction: lm(Areasq1 ~ Habitat * Month, data = Survey_Final)")+
+  labs(x = "Green Value",
+       y = bquote('Size'~(cm^2)),
+       size = 15)+
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000", 
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5))+
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16)) +
+  theme_bw()
+```
+
+```{r Visualization Color Model}
+color_predict <- predict(Color_lm, interval = "confidence")
+head(color_predict)
+
+color_sum <- cbind(Survey_Final, color_predict)
+head(color_sum)
+
+ggplot(data = color_sum) +
+  geom_boxplot(mapping = aes(x = Habitat, y = Green, color = Habitat)) +
+  facet_grid(rows = "Month") +
+  scale_color_manual(values = c("tan4", "chartreuse4")) +
+  ggtitle("Color Influenced by Habitat and Month")+
+  labs(x = "Field Habitat",
+       y = "Green Value",
+       size = 14)+
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000", 
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5))+
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16)) +
+  theme_bw()
+
+```
+
+```{r Rearing Growth Rate}
+Growth <- read_csv("../Data/Rearing.csv") 
+Growth <- na.omit(Growth) %>%
+  rename(Growth_Rate = `Growth Rate`,
+         Treatment = `Rearing Treatment`)
+head(Growth)
+#This data does not meet assumptions. Rather than 
+#Log transforming the data, I will use
+#Mean-variance scaling and Generalized Least Squares
+#Generalized Least Squares - heterogeneous variance
+
+Growth_gls <- gls(Growth_Rate ~ Treatment, data = Growth,
+                  weights = varIdent(~ Treatment))
+
+summary(Growth_gls)
+
+#Generalized Least Squares
+plot(ACF(Growth_gls), alpha = 0.05)
+#this shows that there is some strong autocorrelation pattern in the data
+#in order to account for that, we use the gls function to update the model
+model6=update(Growth_gls, correlation = corAR1())
+#Now we can compare the two models 
+summary(model6)
+#We see that this new model predicts a little better than the 
+#other. Allows us to flexibly incorporate autocorrelation into
+#our model
+
+####Test Assumptions####
+
+#Use emmeans to plot raw data boxplot for growth rate 
+Growth_em <- emmeans(Growth_gls, ~`Treatment`)
+Growth_em
+#Use contrasts to report differences between groups
+emmeans::contrast(Growth_em, method = "tukey")
+
+########
+#Graph
+########
+  
+Growth_plot <- ggplot(Growth, aes(x = Treatment, y = Growth_Rate, fill = Treatment)) +
+  geom_boxplot(fill = c("gray21", "chartreuse4", "tan4")) +
+  ggtitle("Growth Rate by Rearing Treatment") +
+                  labs(x = "Food Source",
+                       y = bquote('Growth Rate'~(mm^2/day)),
+                       size = 14) +
+                  theme(plot.title = element_text(hjust = 0.5,
+                                                  family = "Times",
+                                                  color = "#000000",
+                                                  face = "bold",
+                                                  size = 20)) +
+                  theme(axis.title = element_text(family = "Times",
+                                                  color = "#000000",
+                                                size = 16)) +
+  theme_classic()
+
+Growth_plot
+##########################
+#For reporting the stats - Jarrett's lecture used 
+#Slide GLS z test of coefficients table
+##########################
+
+Anova(Growth_gls)
+summary(Growth_gls)
+plot(Growth_gls)
+
+lsmeans(Growth_gls,
+        pairwise~Treatment,
+        adjust = "tukey")
+
+anova<-anova(Growth_gls)
+summary(anova)
+tidy(anova)
+glance(anova)
+#glance looks at your fit
+
+#Test assumptions
+```
+
+
+```{r Rearing Survivorship}
+Rearing_Survival <- read_csv("../Data/Rearing_Survivorship.csv")
+#Binomial Logistic Regression
+#check out a contingency table
+xtabs(~Survival + Food, data = Rearing_Survival)
+#Looked at size and it was not significant
+#glm to look at response variables
+
+Rearing_Survival$Food <- factor(Rearing_Survival$Food)
+Rearing_logit <- glm(Survival ~ Food,
+                     data = Rearing_Survival, family = "binomial")
+
+summary(Rearing_logit)
+#Find the effect size - Each is compared to Detritus (alphabetical)
+exp(coef(Rearing_logit))
+#ANOVA
+Anova(Rearing_logit)
+stable <- car::Anova(Rearing_logit)
+
+#ANOVA Results and find Confidence intervals using 
+#profiled log-likelihood
+exp(cbind(OR = coef(Rearing_logit),
+          confint(Rearing_logit)))
+#Find emmeans and standard error for each interaction
+Rearing_em <- emmeans(Rearing_logit, ~Food)
+Rearing_Tukey<- emmeans::contrast(Rearing_em,
+                                method = "tukey")
+confint(Rearing_Tukey)
+#Or
+confint.default(Rearing_logit)
+
+
+#Wald test for an overall effect of food source:
+library(aod)
+wald.test(b = coef(Rearing_logit), Sigma = vcov(Rearing_logit), Terms = 2:3)
+#The chi-squared test statistic of 10.0 with 2 degrees of freedom is associated with a p-value of 0.0067 indicating that the overall effect of treatment is statistically significant. 
+
+#Interpret as odds-ratios and cbind into a table:
+#odds ratios and 95% CI:
+exp(cbind(OR = coef(Rearing_logit), confint(Rearing_logit)))
+#For one unit increase in Eelgrass the odds of survival increased by a factor of 0.85 while for a one unit increase in Fucus the odds of survival increase by a factor of 25.9
+
+#Test Assumptions - need to simulate residuals to see if the model is working well
+simulationOutput <- simulateResiduals(fittedModel = Rearing_logit, n = 500)
+
+plotSimulatedResiduals(simulationOutput = simulationOutput)
+#Visual inspection of the residuals: specialized goodness-of-fit tests
+testUniformity(simulationOutput = simulationOutput)
+#Test for zero inflation
+testZeroInflation(simulationOutput)
+#Looks good
+```
+
+```{r Plot for Rearing Survivorship}
+#Find Standard Errors for each
+Rear2 <- Rearing_Survival %>%
+  group_by(Food) %>%
+  mutate(avg = mean(Survival)) %>%
+  mutate(stde = (sd(Survival) / sqrt(length(Survival))))
+Rear2
+
+#Find the averages
+Rear_sum <- Rear2 %>%
+  group_by(Food) %>%
+  summarise(rear_surv = (sum(Survival/length(Survival))),
+            stde = mean(stde)) %>%
+  ungroup()
+Rear_sum
+
+#Graph with standard errors
+RearPlot <- ggplot(data = Rear_sum,
+                   mapping = aes(x = Food, y = rear_surv, fill = Food)) +
+  geom_col(fill = c("gray21", "chartreuse4", "tan4")) +
+  geom_errorbar(aes(ymin = rear_surv - stde, ymax = rear_surv + stde),
+                width = 0.1) +
+                ggtitle("Rearing Survivorship") +
+                  labs(x = "Food Source",
+                       y = "Proportion Surviving",
+                       size = 15) +
+                  theme(plot.title = element_text(hjust = 0.5,
+                                  family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 20)) +
+     theme(axis.title = element_text(family = "Times",
+                                    color = "#000000",
+                                     size = 16)) +
+  theme_classic()
+RearPlot
+```
+
+```{r Seagrass Tether Trial}
+#Logistic Regression for each Habitat
+Seagrass <- read_csv("../Data/Seagrass_Tether.csv")
+head(Seagrass)
+#Quick look at contingency table with outcomes
+xtabs(~`Survivorship Seagrass` + Color, data = Seagrass)
+
+#Survivorship based on color and size:
+Seagrass$Color <- factor(Seagrass$Color)
+seagrass_logit <- glm(`Survivorship Seagrass` ~ Color + `Size Seagrass`,
+               data = Seagrass, family = "binomial")
+summary(seagrass_logit)
+#Color is significant but size is not. 
+#Test Assumptions using DHARMa package
+SeagrassOutput <- simulateResiduals(fittedModel = seagrass_logit, n = 250)
+plotSimulatedResiduals(SeagrassOutput)
+
+#Get ChiSq results for reporting:
+car::Anova(seagrass_logit)
+#profiled log-likelihood
+exp(cbind(OR = coef(seagrass_logit),
+          confint(seagrass_logit)))
+#Find emmeans and standard error for each interaction
+seagrass_em <- emmeans(seagrass_logit, ~Color)
+seagrass_tukey <- emmeans::contrast(seagrass_em,
+                                method = "tukey")
+confint(seagrass_tukey)
+#Or
+confint.default(seagrass_logit)
+```
+
+```{r Fucus Tether Trial}
+Fucus <- read_csv("../Data/Fucus_Tether.csv")
+xtabs(~Survivorship + Color, data = Fucus)
+Fucus$Color <- factor(Fucus$Color)
+
+fucus_logit <- glm(Survivorship ~ Color, data = Fucus,
+                   family = "binomial")
+#Test Assumptions using DHARMa package
+FucusOutput <- simulateResiduals(fittedModel = fucus_logit, n = 250)
+plotSimulatedResiduals(FucusOutput)
+
+#Get ChiSq results for reporting:
+car::Anova(fucus_logit)
+#profiled log-likelihood
+exp(cbind(OR = coef(fucus_logit),
+          confint(fucus_logit)))
+#Find emmeans and standard error for each interaction
+fucus_em <- emmeans(fucus_logit, ~Color)
+fucus_tukey <- emmeans::contrast(fucus_em,
+                                method = "tukey")
+confint(fucus_tukey)
+#Or
+confint.default(fucus_logit)
+```
+
+```{r Tether Plots}
+Tether <- read_csv("../Data/Tether.csv") %>%
+  group_by(Habitat, Color) %>%
+  mutate(avg = mean(Survivorship)) %>%
+  mutate(stde = (sd(Survivorship)/sqrt(length(Survivorship))))
+Tether
+
+tether_sum <- Tether %>%
+  group_by(Habitat, Color) %>%
+  summarise(size_surv = (sum(Survivorship/length(Survivorship))),
+            stde = mean(stde)) %>%
+  ungroup()
+head(tether_sum)
+
+TetherPlot <- ggplot(data = tether_sum, 
+                     mapping = aes(x = Color, y = size_surv, fill = Color)) +
+  geom_col(fill = c("tan4", "chartreuse4", "tan4", "chartreuse4")) +
+  geom_errorbar(aes(ymin = size_surv - stde, ymax = size_surv + stde),
+                width = 0.1, color = "gray22") +
+  facet_wrap(~Habitat) +
+  ggtitle("Tether Trial") +
+  labs(x = "Isopod Color",
+       y = "Proportion Surviving") +
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5)) +
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16))
+TetherPlot
+```
+
+
+```{r Artificial Habitat Trials}
+#Load data
+Trials <- read_csv("../Data/Artificial_Habitat.csv")
+head(Trials)
+
+#Create Data for Trials with same color mixed habitat
+#mutate all proportions to make then (0>1)
+Trials <- Trials %>%
+  mutate(BASU_new = case_when(.$BASU_prop == 0 ~ "0.005",
+                              .$BASU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(BASU_prop))) %>%
+  mutate(BASU_new = as.numeric(.$BASU_new)) %>%
+  mutate(BAFU_new = case_when(.$BAFU_prop == 0 ~ "0.005",
+                              .$BAFU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(BAFU_prop))) %>%
+  mutate(BAFU_new = as.numeric(.$BAFU_new))%>%
+  mutate(GASU_new = case_when(.$GASU_prop == 0 ~ "0.005",
+                              .$GASU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(GASU_prop))) %>%
+  mutate(GASU_new = as.numeric(.$GASU_new)) %>%
+  mutate(GAFU_new = case_when(.$GAFU_prop == 0 ~ "0.005",
+                              .$GAFU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(GAFU_prop))) %>%
+  mutate(GAFU_new = as.numeric(.$GAFU_new))
+head(Trials)
+
+#Let's try a betareg
+#Initial Visualizations
+ggplot(Trials,
+       aes(x = Trial_Type, y = BAFU_new, fill = Field_Habitat)) +
+  geom_col() +
+  facet_wrap(~Isopod_Color) # This is interesting
+
+ggplot(Trials,
+       aes(x = Trial_Type, y = BASU_new, fill = Isopod_Color)) +
+  geom_boxplot()
+
+ggplot(Trials,
+       aes(x = Trial_Type, y = BAFU_new, fill = Field_Habitat)) +
+  geom_boxplot()
+
+ggplot(Trials,
+       aes(x = Trial_Type, y = BASU_new, fill = Field_Habitat)) +
+  geom_boxplot()
+
+#Now let's look using beta regression
+#Not all potential levels of field habitat were represented in
+#each trial
+#Create data for trials
+Trial1 <- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("BASU/BAFU", "GASU/BAFU"))
+
+Trial2_Brown<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type == "BASU/BAFU")
+
+Trial2_Green <- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type == "GASU/GAFU")
+
+Trial3<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("BASU/BAFU","BASU/GAFU"))
+
+Trial4<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("GASU/BAFU","GASU/GAFU"))
+
+Trial5<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("GASU/BAFU"))
+
+Trial6<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("GASU/GAFU","BASU/GAFU"))
+
+Trial7 <- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("BASU/GAFU"))
+
+Trial1_beta <- betareg(BAFU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial1)
+Anova(Trial1_beta)
+plot(Trial1_beta, which = 4)
+cld(emmeans(Trial1_beta, ~ Trial_Type | Isopod_Color))
+cld(emmeans(Trial1_beta, ~Trial_Type))
+
+Trial2_Brown_beta <- betareg(BAFU_new ~ Isopod_Color * Field_Habitat,
+                      data = Trial2_Brown)
+Anova(Trial2_Brown_beta)
+plot(Trial2_Brown_beta, which = 4)
+cld(emmeans(Trial2_Brown_beta, ~ Isopod_Color|Field_Habitat))
+cld(emmeans(Trial2_Brown_beta, ~Trial_Type))
+
+Trial2_Green_beta <- betareg(GAFU_new ~ Isopod_Color * Field_Habitat, data = Trial2_Green)
+Anova(Trial2_Green_beta)
+cld(emmeans(Trial2_Green_beta, ~Isopod_Color*Field_Habitat))
+
+Trial3_beta <- betareg(BASU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial3)
+Anova(Trial3_beta)
+plot(Trial3_beta, which = 4)
+cld(emmeans(Trial3_beta, ~ Isopod_Color|Trial_Type))
+cld(emmeans(Trial3_beta, ~Trial_Type))
+
+Trial4_beta <- betareg(GASU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial4)
+Anova(Trial4_beta)
+plot(Trial4_beta, which = 4)
+cld(emmeans(Trial4_beta, ~ Isopod_Color|Trial_Type))
+cld(emmeans(Trial4_beta, ~Trial_Type))
+
+Trial5_beta <- betareg(GASU_new ~ Isopod_Color * BAFU_new + Date_of_Collection, data = Trial5)
+Anova(Trial5_beta)
+cld(emmeans(Trial5_beta, ~ Isopod_Color))
+
+Trial6_beta <- betareg(GAFU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial6)
+Anova(Trial6_beta)
+plot(Trial6_beta, which = 4)
+cld(emmeans(Trial6_beta, ~ Isopod_Color|Trial_Type))
+cld(emmeans(Trial6_beta, ~Trial_Type))
+
+Trial7_beta <- betareg(BASU_new ~ Isopod_Color * GAFU_new + Date_of_Collection, data = Trial7)
+plot(Trial7_beta, which = 4)
+Anova(Trial7_beta)
+cld(emmeans(Trial7_beta, ~ Isopod_Color*GAFU_new|Date_of_Collection))
+
+```
+
+
+```{r ggplots for trials}
+ggplot(BAFU_trials,
+       aes(x = Trial_Type, y = BAFU_new, fill = Field_Habitat)) +
+  geom_col() +
+  facet_wrap(~Isopod_Color)
+
+ggplot(Trials, 
+       aes(x = Trial_Type, y = BASU_new, fill = Field_Habitat)) +
+  geom_col() +
+  facet_wrap(~Isopod_Color)
+
+ggplot(Trials, 
+       aes(x = Trial_Type, y = GASU_new, fill = Field_Habitat)) +
+  geom_col() +
+  facet_wrap(~Isopod_Color)
+  ```
+
+
+```{r Trials with Both Same Color Mixed Habitat}
+
+Trial2_field_match <- read_csv("../Data/Artificial_Same_Color_Mixed_Habitat.csv")
+
+ggplot(Trial2, 
+       aes(x = Trial_Type, y = Prop_Field_Match, fill = Field_Habitat)) +
+  geom_col() +
+  facet_wrap(~Isopod_Color)
+
+#Doesn't really tell us much
+```
+
+
+```{r First Habitat Trial Data}
+
+First_Trials <- read_csv("../Data/First_Habitat_Trials.csv")
+#Can try a beta regression with the same manipulation of the data
+First_Trials <- First_Trials %>%
+  mutate(In_Brown_new = case_when(.$In_Brown == 0 ~ "0.005",
+                              .$In_Brown == 1 ~ "0.995",
+                            TRUE ~ as.character(In_Brown))) %>%
+  mutate(In_Brown_new = as.numeric(.$In_Brown_new)) %>%
+  mutate(In_Green_new = case_when(.$In_Green == 0 ~ "0.005",
+                              .$In_Green == 1 ~ "0.995",
+                            TRUE ~ as.character(In_Green))) %>%
+  mutate(In_Green_new = as.numeric(.$In_Green_new))%>%
+  mutate(Swimming_new = case_when(.$Swimming == 0 ~ "0.005",
+                              .$Swimming == 1 ~ "0.995",
+                            TRUE ~ as.character(Swimming))) %>%
+  mutate(Swimming_new = as.numeric(.$Swimming_new)) %>%
+  mutate(Other_new = case_when(.$Other == 0 ~ "0.005",
+                              .$Other == 1 ~ "0.995",
+                            TRUE ~ as.character(Other))) %>%
+  mutate(Other_new = as.numeric(.$Other_new))
+
+
+#Visualize
+
+ggplot(First_Trials, 
+       aes(x = Isopod_Color, y = In_Green_new, fill = Isopod_Color)) +
+  geom_col()+
+  facet_wrap(~Trial_Type)
+
+ggplot(First_Trials, 
+       aes(x = Isopod_Color, y = In_Brown_new, fill = Isopod_Color)) +
+  geom_col()+
+  facet_wrap(~Trial_Type)
+
+#Try beta regression on time spent in brown habitat
+brown_beta <- betareg(In_Brown_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+
+Anova(brown_beta)
+plot(brown_beta, which = 4)
+cld(emmeans(brown_beta, ~Isopod_Color|Trial_Type))
+
+#Beta regression on time spent in green habitat
+green_beta <- betareg(In_Green_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+plot(green_beta, which = 4)
+Anova(green_beta)
+cld(emmeans(green_beta, ~Isopod_Color|Trial_Type))
+
+#Beta regression on time spent swimming
+swimming_beta <- betareg(Swimming_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+plot(swimming_beta, which = 4)
+Anova(swimming_beta)
+cld(emmeans(swimming_beta, ~Isopod_Color))
+cld(emmeans(swimming_beta, ~Trial_Type))  
+coeftest(swimming_beta)
+
+#Beta regression on time spent in other
+other_beta <- betareg(Other_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+plot(other_beta, which = 4)
+Anova(other_beta)
+cld(emmeans(other_beta, ~Isopod_Color))
+cld(emmeans(other_beta, ~Trial_Type))
+coeftest(other_beta)
+```
+
+
+```{r Plots for ASU/AFU}
+First_Trials <- read_csv("../Data/First_Habitat_Trials_Long.csv") %>%
+  group_by(Isopod_Color, Trial_Type, Location) %>%
+  mutate(avg = mean(Proportion)) %>%
+  mutate(stde = (sd(Proportion)/sqrt(length(Proportion))))
+First_Trials
+
+Trial_sum <- First_Trials %>%
+  group_by(Isopod_Color, Trial_Type, Location) %>%
+  summarise(trial_prop = (sum(Proportion/length(Proportion))),
+            stde = mean(stde)) %>%
+  ungroup()
+head(Trial_sum)
+
+Trial_Plot <- ggplot(data = Trial_sum, 
+                     mapping = aes(x = Location, y = trial_prop, group = Isopod_Color, fill = Isopod_Color)) +
+  geom_col(fill = c("tan4", "chartreuse4", "tan4", "chartreuse4", "tan4", "chartreuse4", "tan4", "chartreuse4","tan4", "chartreuse4", "tan4", "chartreuse4","tan4", "chartreuse4", "tan4", "chartreuse4"), position = "dodge2") +
+  geom_errorbar(aes(ymin = trial_prop - stde, ymax = trial_prop + stde),
+        position = position_dodge(width = 0.9), 
+        width = 0.3) +
+  facet_wrap(~Trial_Type) +
+  ggtitle("Artificial Habitat Experiments") +
+  labs(x = "Artificial Habitat",
+       y = "Time Spent (%)") +
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5)) +
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16))
+Trial_Plot
+
+####Try a new betareg####
+#longform data
+
+First_Trial <- read_csv("../Data/First_Habitat_Trials_Long.csv")
+
+ggplot(First_Trial,
+       aes(x = Location, y = Proportion, 
+           fill = Isopod_Color)) +
+  geom_boxplot()
+#Okay so I need to do a betareg on proportion predicted by trial type, isopod color, and location
+#First make values between 0 and 1
+beta_long <- First_Trial %>%
+  mutate(Proportion_new = case_when(.$Proportion == 0 ~ "0.005",
+                              .$Proportion == 1 ~ "0.995",
+        TRUE ~ as.character(Proportion))) %>%
+  mutate(Swimming_new = as.numeric(.$Proportion_new))
+
+head(beta_long)
+
+new_beta <- betareg(Proportion_new ~ Location * Trial_Type * Isopod_Color, data = beta_long)
+
+plot(new_beta, which = 4)
+
+cld(emmeans(new_beta, ~ Isopod_Color | Location))
+
+cld(emmeans(new_beta, ~ Trial_Type | Location | Isopod_Color))
+
+### Maybe use this in the final paper###
+Anova(new_beta)
+coeftest(new_beta)
+summary(coeftest(new_beta))
+
+```
+
+```{r}
+Preference <- read_csv("../Data/Preferred_Habitat.csv")
+pref_lm <- lm(Preferred_Habitat ~ Isopod_Color + Trial_Type, 
+              data = Preference)
+
+head(Preference)
+```

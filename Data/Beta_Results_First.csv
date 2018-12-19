@@ -1,0 +1,13 @@
+﻿Response,Interaction,df,ChiSq,p
+In_Brown,Isopod_Color,1,53.942,0.0001***
+In_Brown,Trial_Type,1,51.515,0.0001***
+In_Brown,Isopod_Color:Trial_Type,1,46.634,0.0001***
+In_Green,Isopod_Color,1,37.412,0.0001***
+In_Green,Trial_Type,1,0.451,0.502
+In_Green,Isopod_Color:Trial_Type,1,0.801,0.369
+Swimming,Isopod_Color,1,2.519,0.112
+Swimming,Trial_Type,1,15.641,0.0001***
+Swimming,Isopod_Color:Trial_Type,1,5.213,0.022*
+Other,Isopod_Color,1,0.36,0.549
+Other,Trial_Type,1,0.038,0.845
+Other,Isopod_Color:Trial_Type,1,0.304,0.582

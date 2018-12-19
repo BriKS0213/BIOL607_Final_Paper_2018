@@ -1,0 +1,1048 @@
+---
+title: "BIOL607 Final Paper 2018"
+author: "Brianna Shaughnessy"
+date: "12/17/2018"
+output:
+  word_document: default
+  pdf_document: default
+  html_document:
+    df_print: paged
+theme: spacelab
+always_allow_html: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(car)
+library(ggplot2)
+library(emmeans)
+library(readr)
+library(broom)
+library(dplyr)
+library(nlme)
+library(lattice)
+library(ggthemes)
+library(multcompView)
+library(lmtest)
+library(visreg)
+library(kableExtra)
+library(DHARMa)
+library(betareg)
+library(aod)
+library(cowplot)
+```
+
+##Abstract  
+Mesograzers within coastal Eelgrass and macroalgal communities are widely accepted as key components to marine food webs. As a linkage between primary producers and higher-level consumers, as well as a mechanism for epiphytic control, the resource utilization of mesograzers often influences community assemblage. The marine isopod *Idotea balthica* has a vast habitat range spanning the North Atlantic and Baltic Sea and utilizes a variety of resources within its environment. As mesograzers, these isopods have been shown to adapt locally depending on season and what is available to their specific population. We conducted a series of lab and field experiments to investigate differential resource utilization by brown and green color morphs within one *I. balthica* population. Field Surveys indicate differences in isopod size and color based on field habitat and season in which they are collected. Rearing and feeding trials indicate that the brown algae *Fucus vesiculosus* is a preferred resource for feeding, growth, and sustainability for both color morphs. We also conducted artificial habitat and field tethering experiments, yielding results that suggest food is not the only factor influencing resource utilization within this population. Our findings indicate differences in susceptibility to predation of brown and green isopods tethered in Eelgrass and *Fucus* habitats. We suggest color matching to one’s habitat can provide camouflage from visually seeking predators, however, it remains difficult to tease apart whether morphology or nutritional value drive habitat preference. Our findings offer support for the interconnectedness of factors influencing community-level interactions.
+
+#Introduction  
+One widely popular topic of modern community ecology is the investigation of the many factors influencing how an organism exists and interacts within its environment. Food preference, access to food, seasonality, habitat choice, and morphological characteristics such as color all influence a species’ relative fitness within its community (Hay 1984; Puttman 1986; Orav-Kotta and Kotta 2004; Hultgren and Mittelstaedt 2015). Resource utilization in marine environments can exhibit many complexities, often because organisms use their surroundings for different purposes and on spatial and temporal scales (Kotta et al. 2000, Wernberg et al. 2013). For example, an organism’s preferred food source may not provide suitable habitat, or its preferred habitat may not provide appropriate food (Puttman 1986; Peirano et al. 2001; Galloway et al. 2014; Hultgren and Mittelstaedt 2015).  Some studies suggest the evolution of habitat preference is a direct result of protective value from predators rather than a preference for that habitat as a food source (Sotka and Hay 2002). Others argue that preference for food, in fact, has a stronger influence on an organism, overriding the necessity for shelter particularly when predation pressures are low (Bostrom and Mattila 1999; Hultgren and Mittelstaedt 2015). What is more likely is that both scenarios are at play, potentially even within one community and during different seasons.
+
+In one community study, the marine amphipod *Ampitoe longimana*, given the opportunity, grazed preferentially on seaweed lacking chemical defenses (Schnitzler et al. 2001) and yet, other studies of the same species suggest *A. longimana* populations co-occurring with chemically defended seaweeds develop stronger resistance to the seaweed’s toxins through consumption. In this case, amphipods are able to utilize the host plant for both shelter and food (Sotka and Hay 2002). Not all communities are structured equally and, often times, trade-offs for food and shelter are locally specific and may vary temporally i.e. across seasons (Duffy and Hay 1991). Exploring these trade-offs can shed light on the complex interactions that drive community structure. Understanding the drivers of community structure can aid in the development of historical baselines for future comparison within our shifting climate (Rothausler et al. 2017).
+
+Necto-benthic herbivores (mesograzers), often crustacean species, are ubiquitous to marine ecosystems and key linkages within marine food webs. In critical Eelgrass habitat, mesograzers inhibit the accumulation of epiphytes through consumption (Kotta et al. 2000; Hughes et al. 2004; Valentine and Duffy 2005; Jaschinski and Sommer 2008; Jephson et al. 2008). Mesograzer foraging along the blades of Eelgrass and macroalgae can protect marine plants from overgrowth by accumulated epiphytes (Kotta et al. 2000), as well as release blades from competitive pressures for light and nutrients (Kotta et al. 2000; Brush and Nixon 2002; Jephson et al. 2008). The marine crustacean *Idotea balthica* is found throughout the North Atlantic and Baltic Sea, colonizing both hard- and soft-bottom substrates (Jormalainen et. al. 1995; Bell and Sotka 2012). Along New England’s coast, populations of *I. balthica* are pervasive within high-energy shores, often dominated by the brown canopy forming algae *Fucus vesiculosus* (Here: *Fucus*). *I. balthica* are equally as common within sheltered coves, characterized by *Zostera marina* (Here: Eelgrass, Seagrass) (Hawkins et al. 2008; Bell and Sotka 2012). Research also suggests that I. balthica actively consume decaying Eelgrass leaves (Robertson and Mann 1980). This fragmentation of leaves creates a key intermediate trophic linkage between primary production and higher-level consumers (Robertson and Mann 1980; Peirano et al. 2001; Galloway and Eisenlord 2014). Furthermore, as prey to many larger animals, including commercially and recreationally important birds and fish, (Jarv et al. 2011) *I. balthica* influence near-shore community structure (Wernberg et al 2013). 
+
+Multi-faceted uses of resources by mesograzers make it difficult to tease out whether characteristics of food or shelter are driving resource utilization. While *I. balthica* are acknowledged for their ability to utilize a variety of resources (Franke and Janke 1998; Jormalainen et al. 2001; Goecker and Kall 2003; Orav-Kotta and Kotta 2004; Bell and Sotka 2012), research suggests juvenile isopods preferentially feed on apical portions of *Fucus* (Hultgren and Mittelstaedt 2015; Merilaita and Jormalainen 1997; Jormalainen 2001), but favor Eelgrass as habitat due to its habitat complexity; providing protection from predation (Hultgren and Mittelstaedt 2015; Jormalainen 2001). Various methods have been used to quantify these preferences for resource utilization, mainly in populations from the Baltic Sea. Past studies include: (1) fatty acid and stable isotope analysis (Galloway et al. 2014; Jaschinski et al. 2008 respectively), (2) food and habitat experiments (Jormalainen and Merilaita 1995; Bostrom and Mattila 1999; Jormalainen et al. 2001; Orav-Kotta and Kotta 2004; Bell and Sotka 2012), and (3) the assessment of resource utilization in response to the genetic variation within food sources (Hemmi and Jormalainen 2002; Hemmi and Jormalainen 2004). Evidence has shown that, as with many metapopulations, localized communities adapt depending on what resources are available to their population (Bostrom and Mattila 1999; Jaschinski 2008; Bell and Sotka 2012). Studies have also found that isopod spp. can utilize different habitats based on color polymorphism; a trait that, although common in marine ecosystems, is relatively rare in current literature (Salemaa 1978; Jormalainen et. al. 2001, Stevens 2016).
+
+Hultgren and Mittelstaedt (2015) set out to quantify variations in habitat utilization by brown and green color morphs of *Pentidotea (Idotea) wosnesenskii* within a Pacific Northwest population, a species closely related to *Idotea balthica*. Hultgren and Mittelstaedt found significant adaptive advantages for matching color to background; matching to one’s surroundings allows *Pentidotea wosnesenskii* to inhabit feed on Fucus while reducing susceptibility to predation. Here, we attempt to understand factors influencing resource utilization in a Northwest Atlantic population of *I. balthica* in an effort to tease out underlying mechanisms within our community. We use a series of lab and field experiments to investigate: 1) phenological traits of brown and green isopods through field surveys, 2) the effect of resource availability on fitness, 3) varying odds of survivorship for brown and green isopods in Eelgrass and *Fucus*, and 4) preferential habitat utilization. We found variation in isopod fitness across habitats, and also found evidence that visual cues may not be the only driver for seeking shelter in color-matching habitat.
+
+#Materials and Methods
+
+##1.1 Field Collection and Surveys
+
+We focused on a single population of *I. balthica* (Here: isopods) inhabiting Dorothy Cove, a sheltered harbor located in the Gulf of Maine in Nahant, MA (42°25’123.5” N, 70°55’11.2” W). Dorothy Cove contains both Eelgrass and Fucus spp. in abundance, making it a useful site for comparing habitats. Eelgrass (*Zostera marina*) is a marine plant forming meadows in muddy and fine sediments at 10-15meters in sheltered bays and inlets throughout the Atlantic Ocean (Pérez Llorens 2004) while *Fucus spp.* are a genus of brown macroalgae that can be found in intertidal zones throughout the world (Kotta and Kotta 2014). Isopods were collected from Dorothy Cove for use in experiments in the summer months of 2014 and 2015. 
+
+We investigated natural variation in isopod habitat preference through a series of field surveys, May through September of 2015. In the Eelgrass bed, surveys consisted of 1m2 quadrats (n=3) within which as many isopods as possible were collected. In *Fucus*, isopods were retrieved from the perimeter of two large boulders within the cove, previously determined to suitably characterize *Fucus* habitat. Photographs were taken of collected isopods and used in the analysis of size and color.
+
+During the month of August, only 24 isopods were found for collection in Dorothy Cove, compared to the average 128 collected in surveys from May through July (*see appendix for details*). This indicated to us that there may be an effect of seasonality on isopod habitat use and, as so, the following analyses investigate variables to predict habitat use. First, by coding our habitat categories with a binomial nomenclature we were able to conduct a binomial logistic regression on the odds of collection in Eelgrass compared to *Fucus* as predicted by month of collection. 
+
+```{r Survey Data, include = FALSE}
+Survey <- read_csv("../Data/Field_Survey.csv")
+str(Survey)
+head(Survey)
+#The following is the data transformation:
+#Restrict isopod size for outliers that were inherently very small or very large (not representative of this sample population with not enough others in similar size range)
+Survey <- Survey %>%
+  filter(Area < 1.5) %>%
+  filter(Area > 0.05)
+#Check the data
+Survey %>%
+  group_by(Habitat, Month) %>%
+  tally
+```
+
+```{r Habitat by Month, include = FALSE}
+#Sex did not have an effect.
+#Binomial Logistic Regression:
+Season_Binomial <- glm(Binomial_Habitat ~ Month, data = Survey,
+                       family = "binomial")
+#Test Assumptions
+#Looks good.
+SeasonalOutput <- simulateResiduals(fittedModel = Season_Binomial, n = 500)
+plotSimulatedResiduals(simulationOutput = SeasonalOutput)
+testUniformity(simulationOutput = SeasonalOutput)
+testZeroInflation(SeasonalOutput)
+
+#Anova
+Anova(Season_Binomial)
+#Coefficients and Odds Ratio
+exp(coef(Season_Binomial))
+Season_em <- emmeans(Season_Binomial, ~Month) 
+Season_tukey <-contrast(Season_em, method = "tukey")
+
+```
+
+
+In order to determine variation in isopod size in Eelgrass and *Fucus* habitats, we used ImageJ64 software (Abramoff et al 2004). In summary, carapace area was determined by measuring the perimeter of each isopod and that measurement was used as a proxy for isopod size. Similarly, in order to determine variation in isopod color across habitats, we used Adobe Photoshop CS4 11.0.1 (Adobe Systems Incorporated) to determine isopod color. Color was quantified by (1) tracing the dorsal area of the isopod, (2) recording measurements of green channel values, and (3) standardizing these values using a green color swatch included in each photograph. Methods were modified from those described by Hultgren and Stachowicz (2008). Final green values for each isopod were calculated using the equation:
+
+$$Green = GC_s - GC_i$$
+
+where $GC_s$ represents the Green Channel value of our standardized color swatch and $GC_i$ the Green Channel value of the isopod carapace in that photograph. This final value provided a green color value that accounted for variation between photographs by correcting for the green color swatch unique to each photo. Higher values indicate a more green isopod, lower indicate less.
+
+We used R statistical software to model our population (R Core Team, 2013). Green color data met the assumptions of normality and homogeneity and hence, we proceeded with an ANCOVA analysis where green channel value was the dependent variable predicted by month collected and habitat in which the isopod was collected. We queried our model using R package emmeans for estimated marginal means using Tukey methods for post hoc comparison (R Core Team, 2013). Isopod size data did not meet assumptions. In order to meet the assumptions that residuals were normally distributed, and that variances were homogeneous across groups, we reciprocally square root transformed our isopod size data. We then proceeded with an ANCOVA on a model of a three-way interaction where isopod size was a dependent variable predicted by color, month collected, and habitat in which it was collected (R Core Team, 2013). We queried our model using R package (“emmeans”) for estimated marginal means using Tukey methods for post hoc comparison (R Core Team, 2013)
+
+```{r Field Survey Analysis, include = FALSE}
+#This data has something up with it. After playing around with it, a reciprocal square root transformation seems to remedy the issue of a non-normal distribution of residuals and a funky QQ Plot. 
+#Remove the one outlier
+Survey_no_outlier <- Survey[-368,]
+Survey_Final <- Survey_no_outlier %>%
+  mutate(Month = fct_relevel(Survey_no_outlier$Month,
+                  "May", "June", "July", "August"))
+Survey_Final <- Survey_Final %>%
+  mutate(Areasq1 = (1/(sqrt(Area)))) %>%
+  mutate(lnArea = log(Area))
+####Test the three-way interaction:####
+Size_lm <- lm(Areasq1 ~ Habitat*Green*Month, data = Survey_Final)
+Size_Anova <- Anova(Size_lm)
+
+#####Test assumptions####
+plot(Size_lm, which = c(1, 2, 4, 5))
+res_Size <- residuals(Size_lm)
+hist(res_Size)
+#Not ideal but Jarrett says okay.
+
+#####Trends for interactions####
+Size_tr <- emtrends(Size_lm, ~Habitat | Month, "Green")
+Size_tr 
+contrast(Size_tr) %>% tidy
+contrast(Size_tr, "tukey") %>% tidy()
+
+####Post-Hoc: Tukey's HSD####
+Size_em <- contrast(emmeans(Size_lm, ~Habitat | Month), method = "tukey", adjust = "none")
+
+####Test Two Way Interaction: Color####
+#Test it
+color_lm <- lm(Green ~ Habitat * Month, data = Survey_Final)
+Anova(color_lm)
+summary(color_lm)
+
+####Test assumptions####
+plot(color_lm, which = c(1, 2, 4, 5))
+res_color <- residuals(color_lm)
+hist(res_color)
+#Looks great
+
+####Post-Hocs: Tukey HSD####
+color_em <- contrast(emmeans(color_lm, ~Habitat|Month), method = "tukey", adjust = "none")
+color_em
+
+```
+
+```{r Three-Way Interaction Graph, include = FALSE}
+#Linear Predictions
+size_predict <- predict(Size_lm, interval = "confidence")
+#Bind to raw data
+Size_Final <- cbind(Survey_Final, size_predict)
+
+Three_Way_Plot <- ggplot(data = Size_Final) +
+  geom_point(mapping = aes(x = Green, y = Areasq1, color = Habitat),
+             alpha = 0.5) +
+    geom_ribbon(data = Size_Final, aes(x = Green,
+                                 ymin = lwr,
+                                 ymax = upr,
+                                 group = Habitat,
+                                 alpha = 0.5),
+              fill = "lightgrey") +
+  geom_line(mapping = aes(x = Green, y = fit, color = Habitat, linetype = Habitat), size = 1) +
+  scale_color_manual(values = c("chartreuse4", "tan4")) +
+  facet_grid(rows = "Month") +
+  ggtitle("Isopod Size by Color*Month*Habitat")+
+  labs(x = "Green Value",
+       y = bquote('Size'~(cm^2)),
+       size = 15)+
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000", 
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5))+
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16)) +
+  theme_bw()
+```
+
+```{r Field Survey Color Graph, echo = FALSE}
+Two_Way_Plot <- ggplot(data = Survey_Final) +
+  geom_boxplot(mapping = aes(x = Habitat, y = Green, color = Habitat)) +
+  facet_grid(rows = "Month") +
+  scale_color_manual(values = c("chartreuse4", "tan4")) +
+  ggtitle("Isopod Color by Month and Habitat")+
+  labs(x = "Field Habitat",
+       y = "Green Value",
+       size = 14)+
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000", 
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5))+
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16)) +
+  theme_bw()
+
+```
+
+##1.2 Rearing Trials
+
+To investigate growth and survivorship of isopods in response to food source; we collected individuals from Dorothy Cove in June of 2014 for rearing trials. Prior to initiating rearing treatments, isopods were housed in plastic flow-through containers (length: 30cm, width: 17cm, height: 10cm). In order to control for differences in growth rate that may be due to age, juvenile isopods were used. A combination of *Fucus*, Eelgrass, and Detrital Eelgrass (free-floating, decaying Eelgrass leaves) were added to isopod flow-through containers as food, as they are the most commonly accepted food sources for isopods in-situ (Hultgren and Mittelstaedt 2015; Jormalainen 2008).
+
+Application of rearing treatments commenced no more than 3 days after isopod collection. After obtaining an initial photograph for size measurements, isopods were relocated into 9oz. clear plastic SOLO cups containing ~8oz of seawater. Food sources were collected from Dorothy Cove, Nahant, MA, and rearing treatments represented one of 3 possible food sources: (1) *Fucus*, (2) healthy Eelgrass leaves, or (3) Detrital Eelgrass (here on: Detritus). A total of 75 replicates (n=25) were maintained for 23 days (±4 days). SOLO cups were rinsed 1-2 times per week and replenished with fresh seawater and food to ensure consistent rearing conditions. Isopod mortality was recorded weekly over the course of rearing, and at the termination of the rearing trial a final photo was taken to be compared to initial photographs of each surviving isopod for use in analysis of growth. 
+
+We tested for variations in isopod survival using a binomial logistic regression with survival as the dependent variable (coded 0 = Death, 1 = Survival) and the three rearing treatment levels as categorical predictors. Using the R package DHARMa we tested that our model met assumptions. Our rearing survivorship model passed a goodness of fit test and did not indicate zero inflation (R Core Team, 2013). We queried our model using R package (“emmeans”) for estimated marginal means using Tukey methods for post hoc comparison (R Core Team, 2013)
+
+##1.3 Growth Rate  
+We tested growth rate in response to food source by comparing initial and final photographs of each surviving reared isopod. Using ImageJ64 software, we quantified growth with methods similar to those describe by Abramoff et al (2004). Similar to size measurements, carapace area was determined by measuring the perimeter of each isopod in its respective initial and final photographs. Growth rate was then calculated using the following equation:
+
+$$Growth Rate = \frac{A_i - A_f}{T}$$
+
+Where $A_i$ represents area calculated from the initial photograph, $A_f$ represents area calculated from the final photograph, and $T$ represents the total number of days that isopod was subjected to its rearing treatment (23 days ±4 days). Isopods that did not survive rearing treatment were excluded from further analyses. Growth data did not meet the assumptions of homogeneity in variance across treatments. Rather than transforming the data, we used a generalized least squares model, fit by maximizing the restricted log-likelihood (REML). Analysis was conducted using R’s (“nlme”) package and assumptions were tested using R’s (“lattice”) package (R Core Team, 2013). We queried our model using R package (“emmeans”) for estimated marginal means using Tukey methods for post hoc comparison. 
+
+```{r Load Rearing Treatment Data, include = FALSE}
+Growth <- read_csv("../Data/Rearing.csv") 
+#Omit NAs and Rename Columns
+Growth <- na.omit(Growth) %>%
+  rename(Growth_Rate = `Growth Rate`,
+         Treatment = `Rearing Treatment`)
+head(Growth)
+
+#Survivorship
+Rearing_Survival <- read_csv("../Data/Rearing_Survivorship.csv")
+Rearing_Survival$Food <- factor(Rearing_Survival$Food)
+```
+
+
+```{r Growth Rate Analyses, include = FALSE}
+####Test It####
+growth_lm <- lm(Growth_Rate ~ Treatment, data = Growth)
+####Assumptions####
+plot(growth_lm, which = c(1, 2, 4, 5))
+res_growth <- residuals(growth_lm)
+hist(res_growth)
+#This data does not meet the assumption of equal variance between groups (Treatments). Rather than Log transforming the data, I will useMean-variance scaling and Generalized Least Squares
+####Generalized Least Squares#### 
+Growth_gls <- gls(Growth_Rate ~ Treatment, data = Growth,
+                  weights = varIdent(~ Treatment))
+summary(Growth_gls)
+
+####GLS Assumptions - Autocorrelation####
+plot(ACF(Growth_gls), alpha = 0.05)
+#this shows that there is some strong autocorrelation pattern in the data in order to account for that, we use the gls function to update the model
+model6=update(Growth_gls, correlation = corAR1())
+####Compare the two models####
+growth_table <- summary(model6)
+summary(Growth_gls)
+#We see that this new model predicts a little better than the 
+#other. Allows us to flexibly incorporate autocorrelation into
+#our model
+
+####Post-Hocs: eemmeans and contrasts#### 
+Growth_em <- emmeans(model6, ~`Treatment`)
+Growth_em
+Growth_tukey <- emmeans::contrast(Growth_em, method = "tukey")
+```
+
+```{r Rearing Survivorship Analysis, include = FALSE}
+#This is proportional survivorship (0 or 1) data, as so we want to complete a binomial logistic regression looking at how Survival is influence by food type. 
+#Looked at size and it was not significant
+####Test it####
+Rearing_logit <- glm(Survival ~ Food,
+                 data = Rearing_Survival, family = "binomial")
+summary(Rearing_logit)
+Anova(Rearing_logit)
+
+####Test Assumptions####
+#Simulate residuals to see if the model is working well
+simulationOutput <- simulateResiduals(fittedModel = Rearing_logit, n = 500)
+plotSimulatedResiduals(simulationOutput = simulationOutput)
+#QQ Plot looks good and residuals vs. predicted okay.
+#Goodness-of-fit test:
+testUniformity(simulationOutput = simulationOutput)
+#Test for zero inflation
+testZeroInflation(simulationOutput)
+#Looks good
+
+####Post-Hoc Comparisons####
+Rearing_em <- emmeans(Rearing_logit, ~Food)
+Rearing_Tukey<- emmeans::contrast(Rearing_em,
+                                method = "tukey")
+#Wald test for an overall effect of food source:
+wald.test(b = coef(Rearing_logit), Sigma = vcov(Rearing_logit), Terms = 2:3)
+#The chi-squared test statistic of 10.0 with 2 degrees of freedom is associated with a p-value of 0.0067 indicating that the overall effect of treatment is statistically significant. 
+
+#Interpret as odds-ratios with 95% CI
+#odds ratios and 95% CI:
+exp(cbind(OR = coef(Rearing_logit), confint(Rearing_logit)))
+#For one unit increase in Eelgrass the odds of survival increased by a factor of 0.85 while for a one unit increase in Fucus the odds of survival increase by a factor of 25.9
+```
+
+```{r Rearing Treatment Graphs, echo = FALSE}
+####Growth Rate Plot####
+Growth_plot <- ggplot(Growth, aes(x = Treatment, y = Growth_Rate, fill = Treatment)) +
+  geom_boxplot(fill = c("gray21", "chartreuse4", "tan4")) +
+  ggtitle("Growth Rate by Rearing Treatment") +
+                  labs(x = "Food Source",
+                       y = bquote('Growth Rate'~(mm^2/day)),
+                       size = 14) +
+                  theme(plot.title = element_text(hjust = 0.5,
+                        family = "Times",
+                        color = "#000000",
+                        face = "bold",
+                        size = 20)) +
+                  theme(axis.title = element_text(family = "Times", color = "#000000", size = 16)) +
+  theme_classic()
+
+####Survivorship Plot####
+Rear2 <- Rearing_Survival %>%
+  group_by(Food) %>%
+  mutate(avg = mean(Survival)) %>%
+  mutate(stde = (sd(Survival) / sqrt(length(Survival))))
+#Find the averages
+Rear_sum <- Rear2 %>%
+  group_by(Food) %>%
+  summarise(rear_surv = (sum(Survival/length(Survival))),
+            stde = mean(stde)) %>%
+  ungroup()
+#Graph with standard errors
+RearPlot <- ggplot(data = Rear_sum,
+                   mapping = aes(x = Food, y = rear_surv, fill = Food)) +
+  geom_col(fill = c("gray21", "chartreuse4", "tan4")) +
+  geom_errorbar(aes(ymin = rear_surv - stde, ymax = rear_surv + stde),
+                width = 0.1) +
+                ggtitle("Rearing Survivorship") +
+                  labs(x = "Food Source",
+                       y = "Proportion Surviving",
+                       size = 15) +
+                  theme(plot.title = element_text(hjust = 0.5,
+                                  family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 20)) +
+     theme(axis.title = element_text(family = "Times",
+                                    color = "#000000",
+                                     size = 16)) +
+  theme_classic()
+```
+
+##1.4 Tethering Trials
+In order to compare the susceptibility of brown and green isopods to predation, we conducted tethering experiments in October of 2014. To determine susceptibility in Eelgrass beds, size-paired isopods (one brown and one green per pair) were tethered, in a manner similar to SquidPops described by Duffy et al. 2015, via superglue to 10cm of fishing line with one isopod per line. Fishing line was attached to a 60 cm long clear acrylic rod measuring 0.5 cm in diameter (n=20). Rods were then deployed along a 20m transect in Dorothy Cove, with ~¾ of the acrylic rod sunk into the sediment. Tethered isopods rested ~10cm above the sediment and each pair of isopods was deployed ½ meter apart along either side of the transect. Tethering units were collected after 24 hours and isopods were scored for survivorship. Levels of survivorship included 0 (no isopod remaining), and 1 (isopod still present). 
+
+A separate experiment involving similar methods was used to determine isopod susceptibility to predation in *Fucus*. Size-paired isopods (one green and one brown) were super-glued to the end of a 10cm piece of fishing line that was tied to a white plastic cable-tie. Paired isopods were then deployed in Dorothy Cove by securing cable-ties to the thallus of *Fucus* plants located on two large boulders (the same boulders used in isopod collection and surveys). Paired isopods were secured ½ meter apart along a transect that circumvented the boulder. One boulder was 6.3m in circumference while the other was 6.5m. We deployed 5 replicate pairs at each *Fucus* boulder and the experiment was run twice (n=20). Isopods were collected 24 hours after deployment and survivorship was scored in the same fashion as Eelgrass trials.
+
+We tested for variations in isopod survival with multiple binomial logistic regressions, one representing each experimental habitat. We used survival as the dependent variable (coded 0 = Death, 1 = Survival) and isopod color as categorical predictor. We tested assumptions using R’s (“DHARMa”) package, and data met all assumptions (R Core Team, 2013). We queried our model using R package (“emmeans”) for estimated marginal means using Tukey methods for post hoc comparison
+
+```{r Load Tether Trial Data, include = FALSE}
+#Logistic Regression for each Habitat
+Seagrass <- read_csv("../Data/Seagrass_Tether.csv")
+Seagrass$Isopod_Color <- factor(Seagrass$Isopod_Color)
+
+Fucus <- read_csv("../Data/Fucus_Tether.csv")
+Fucus$Color <- factor(Fucus$Color)
+```
+
+```{r Tether Trial Analyses, include = FALSE}
+#We have count data again so a binomial logistic regression is appropriate.
+####Seagrass####
+#Test it####
+eelgrass_logit <- glm(`Survivorship Eelgrass` ~ Isopod_Color + `Size Eelgrass`, data = Seagrass, family = "binomial")
+summary(eelgrass_logit)
+Anova(eelgrass_logit)
+#Color is significant but size is not. 
+
+####Assumptions####
+#Simulate residuals to see if the model is working well
+EelgrassOutput <- simulateResiduals(fittedModel = eelgrass_logit, n = 250)
+plotSimulatedResiduals(EelgrassOutput)
+#Goodness-of-fit test:
+testUniformity(simulationOutput = EelgrassOutput)
+#Test for zero inflation
+testZeroInflation(EelgrassOutput)
+#Looks good
+
+####Post-Hoc Comparisons####
+eelgrass_em <- emmeans(eelgrass_logit, ~Isopod_Color)
+eelgrass_tukey <- emmeans::contrast(eelgrass_em,
+                                method = "tukey")
+
+####Fucus####
+####Test it####
+fucus_logit <- glm(Survivorship ~ Color, data = Fucus,
+                   family = "binomial")
+summary(fucus_logit)
+Anova(fucus_logit)
+
+####Assumptions####
+FucusOutput <- simulateResiduals(fittedModel = fucus_logit, n = 250)
+plotSimulatedResiduals(FucusOutput)
+#Goodness-of-fit test:
+testUniformity(simulationOutput = FucusOutput)
+#Test for zero inflation
+testZeroInflation(FucusOutput)
+#Looks good
+
+####Post Hoc Comparisons####
+#Find emmeans and standard error for each interaction
+fucus_em <- emmeans(fucus_logit, ~Color)
+fucus_tukey <- emmeans::contrast(fucus_em,
+                                method = "tukey")
+```
+
+```{r Tether Plot, include = FALSE}
+Tether <- read_csv("../Data/Tether.csv") %>%
+  group_by(Habitat, Color) %>%
+  mutate(avg = mean(Survivorship)) %>%
+  mutate(stde = (sd(Survivorship)/sqrt(length(Survivorship))))
+
+tether_sum <- Tether %>%
+  group_by(Habitat, Color) %>%
+  summarise(size_surv = (sum(Survivorship/length(Survivorship))),
+            stde = mean(stde)) %>%
+  ungroup()
+
+TetherPlot <- ggplot(data = tether_sum, 
+                     mapping = aes(x = Color, y = size_surv, fill = Color)) +
+  geom_col(fill = c("tan4", "chartreuse4", "tan4", "chartreuse4")) +
+  geom_errorbar(aes(ymin = size_surv - stde, ymax = size_surv + stde),
+                width = 0.1, color = "gray22") +
+  facet_wrap(~Habitat) +
+  ggtitle("Tether Trial") +
+  labs(x = "Isopod Color",
+       y = "Proportion Surviving") +
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5)) +
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16))
+
+```
+
+##1.5 Artificial Habitat Experiments
+
+We tested whether brown and green isopods selected for habitat based on color and morphology through multiple artificial habitat experiments. All experiments consisted of some combination of Artificial Seagrass Units (ASUs) and Artificial Fucus Units (AFUs):
+
+**ASUs** consisted of a 20cm diameter circle of vexar with 7 strands of 0.95cm polypropylene curling ribbon, measuring 50 cm total; creating two 25cm “shoots” per strand. A shoot density of 7 was chosen based on prior field sampling at Dorothy Cove, which yielded an average of 6.75 shoots per 20cm wire ring.   
+**AFUs** consisted of a 20cm diameter circle of vexar with 7 “clusters” of 1.825cm polypropylene curling ribbon. Each cluster contained four 13cm blades to imitate Fucus morphology. Precautions were taken/artificial units were constructed in a way to keep habitat area consistent between artificial habitats. Total possible habitat area of AFUs totaled 642.4cm^2 and habitat area of ASUs totaled 666.75cm^2.
+
+Isopods were collected from Dorothy Cove in Nahant, MA on September 4th, 2014 and again in 2015 for a second set of trials. Isopods were housed in flow-through seawater tanks at Northeastern University’s Marine Science Center Greenhouse facility. Tanks contained potted Eelgrass plants and isopods were free to graze on naturally growing Eelgrass and epiphytes while being held. Tanks were 33 inches in diameter, holding a maximum of 54 gallons of seawater supplied by Northwestern Atlantic at a rate of 10L minute-1. Artificial habitat trials were run in the same 54-gallon tanks. For the first set of trials, in order to determine habitat color preference of brown and green isopods, 4 matching artificial habitat units were placed in each replicate tank (2 brown and 2 green). Artificial habitat units were left for one week prior to experimental use to allow natural epiphyte colonization. Sand collected from Dorothy Cove was added to the bottom of each tank to act as natural substrate. At the commencement of artificial habitat trials, one isopod was added to the center of each tank. The color and location of each isopod, within its tank, was recorded using 5 observations over the course of 4 hours.
+
+This experiment was replicated multiple times over the course of four weeks (n=12). Possible isopod locations included (1) Green habitat, (2) Brown habitat, (3) Swimming, (4) Other: side of tank, center of tank, or on drainage pipe. Proportion of time spent in each location was determined with the following equation:
+
+$$Proportion = \frac{obs_x}{Total Observations}$$
+
+Where $obs_x$ represents the total number of observations of an isopod in x habitat and $Total Observations$ represents the total number of observations collected for that replicate. Multiple methods for statistical analyses were tried including t-tests, and multinomial logistic regressions. Ultimately, due to our use of proportional data we decided to conduct a series of beta regressions assessing the differences in habitat use of brown and green isopods. Separate beta regressions were performed for each of the four possible location categories, using trial type as a fixed block effect. Analyses were conducted using the R package (“betareg”) and post-hoc estimated means were found using the (“emmeans”) package (R Core Team, 2013). 
+Following our initial trials, in order to investigate variation in isopod habitat preference in response to varying habitat morphology, a second set of trials was completed throughout the summer of 2015. During these trials, experimental setup remained the same, however, artificial habitats were crossed by habitat type and color. Possible treatments included (1) Brown ASU/Brown AFU (n = 76), (2) Green ASU/Green AFU (n= 76), (3) Green ASU/Brown AFU (n = 48), and (4) Brown ASU/Green AFU (n = 48). Trials were conducted similar to the first set of artificial habitat trials and used the same artificial habitat units. The color and location of each isopod was recorded using 4 observations over the course of 3 hours, beginning 5 minutes after the isopod was added to the tank. Possible isopod locations included (1) Artificial Seagrass, (2) Artificial Fucus, (3) Other: side of tank, center of tank, or on drainage pipe. 
+For this second round of trials we conducted another set of regressions using R statistical software (R Core Team, 2013). To predict variation in habitat use we compared the use of one artificial habitat to the use of others in each trial. We used isopod color, date collected, and field habitat (where possible) as independent variables and location as the dependent variable. Beta regressions allow analysis of proportional data but require data to be bound between 0 and 1. As so, all beta regression data was transformed where 0.05 was added to values of 0 and 0.05 was subtracted from values of 1. 
+
+```{r Load Artificial Habitat Data, include = FALSE}
+#Mixed Trials
+Trials <- read_csv("../Data/Artificial_Habitat.csv")
+#Same Habitat Trials (mine)
+First_Trials <- read_csv("../Data/First_Habitat_Trials.csv")
+#Trials with One Color
+Trial2_field_match <- read_csv("../Data/Artificial_Same_Color_Mixed_Habitat.csv")
+```
+
+```{r Data Manipulation, include = FALSE}
+#Create Data for Trials with same color mixed habitat
+#mutate all proportions to make then (0>1)
+###Randall's Trials####
+Trials <- Trials %>%
+  mutate(BASU_new = case_when(.$BASU_prop == 0 ~ "0.005",
+                              .$BASU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(BASU_prop))) %>%
+  mutate(BASU_new = as.numeric(.$BASU_new)) %>%
+  mutate(BAFU_new = case_when(.$BAFU_prop == 0 ~ "0.005",
+                              .$BAFU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(BAFU_prop))) %>%
+  mutate(BAFU_new = as.numeric(.$BAFU_new))%>%
+  mutate(GASU_new = case_when(.$GASU_prop == 0 ~ "0.005",
+                              .$GASU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(GASU_prop))) %>%
+  mutate(GASU_new = as.numeric(.$GASU_new)) %>%
+  mutate(GAFU_new = case_when(.$GAFU_prop == 0 ~ "0.005",
+                              .$GAFU_prop == 1 ~ "0.995",
+                            TRUE ~ as.character(GAFU_prop))) %>%
+  mutate(GAFU_new = as.numeric(.$GAFU_new))
+
+####My Trials####
+First_Trials <- First_Trials %>%
+  mutate(In_Brown_new = case_when(.$In_Brown == 0 ~ "0.005",
+                              .$In_Brown == 1 ~ "0.995",
+                            TRUE ~ as.character(In_Brown))) %>%
+  mutate(In_Brown_new = as.numeric(.$In_Brown_new)) %>%
+  mutate(In_Green_new = case_when(.$In_Green == 0 ~ "0.005",
+                              .$In_Green == 1 ~ "0.995",
+                            TRUE ~ as.character(In_Green))) %>%
+  mutate(In_Green_new = as.numeric(.$In_Green_new))%>%
+  mutate(Swimming_new = case_when(.$Swimming == 0 ~ "0.005",
+                              .$Swimming == 1 ~ "0.995",
+                            TRUE ~ as.character(Swimming))) %>%
+  mutate(Swimming_new = as.numeric(.$Swimming_new)) %>%
+  mutate(Other_new = case_when(.$Other == 0 ~ "0.005",
+                              .$Other == 1 ~ "0.995",
+                            TRUE ~ as.character(Other))) %>%
+  mutate(Other_new = as.numeric(.$Other_new))
+```
+
+```{r Initial Visualizations, include = FALSE}
+#Initial Visualizations
+ggplot(Trials,
+       aes(x = Trial_Type, y = BAFU_new, fill = Field_Habitat)) +
+  geom_col() +
+  facet_wrap(~Isopod_Color) # This is interesting
+
+ggplot(Trials,
+       aes(x = Trial_Type, y = BASU_new, fill = Isopod_Color)) +
+  geom_boxplot()
+
+ggplot(Trials,
+       aes(x = Trial_Type, y = BAFU_new, fill = Field_Habitat)) +
+  geom_boxplot()
+
+ggplot(Trials,
+       aes(x = Trial_Type, y = BASU_new, fill = Field_Habitat)) +
+  geom_boxplot()
+
+#Select out the trials that do not have BAFU
+```
+
+```{r Beta Regressions, include = FALSE}
+#Not all potential levels of field habitat were represented in each trial so I had to approach beta regressions by what information was available.
+#Create data for trials
+Trial1 <- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("BASU/BAFU", "GASU/BAFU"))
+
+Trial2_Brown<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type == "BASU/BAFU")
+
+Trial2_Green <- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type == "GASU/GAFU")
+
+Trial3<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("BASU/BAFU","BASU/GAFU"))
+
+Trial4<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("GASU/BAFU","GASU/GAFU"))
+
+Trial5<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("GASU/BAFU"))
+
+Trial6<- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("GASU/GAFU","BASU/GAFU"))
+
+Trial7 <- Trials %>%
+  group_by(Trial_Type) %>%
+  filter(Trial_Type %in% c("BASU/GAFU"))
+
+Trial1_beta <- betareg(BAFU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial1)
+Anova(Trial1_beta)
+plot(Trial1_beta, which = 4)
+cld(emmeans(Trial1_beta, ~ Trial_Type | Isopod_Color))
+
+Trial2_Brown_beta <- betareg(BAFU_new ~ Isopod_Color * Field_Habitat,
+                      data = Trial2_Brown)
+Anova(Trial2_Brown_beta)
+plot(Trial2_Brown_beta, which = 4)
+cld(emmeans(Trial2_Brown_beta, ~ Isopod_Color|Field_Habitat))
+
+Trial2_Green_beta <- betareg(GAFU_new ~ Isopod_Color * Field_Habitat, data = Trial2_Green)
+Anova(Trial2_Green_beta)
+cld(emmeans(Trial2_Green_beta, ~Isopod_Color*Field_Habitat))
+
+Trial3_beta <- betareg(BASU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial3)
+Anova(Trial3_beta)
+plot(Trial3_beta, which = 4)
+cld(emmeans(Trial3_beta, ~ Isopod_Color|Trial_Type))
+
+Trial4_beta <- betareg(GASU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial4)
+Anova(Trial4_beta)
+plot(Trial4_beta, which = 4)
+cld(emmeans(Trial4_beta, ~ Isopod_Color|Trial_Type))
+
+Trial5_beta <- betareg(GASU_new ~ Isopod_Color * BAFU_new + Date_of_Collection, data = Trial5)
+Anova(Trial5_beta)
+cld(emmeans(Trial5_beta, ~ Isopod_Color))
+
+Trial6_beta <- betareg(GAFU_new ~ Isopod_Color * Trial_Type + Date_of_Collection,
+                      data = Trial6)
+Anova(Trial6_beta)
+plot(Trial6_beta, which = 4)
+cld(emmeans(Trial6_beta, ~ Isopod_Color|Trial_Type))
+
+Trial7_beta <- betareg(BASU_new ~ Isopod_Color * GAFU_new + Date_of_Collection, data = Trial7)
+plot(Trial7_beta, which = 4)
+Anova(Trial7_beta)
+cld(emmeans(Trial7_beta, ~ Isopod_Color*GAFU_new|Date_of_Collection))
+
+```
+
+```{r Mixed Habitat Plots, include = FALSE}
+Trial2_sum <- Trial2_Green %>% 
+ group_by(Isopod_Color, Field_Habitat) %>%
+  mutate(avg = mean(GAFU_prop)) %>%
+  mutate(stde = (sd(GAFU_prop)/sqrt(length(GAFU_prop))))
+
+Trial2_sum <- Trial2_sum %>%
+  group_by(Isopod_Color, Field_Habitat) %>%
+  summarise(Fucus_prop = (sum(GAFU_prop/length(GAFU_prop))),
+            stde = mean(stde)) %>%
+  ungroup()
+
+Trial2_Plot <- ggplot(data = Trial2_sum, 
+       mapping = aes(x = Field_Habitat, y = Fucus_prop, 
+      group = Isopod_Color, fill = Isopod_Color)) +
+  geom_col() +
+  scale_fill_manual(values = c("tan4", "chartreuse4"))+
+  theme_classic() +
+  ggtitle("Green ASU/Green AFU")+
+  labs(x = "Field Habitat",
+       y = "Time Spent in Green AFU (%)") +
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 12,
+                                  hjust = 0.5)) +
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 12))
+
+Trial5_sum <- Trial5 %>% 
+ group_by(Isopod_Color) %>%
+  mutate(avg_BAFU = mean(BAFU_prop)) %>%
+  mutate(stde_BAFU = (sd(BAFU_prop)/sqrt(length(BAFU_prop))))
+
+Trial5_Plot <- ggplot(data = Trial5_sum, 
+       mapping = aes(x = Isopod_Color, y = avg_BAFU, 
+                     fill = Isopod_Color)) +
+  geom_col() +
+  scale_fill_manual(values = c("tan4", "chartreuse4"))+
+  theme_classic() +
+  ggtitle("Green ASU/Brown AFU") +
+  labs(x = "Isopod Color",
+       y = "Time Spent in Brown AFU (%)") +
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 12,
+                                  hjust = 0.5)) +
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 12))
+
+Significant_Mixed_Plot <- plot_grid(Trial2_Plot, Trial5_Plot)
+```
+
+```{r Artificial Habitat Plot, include = FALSE}
+First_Trials <- read_csv("../Data/First_Habitat_Trials.csv")
+#Can try a beta regression with the same manipulation of the data
+First_Trials <- First_Trials %>%
+  mutate(In_Brown_new = case_when(.$In_Brown == 0 ~ "0.005",
+                              .$In_Brown == 1 ~ "0.995",
+                            TRUE ~ as.character(In_Brown))) %>%
+  mutate(In_Brown_new = as.numeric(.$In_Brown_new)) %>%
+  mutate(In_Green_new = case_when(.$In_Green == 0 ~ "0.005",
+                              .$In_Green == 1 ~ "0.995",
+                            TRUE ~ as.character(In_Green))) %>%
+  mutate(In_Green_new = as.numeric(.$In_Green_new))%>%
+  mutate(Swimming_new = case_when(.$Swimming == 0 ~ "0.005",
+                              .$Swimming == 1 ~ "0.995",
+                            TRUE ~ as.character(Swimming))) %>%
+  mutate(Swimming_new = as.numeric(.$Swimming_new)) %>%
+  mutate(Other_new = case_when(.$Other == 0 ~ "0.005",
+                              .$Other == 1 ~ "0.995",
+                            TRUE ~ as.character(Other))) %>%
+  mutate(Other_new = as.numeric(.$Other_new))
+
+#Seperate beta regressions for each possible location
+brown_beta <- betareg(In_Brown_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+
+Anova(brown_beta)
+plot(brown_beta, which = 4)
+cld(emmeans(brown_beta, ~Isopod_Color|Trial_Type))
+
+#Beta regression on time spent in green habitat
+green_beta <- betareg(In_Green_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+plot(green_beta, which = 4)
+Anova(green_beta)
+cld(emmeans(green_beta, ~Isopod_Color|Trial_Type))
+
+#Beta regression on time spent swimming
+swimming_beta <- betareg(Swimming_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+plot(swimming_beta, which = 4)
+Anova(swimming_beta)
+cld(emmeans(swimming_beta, ~Isopod_Color|Trial_Type))
+
+#Beta regression on time spent in other
+other_beta <- betareg(Other_new ~ Isopod_Color * Trial_Type,
+                      data = First_Trials)
+plot(other_beta, which = 4)
+Anova(other_beta)
+cld(emmeans(other_beta, ~Isopod_Color|Trial_Type))
+```
+
+```{r Plot for First Trials, include = FALSE}
+First_Trials_Plot <- read_csv("../Data/First_Habitat_Trials_Long.csv") %>%
+  group_by(Isopod_Color, Trial_Type, Location) %>%
+  mutate(avg = mean(Proportion)) %>%
+  mutate(stde = (sd(Proportion)/sqrt(length(Proportion))))
+
+Trial_sum <- First_Trials_Plot %>%
+  group_by(Isopod_Color, Trial_Type, Location) %>%
+  summarise(trial_prop = (sum(Proportion/length(Proportion))),
+            stde = mean(stde)) %>%
+  ungroup()
+head(Trial_sum)
+
+Trial_Plot <- ggplot(data = Trial_sum, 
+                     mapping = aes(x = Location, y = trial_prop, group = Isopod_Color, fill = Isopod_Color)) +
+  geom_col(fill = c("tan4", "chartreuse4", "tan4", "chartreuse4", "tan4", "chartreuse4", "tan4", "chartreuse4","tan4", "chartreuse4", "tan4", "chartreuse4","tan4", "chartreuse4", "tan4", "chartreuse4"), position = "dodge2") +
+  geom_errorbar(aes(ymin = trial_prop - stde, ymax = trial_prop + stde),
+        position = position_dodge(width = 0.9), 
+        width = 0.3) +
+  facet_wrap(~Trial_Type) +
+  ggtitle("Artificial Habitat Experiments") +
+  labs(x = "Artificial Habitat",
+       y = "Time Spent (%)") +
+  theme(plot.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  face = "bold",
+                                  size = 20,
+                                  hjust = 0.5)) +
+  theme(axis.title = element_text(family = "Times",
+                                  color = "#000000",
+                                  size = 16))
+```
+
+#Results
+
+##2.1 Field Collection and Surveys
+We found differences in numbers of isopods collected in *Fucus* compared to Eelgrass based on month of collection (Table 1: ChiSq = 25.56, p <0.0001). On average, isopods were twice as likely to be collected in Eelgrass in August, but in July were 67% less likely to be collected in Eelgrass than in *Fucus* (Tukey HSD Contrast: p = 0.0036; Eelgrass mean (July) ± standard error = -0.677 ± 0.221, Eelgrass mean (August) ± standard error = 1.099 ±0.471). 
+
+An analysis of covariance (ANCOVA) on isopod green color value yielded significant variation among habitat and month collected (Table 3, Figure 1: Habitat: F1 = 21.4, p<0.0001, Month: F3 = 14.1, p < 0.0001, HabitatxMonth: F3 = 17.00, p <0.0001) . A post hoc Tukey test showed that in the moths of May and June isopods found in *Fucus* were significantly less green than those found in Eelgrass at p<0.0001 and p < 0.002 respectively (Table 4 Figure 1). Isopods collected in *Fucus* in July were, on average, less green than those collected from Eelgrass at p < 0.001, yet there was no significant difference in isopod green color value between collection habitats in the month of August at p = 0.062 (Table 4, Figure 1)
+
+```{r, fig.cap = "**Figure 1**: Means +/- SE for Isopod Green Color Value as Predicted by Field Habitat and Month Collected", echo = FALSE}
+Two_Way_Plot
+```
+
+An analysis of covariance (ANCOVA) on our three-way interaction model allowed us to query these interactions further (Table 5, Figure 2). Using isopod size as our dependent variable, our ANCOVA yielded significant variation among isopod color and month (Table 5: Color: F1 = 16.2, p < 0.0001, Month: F3 = 17.6, p < 0.0001). Furthermore, there were significant interactions between Habitat and Month, as well as Color and Month (Table 5: HabitatxMonth: F3 = 3.78, p = 0.011, ColorxMonth: F3 = 7.23, p < 0.0001). There was no significant interaction of Habitat in this three-way model (Table 5, Figure 2: F1 = 0.39, p = 0.531), nor were the interactions of HabitatxColor or HabitatxColorxMonth significant (Table 5: HabitatxColor: F1 = 2.87, p = 0.091, HabitatxColorxMonth: F3 = 1.06, p = 0.365). 
+
+An analysis of trends using post-hoc Tukey comparisons suggest that the strongest interaction for predicting isopod size as driven by color and habitat is at the beginning of the summer season in May (Table 6, Figure 2: *Fucus* vs. Eelgrass in May: F371 = -2.27, p = 0.024). Other months did now show significant trends (Table 6, Figure 2)
+
+```{r, fig.cap = "**Figure 2:** Fitted Results of Three-Way Interaction Model Overlayed on Raw Data. Confidence intervals represent alpha = 0.5", echo = FALSE}
+Three_Way_Plot
+```
+
+##2.2 Rearing
+
+A binomial logistic regression determined that during the 24-day rearing period, Isopods fed *Fucus* had a higher probability of survival when compared to isopods fed Eelgrass or Detritus (p <0.0001, Table 8, Figure 3). A post hoc Tukey test revealed that isopods fed Detritus were 3.26 times less likely to survive than those fed Fucus (Table 9, Figure 3: SE = 1.10, p = 0.0083). Isopods fed Eelgrass were 3.42 times less likely to survive than those fed *Fucus* (Table 9: SE = 1.010, p = 0.0052). A post hoc Tukey test also revealed that probability of survival for Eelgrass- and Detritus-reared isopods did not differ (Table 9: p = 0.95). 
+
+```{r, fig.cap = "**Figure 3**: Estimated Proportion of Isopods Surviving (+/- SE) by Rearing Treatment", echo = FALSE}
+RearPlot
+```
+
+When pre- and post-rearing photographs were compared for analysis of growth, our Generalized Least Squares analysis yielded significant variation among rearing treatments (Table 8; Fig. 4; df = 3, ChiSq = 149.98, Prob>ChiSq = <0.001). On average, when fed Eelgrass or Detritus, isopods grew 77% less than those reared on *Fucus* (Means ± standard error: Fucus: 437.022 ± 50.725, Eelgrass: 113.998 ± 26.455, Detritus: 89.582 ±11.847). A post hoc Tukey test showed that eelgrass-and detritus-reared isopod groups were not significantly different from one another (Table 8: Tukey HSD: p = 0.747). When fed Eelgrass, isopod growth rate was lower than those reared on *Fucus* (Table 8: Tukey HSD: p <0.0001). Similarly, when fed Detritus, isopod growth rate was less than those reared on *Fucus* (Table 8: Tukey HSD: p < 0.0001). 
+
+```{r, fig.cap = "**Figure 4**: Estimated Means +/- SE for Isopod Growth Rate by Rearing Treatment", echo = FALSE}
+Growth_plot
+```
+
+##2.3 Tethering Trials
+A binomial logistic regression revealed that when tethered in Eelgrass, susceptibility to predation differed between brown and green isopods (Table 11, Figure 5; ChiSq = 5.61, df = 1, p = 0.0186). The odds of survival for green isopods in Eelgrass were higher that brown isopods by a factor of 6.5 (Tukey HSD: p = 0.032, Table 12; Figure 5). Isopod size did not have a significant effect on survivorship (Table 12; ChiSq = 0.08, df = 1, p = 0.773). 
+
+A separate binomial logistic regression was performed for *Fucus* tethers, revealing susceptibility to predation when tethered in *Fucus* also differed between brown and green isopods (Table 16; Figure 5; ChiSq = 4.05, df = 1, p = 0.044). The odds of survival for brown isopods in Fucus 1.5 times higher than green isopods (Table 18; Figure 5; Tukey HSD: p = 0.050, Table). When tested, there was no effect isopod size on probability of survival.
+
+```{r, fig.cap = "**Figure 5**: Estimated Means (+/- SE) for Proportion of Isopods Surviving in Relation to Tether Trials", echo = FALSE}
+TetherPlot
+```
+
+##2.4 Artificial Habitat Experiments
+
+###2.4.1 Artificial Seagrass or Artifical Fucus Mixed Color  
+Multiple beta regressions were performed to investigate differences in habitat utilization by comparing proportions of observations of brown and green isopods in each possible trial location. We found that Isopod Color and Trial Type had an effect on proportion of observations of isopods utilizing brown habitat (Table 19: ChiSq = 53.942, p < 0.0001; ChiSq = 51.515, p < 0.0001 respectively). Post-Hoc Contrasts of estimated means found that the proportion of observations of green isopods in brown Artificial Seagrass Units was less (M = 0.040, SE 0.013) compared to brown isopods (M = 69.9% SE = 4.2%). Furthermore, brown isopods in Artificial Seagrass Units spent significantly more time in brown habitat (M = 69.9% SE = 4.2%) than brown isopods in Artificial Fucus Units (M = 50%, SE = 1.3%). 
+
+We found that Isopod Color had a significant effect on the proportion of observations of brown and green isopods utilizing green habitat (Table 19: ChiSq = 37.412, p < 0.0001). Post-Hoc estimated means found that the proportion of observations of green isopods utilizing green habitat were higher than brown isopods in both Artificial Seagrass Units (green: M = 62.1% SE = 7.7%, brown: M = 11.7% SE = 3.7%) and Artificial Fucus Units (green: M = 49.8% SE = 7.8%, brown: M = 12.4% SE = 3.7%). Trial type did not have a significant effect (Table 19: ChiSq = 0.451 p = 0.502). 
+
+Artificial Trial Type had an effect on proportion of observations of brown and green isopods swimming (Table 19: ChiSq = 15.641, p < 0.0001). Brown and green isopods spent significantly more time swimming in Artificial Fucus Units (brown: M = 68.3% SE = 7.4%, green: M = 35.8% SE = 7.8%) compared to Artificial Seagrass Units (brown: M = 18.0% SE = 5.3%, green: M = 21.6% SE = 6.1%). There was no significant effect of isopod color or trial type on the proportion of observations of isopods utilizing other locations within artificial experiment tanks (Table 19, Table 20).  
+
+```{r, fig.cap = "**Figure 6**: Means (+/- SE) Comparing Results from Artificial Habitat Trials. Bar colors represent isopod color", echo = FALSE}
+Trial_Plot
+```
+
+###2.4.2 Mixed Habitat Trials  
+
+Multiple beta regressions were performed to investigate difference in proportion of observations of brown and green isopods in mixed habitat and color trials. Where possible, trials and field habitat (where the isopod was collected) were compared and date of collection was used as a fixed block effect. Our analyses indicated few statistically significant patterns in isopod habitat location (Table 21, Table 22) The following summarizes the findings of significance.
+We found isopods offered green Seagrass or Fucus Units exhibited an interactive effect of isopod color and field habitat on proportion of observations in green Artificial Fucus Units (Fig.7: ChiSq = 4.012, p = 0.045). Post-Hoc contrasts of estimated means indicate that green isopods collected from Fucus spent more time on Artificial Fucus Units (Fig. 7: M = 53.1% SE = 8.9%) than those collected from Eelgrass (M = 25.9% SE = 5.4%). We also found that isopods offered Green Artificial Seagrass Units in concert with Brown Artificial Fucus Units showed significantly different proportion of observations on Seagrass in comparison to Fucus (ChiSq = 27.452 p < 0.0001). Green isopods were observed on green Artificial Seagrass Units twice as often (M = 62.4%, SE = 8.7%) as Brown Artificial Fucus Units (M = 37.2%, SE = 8.7%). 
+
+```{r, fig.cap = "**Figure 7**: Means Comparing Results from Artificial Habitat Trials from two experiments. Bar colors represent isopod color, Green ASU/Brown AFU Trials did not have isopods representing all levels of field habitat", echo = FALSE}
+Significant_Mixed_Plot
+```
+
+#Discussion
+
+In this study, we investigated multiple factors driving resource utilization within one *Idotea balthica* population. First, we were able to quantify variations in isopod size and color across months and in Eelgrass compared to *Fucus* habitats. We found that isopods collected from Eelgrass in May and June reach (1) significantly higher green values than isopods collected in *Fucus* (Fig. 1) and that isopods collected in Eelgrass in May reach larger sizes and higher green values than isopods collected in *Fucus* (Fig. 2). In field tethering trials, we found that individuals color matched to their environment had higher odds of survival (Fig. 5). Furthermore, we determined isopods fed *Fucus* are (1) significantly more likely to survive (Fig. 3), and (2) grew significantly more than those reared on Eelgrass and Detritus (Fig. 4). In artificial habitat trials, we initially found that isopods had higher odds of utilizing color-matching habitat (Fig. 6). However, when habitats were crossed, few significant patterns were found (Table 20, 21). From these results, we hypothesize that there is a seasonal variation in habitat utilization of Idotea balthica, suggesting the underlying mechanisms for habitat determination may be more complicated than plant morphology and color. 
+
+Similar to results from Hultgren and Mittelstaedt (2015) with the isopod Pentidotea wosnesenskii, our findings suggest *Fucus* as a preferred resource for the fitness of *I. balthica*. We observed significantly higher growth rates in isopods reared on Fucus (Fig. 4), as well as lower mortality in *Fucus-* reared isopods (3% compared to 55% in detritus- and eelgrass-reared isopods). Despite the phytotoxic capabilities of *Fucus* (Schnitzler et al. 2001), our results suggest the macroalgae is a higher quality resource for isopods. However, the protective benefit to color-matching habitat becomes apparent in the results of our field tether trials. At both tethering sites, isopods that were of similar color to their environment had significantly higher odds of survival (Fig. 5). The odds of a green isopod surviving were >6 times higher than brown isopods when tethered in Eelgrass. When tethered in *Fucus* these odds dropped and we observed higher survival in brown isopods by a factor of 4 (Fig. 5). These results build on previous studies to further suggest that, despite Fucus as a preferred resource for consumption, Eelgrass habitat provides an important source of shelter for green isopods. It is interesting to note the observed seasonality within this population of Idotea balthica. Large green isopods inhabit Eelgrass habitat in May and potentially in June, which may support research suggesting juvenile isopods preferentially feed on Fucus (Hultgren and Mittelstaedt 2015; Merilaita and Jormalainen 1997; Jormalainen 2001). Intriguingly, such results may not support previous evidence that juvenile (small) isopods benefit from the habitat complexity of Eelgrass for shelter (Hultgren and Mittelstaedt 2015; Jormalainen 2001). The lack of representation of small isopods in Eelgrass in the beginning of the season (Fig. 2) may suggest that they are, in fact, more susceptible to predation in Eelgrass when they are small but as they grow throughout the season have higher chances of survival in both habitats.
+
+
+Artificial habitat experiments can facilitate our understanding of resource preference by creating a standardized environment where all variables are controlled. As we saw with our experiments, however, such trials do not come without limitations. In our initial artificial habitat trials, we determined that isopods were significantly more likely to color-match in artificial habitats. The proportion of observations of brown isopods in brown ASUs was significantly higher than green isopods (Fig. 6). Similarly, the proportion of observations of green isopods in green ASUs was significantly higher than brown isopods. These results offer support to the hypothesis, when given the choice; isopods are capable of using visual information from their surroundings to seek shelter in habitats matching their color. As early as 1965, Lee et al. suggest that some isopods may sense their habitat color, and adapt to match that color (Lee, 1965). As supported by the results of our tethering trials, such traits are beneficial to camouflaging from visually seeking predators (Salemaa, 1978; Jormalainen & Merilaita, 1995). Nonetheless, had we terminated our investigation here, we may have also come to the conclusion that isopods are capable of selective camouflage via visual cues (Hultgren and Mittelstaedt 2015). Upon further investigation, our crossed artificial habitat experiments suggest less concrete mechanisms (Table 20, 21)
+
+Our mixed artificial habitat experiments intended to build on the results of our prior trials. Our inability to replicate initial color-matching patterns and our lack of clear habitat preference are useful in the determination of community drivers. We did determine two significant patterns with these trials, suggesting that (1) green isopods collected from *Fucus* spent a larger proportion of time in green *Fucus* compared to green Eelgrass(Fig. 7) and (2) when offered green Eelgrass and brown Fucus, brown isopods spent a higher proportion of time in brown Fucus (Fig. 7). While color-based crypsis is likely the most effective mechanism for avoiding visually seeking predators (Duarte et al. 2016; Hultgren and Mittelstaedt 2015), if this was the driving force of habitat utilization, we would expect such patterns to persist throughout all possible habitat combinations. Without significant findings of parallel preferences (Table 20, 21), it is likely that other mechanisms are acting in combination to drive isopod fitness and resource utilization. There may be chemical cues at play for habitat utilization. For example, the marine amphipod *A. longimana* when co-occurring chemically defended *Dictyopteris spp.*, utilize their phytotoxins as shelter against predators (Sotka & Hay, 2002). In the absence of natural chemical cues, like those from the phytotoxins of Fucus or those from predators, isopods may abandon the ability to choose preferentially. This may be the missing link to a clear pattern in isopod habitat utilization. Future research should focus on the determination and manipulation of such environmental variables.
+
+*I. balthica’s* preference for *Fucus* may have a negative impact on the brown macroalgae. As shifts in community assemblage arise, historically balanced resource utilization may become unstable (Jueterbok et al. 2013). In one instance, following a rapid increase in the density of *I. balthica* in the Baltic Sea, the isopod overgrazed a locally rare Fucus species, while the population simultaneously only had a minor effect on reducing an outbreak of nuisance epiphytic algae (Pilayella littoralis) (Kotta 2000). In a second study, reductions in Fucus growth under increased ocean acidification conditions have suggested that the plant may lose its ability to compensate for intense herbivory by isopods and other mesograzers (Gutow et al. 2014). Finally, two studies investigating the effects of increased ocean temperature on *Fucus*-mesograzer communities, found that long-term stressed Fucus plants were consumed more by isopods and grew softer, making them more vulnerable to herbivory (Gutow 2015; Rothausler et al., 2017). Within the context of our experiments, our clear results supporting isopod preference for *Fucus* should direct future research towards investigating the impact of changing ocean conditions on this community’s assemblage and should take into account the seasonality of these populations in its assessment.
+
+Our experiments provide strong evidence that, in this east coast *Idotea balthica* population, the brown macroalgae Fucus acts a preferential food source and shelter to brown isopods. More evidence is needed to determine whether larger isopods are found in Eelgrass in May because they are less susceptible to predation, or if they are simply larger because juveniles preferentially utilize *Fucus* as they grow. Many organisms are able to respond plastically to changes in their environment by altering behaviors such as food and habitat preference (Hay 1984; Hemmi & Jormalainen 2002; Sotka&Hay 2002). Here, we examine a marine isopod that is known for its ability to utilize a variety of resources. Our results indicate that (1) resource availability does influence *I. balthica* fitness within its environment, (2) *Fucus* is a preferred and better resource than Eelgrass and Detritus in terms of growth, and sustenance, (3) in the beginning of the summer season, isopods collected from Eelgrass are larger and have significantly higher green coloration than those collected in Fucus, and this is potentially driven by (4) matching of body color to habitat color decreasing susceptibility to predation. Such community-level traits allow the persistence of further understanding of marine community structure and fitness. Our work highlights the need for more research regarding the drivers of habitat choice in mesograzer communities.
+
+
+#Literature Cited
+
+Abramoff MD, Magalhaes PJ, and Ram SJ (2004) Image processing with ImageJ. Biophotonics International 11: 36-43.
+
+Bell TM, Sotka EE (2012) Local adaptation in adult feeding preference and juvenile performance in the generalist herbivore Idotea balthica. Oecologia 170:383-393.
+
+Bostrom C, Mattila J (1999) The relative importance of food and shelter for seagrass-associated invertebrates: a latitudinal comparison of habitat choice by isopod grazers. Oecologia 120:162-170.
+
+Brush MJ, Nixon SW (2002) Direct measurements of light attenuation by epiphytes on eelgrass Zostera marina. Marine Ecology Progress Series 223:201-211.
+
+Duarte P (1995) A mechanistic model of the effects of light and temperature on algal primary productivity. Ecological Modelling 82:151-160.
+
+Duffy JE, Ziegler SL, Campbell JE, Bippus PM, Lefcheck JS (2015) Squidpops: A simply tool to crowdsource a global map of marine predation intensity. PLoS ONE 10(11).
+
+Franke HD, Janke M (1998) Mechanisms and consequences of intra- and interspecific interference competition in Idotea baltica (Pallas) and Idotea emarginata (Fabricius) (Crustacea: Idopoda): a laboratory study of possible proximate causes of habitat segregation. Journal of Experimental Marine Biology and Ecology 227:1-21.
+
+Galloway AWE, Eisenlord ME, Dethier MN, Holtgrieve GW, Brett MT (2014) Quantitative estimates of isopod resource utilization using a Bayesian fatty acid mixing model. Marine Ecology Progress Series 507:219-232.
+
+Goecker  ME, Kall SE (2003) Grazing preferences of marine isopods and amphipods on prominent algal species of the Baltic Sea. Journal of Sea Research 50:309-314.
+
+Gutow L, Rahman MM, Bartle K, Saborowski R, Bartsch I, Wiencke C (2014) Ocean acidification affects growth but not nutritional quality of the seaweed Fucus vesiculosus (Phaeophyceae, Fucales). Journal of Experimental Marine Biology and Ecology 453:84-90.
+
+Gutow, L, Petersen, I, Bartl, K, Huenerlage, K (2015) Marine meso-herbivore consumption scales faster with temperature than seaweed primary production. Journal of Experimental Marine Biology and Ecology 477:80-85.
+
+Hay M.E. (1984) Predictable spatial escapes from herbivory: how do these affect the evolution of herbivore resistance in tropical marine communities? Oecologia 64:396-407.
+
+Hawkins SJ, Moore PJ, Burrow MT, Poloczanska E et al (2008) Complex interactions in a rapidly changing world: responses of rocky shore communities to recent climate change. Climate Research 37:123-133.
+
+Hemmi A and Jormalainen V (2002) Nutrient enhancement increases performance of a marine herbivore via quality of its food alga. Ecology 83:1052-1064.
+
+Hemmi A and Jormalainen V (2004) Genetic and environmental variation in performance of a marine isopod: effects of eutrophication. Oecologia 140:302-311.
+
+Hughes AR, Bando KJ, Rodriguez LF, Williams SL (2004) Relative effects of grazers and nutrients on seagrasses: a meta-analysis approach. Marine Ecological Progress Series 282:87-99.
+
+Hughes AR, Williams SL, Duarte CM, Heck KL, Waycott M (2009) Associations of concern: declining seagrasses and threatened dependent species. Frontiers in Ecology and the Environment 7:242-246.
+
+Hultgren, KM, Mittelstaedt, H (2015) Color change in a marine isopod is adaptive in reducing predation. Current Zoology 61:739-748.
+
+Jaschinski S, Brepohl DC, Sommer U (2008) Carbon sources and trophic structure in an eelgrass Zostera marina bed, based on stable isotope and fatty acid analyses. Marine Ecology Progress Series 358:103-114.
+
+Jaschinski S, Sommer U (2008) Functional diversity of mesograzers in and eelgrass-epiphyte system. Journal of Marine Biology 154:475-482.
+
+Jarv L, Kotta J, Kotta I, Raid T (2011) Linking the structure of benthic invertebrate communities and the diet of native and invasive fish species in a brackish water ecosystem. Annales Zoologici Fennici 48:129-141.
+
+Jephson T, Nystrom P, Moksnes PO, Baden SP (2008) Trophic interactions in Zostera marina beds along the Swedish coast. Marine Ecology Progress Series 369:63-76.
+
+Jormaleinen V, Merilaita S (1995) Differential predation on sexes affects colour polymorphism of the isopod Idotea baltica (Pallas). Biological Journal of the Linnean Society 55:45-68.
+
+Jormalainen V, Honkanen T, Makinen A, Hemmi A, Vesakoski O (2001) Why does herbivore sex matter? Sexual differences in utilization of Fucus vesiculosus by the isopod Idotea baltica. OIKOS 93:77-86.
+
+Jueterbok A, Tyberghein L, Verbruggen H, Coiyer JA, Olsen JL, Hoarau G (2013) Climate change impact on seaweed meadow distribution in the North Atlantic rocky intertidal. Ecology and Evolution 3:1356-1373.
+
+Kotta J, Paalme T, Martin G, and Makinen A (2000) Major changes in macroalgae community composition affect the food and habitat preference of Idotea baltica. International Review of Hydrobiology 85:697-705.
+
+Lee WL (1965) Pigments and color change, and their role in the ecology of natural populations of the marine isopod Idotea montereyensis(Pallas) Maloney, PhD thesis, Stanford University.
+
+Merilaita S, Jormalainen V (1997) Evolution of sex differences in microhabitat choice and colour polymorphism in Idotea baltica. Journal of Animal Behaviour 54:769-778.
+
+Orav-Kotta H, Kotta J (2004) Food and habitat choice of the isopod Idotea baltica in the northeastern Baltic Sea. Hydrobiologia 514:79-85.
+
+Puttman RJ (1986) Grazing in temperate ecosystems: large herbivores and the ecology of the New Forest. Croom Helm. London.
+
+Peirano A, Niccolai I, Mauro R, Bianchi CN (2001) Seasonal grazing and food preference of herbivores in a Posidonia oceanica meadow. Scientia Marina 65:367-374.
+
+R Core Team (2013) R: a language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/.
+
+Robertson AI, Mann KH (1980) The role of isopods and amphipods in the initial fragmentation of eelgrass detritus in Nova Scotia, Canada. Journal of Marine Biology 59:63-69.
+
+Rothausler, E, Haavistor, F, Jormalainen, V (2017) Is the future as tasty as the present? Elevated temperature and hyposalinity affect the quality of Fucus (Phaeophyceae, Fucales) as food for the isopod Idotea balthica. Journal of Marine Biology 164:207.
+
+Salemaa H. (1978) Geographical variability in the colour polymorphism of Idotea baltica in the northern Baltic. Hereditas 88:165-182.
+
+Schnitzler I, Pohnert G, Hay M, Boland W (2001) Chemical defense of brown algae (Dictyopteris spp.) against the herbivorous amphipod Ampithoe longimana. Oecologia 126:515-521.
+
+Sotka E.E., Hay M.E. (2002) Geographic variation among herbivore populations in tolerance for a chemically rich seaweed. Ecology 83:2721-2735.
+
+Stevens, M (2015) Anti-predator coloration and behavior: a longstanding topic with many outstanding questions. Journal of Current Zoology 61:702-707.
+
+Stevens, M (2016) Color change, phenotypic plasticity, and camouflage. Frontiers in Ecology and Evolution 4:51.
+
+Tomas F, Abbott J.M., Steinberg C, Balk M, Williams S.L., Stachowicz J.J. (2011) Plant genotype and nitrogen loading influence seagrass productivity, biochemistry, and plant-herbivore interactions. Ecology 92:1807-1817.
+
+Underwood A.J, Chapman M.G., Crowe T.P. (2004) Identifying and understanding ecological preferences for habitat or prey. Journal of Experimental Marine Biology and Ecology. 300:161-187.
+
+Valentine J, Duffy JE (2005) The central role of grazing in seagrass ecology. In: Larkum AWD, Orth RJ, Duarte CM (eds) Seagrasses: biology, ecology and conservation. Springer, New York, p 463-501.
+
+Wernberg T, Smale DA, Tuya F, Thomsen MS et al. (2013) An extreme climatic event alters marine ecosystem structure in a global biodiversity hotspot. Nature Climate Change 3:78-82.
+
+Valiela I, McClelland J, Hauxwell J, Behr PJ, Hersh D, Foreman K (1997) Macroalgal blooms in shallow estuaries: controls and ecophysiological and ecosystem consequences. Limnology and Oceanography 42:1105-1118.
+
+#Tables
+**Table 1:** Summary of results from binomial logistic regression testing the odds of collection in Eelgrass vs. Fucus habitat compared to month collected
+```{r Binomial Logistic Regression Field Season, echo = FALSE}
+knitr::kable(tidy(Anova(Season_Binomial)), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 2:** Post-Hoc contrasts for log odds ratio for monthly comparisons of each habitat. 
+```{r Log Odds Ratios: Post-Hoc, echo = FALSE}
+knitr::kable(tidy(Season_tukey), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 3:** Analysis of Covariance with Dependent Variable: Isopod Color
+```{r ANCOVA for Color, echo = FALSE}
+knitr::kable(tidy(Anova(color_lm)), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+<br><br>
+**Table 4:** Tukey Post-Hoc Comparisons of Isopod Color Predicted by Habitat and Month Collected
+
+```{r Post-Hocs for Color, echo = FALSE}
+knitr::kable(tidy(color_em), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+<br><br>
+**Table 5:** Summary of results from Analysis of Covariance of a Three-Way Interaction with Size Predicted by Isopod Color, Habitat, and Month Collected
+
+```{r Three Way Interaction ANCOVA, echo = FALSE}
+knitr::kable(tidy(Size_Anova), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+<br><br>
+**Table 6:** Summary of results from Post-Hoc Compressed Trends for Isopod Size as predicted from a three-way interaction of Month, Habitat, and Isopod Color.
+
+```{r Post-Hoc Comparisons for Three-Way ANCOVA, echo = FALSE}
+knitr::kable(tidy(Size_em), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 7:** Summary of results from a Generalized Least Squares analysis testing the effect of treatment (food source) on isopod growth rate.
+```{r Rearing Growth Rate, echo = FALSE}
+knitr::kable(Growth_tukey, digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 8:** Summary of results from binomial logistic regression testing the effect of treatment (food source) on isopod survivorship.
+```{r Rearing Survivorship, echo = FALSE}
+knitr::kable(tidy(Anova(Rearing_logit)), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 9:** Summary of results from Tukey Post-Hoc Comparisons of effect of treatment (food source) on isopod survivorship.
+```{r  , echo = FALSE}
+knitr::kable(tidy(Rearing_Tukey), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 10** Summary of estimated means and standard error for each treatment group and odds of survivorship.
+```{r  , echo = FALSE}
+knitr::kable(tidy(Rearing_em), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 11:** Summary of results from binomial logistic regression testing the effects of Isopod Size and Isopod Color on Survivorship in Eelgrass Habitat
+```{r Eelgrass Tables, echo = FALSE}
+knitr::kable(tidy(eelgrass_logit), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 12:** Summary of results from Analysis of Deviance from Eelgrass Habitat binomial logistic regression.
+```{r Analysis of Deviance, echo = FALSE}
+knitr::kable(tidy(Anova(eelgrass_logit)), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 13:** Summary of estimated means and standard error for isopod survivorship tetherd in eelgrass habitat.
+```{r Estimated Means, echo = FALSE}
+knitr::kable(tidy(eelgrass_em), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 14:** Tukey HSD Contrasts for survivorship of Brown vs. Green isopods tethered in Eelgrass Habitat.
+```{r Tukey HSD Eelgrass Tethers, echo = FALSE}
+knitr::kable(tidy(eelgrass_tukey), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 15:** Summary of results from binomial logistic regression testing the effects of Isopod Color on Survivorship tethered in Fucus Habitat
+```{r Fucus BLR, echo = FALSE}
+knitr::kable(tidy(fucus_logit), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 16:** Summary of results from Analysis of Deviance from binomial logistic regression of isopod survivorship tethered in Fucus habitat.
+```{r Fucus Analysis of Deviance, echo = FALSE}
+knitr::kable(tidy(Anova(fucus_logit)), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 17:** Summary of estimated means and standard error for isopod survivorship tethered in Fucus habitat.
+```{r Estimated Means Fucus, echo = FALSE}
+knitr::kable(tidy(fucus_em), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+**Table 18:** Tukey HSD constrasts for survivorship of Brown vs. Green Isopods tethered in Fucus habitat. 
+```{r TUKEY HSD Fucus, echo = FALSE}
+knitr::kable(tidy(fucus_tukey), digits=3) %>% kableExtra::kable_styling("striped")
+```
+
+```{r Loading Table Data, include = FALSE}
+First_Trial_Beta <- read_csv("../Data/Beta_Results_First.csv")
+First_Trial_Means <- read_csv("../Data/First_Trial_Means.csv")
+Mixed_Beta_Results <- read_csv("../Data/Beta_Results_Mixed copy.csv")
+Mixed_Means <- read_csv("../Data/Beta_Means_Mixed.csv")
+```
+
+**Table 19:** Summary of results from multiple beta regressions looking at variation in habitat use of brown and green isopods in Artificial Seagrass and Artificial Fucus Units. 
+```{r Beta Regression Table, echo = FALSE}
+knitr::kable(First_Trial_Beta) %>%
+  kable_styling(bootstrap_options = c("striped", full_width = F))
+```
+
+**Table 20:** Estimated means and standard error for artificial habitat usage of brown and green isopods.
+```{r Estimated Means First Trial, echo = FALSE}
+knitr::kable(First_Trial_Means) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+**Table 21:** Summary of results from multiple beta regressions looking at variation in habitat use of brown and green isopods in mixed artificial habitat trials. 
+```{r Beta Regression Mixed Results, echo = FALSE}
+knitr::kable(Mixed_Beta_Results) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+**Table 22:** Estimated means and standard error for artificial habitat usage of brown and green isopods in mixed artificial habitat trials. 
+```{r Estimated Means Mixed Trial, echo = FALSE}
+knitr::kable(Mixed_Means) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```

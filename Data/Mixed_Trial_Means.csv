@@ -1,0 +1,25 @@
+﻿Trial_Type,Location,Isopod_Color,Field_Habitat,emmean,SE,Averaged over all levels of date of collection,Trial
+Brown_Seagrass_and_Fucus,BAFU,Brown,,0.366,0.057,,1
+Green_Seagrass_Brown_Fucus,BAFU,Brown,,0.388,0.069,,1
+Brown_Seagrass_and_Fucus,BAFU,Green,,0.361,0.054,,1
+Green_Seagrass_Brown_Fucus,BAFU,Green,,0.372,0.087,,1
+Brown_Seagrass_and_Fucus,BAFU,Brown,Eelgrass,0.326,0.061,,2
+Brown_Seagrass_and_Fucus,BAFU,Green,Eelgrass,0.352,0.063,,2
+Brown_Seagrass_and_Fucus,BAFU,Brown,Fucus,0.306,0.074,,2
+Brown_Seagrass_and_Fucus,BAFU,Green,Fucus,0.314,0.075,,2
+Brown_Seagrass_and_Fucus,BASU,Brown,,0.499,0.056,Averaged over all levels of date of collection,3
+Brown_Seagrass_and_Fucus,BASU,Green,,0.519,0.058,,3
+Brown_Seagrass_Green_Fucus,BASU,Brown,,0.371,0.086,,3
+Brown_Seagrass_Green_Fucus,BASU,Green,,0.491,0.069,,3
+Green_Seagrass_and_Fucus,GAFU,Green,Eelgrass,0.259,0.054,*,2
+Green_Seagrass_and_Fucus,GAFU,Brown,Fucus,0.374,0.083,*,2
+Green_Seagrass_and_Fucus,GAFU,Brown,Eelgrass,0.399,0.067,*,2
+Green_Seagrass_and_Fucus,GAFU,Green,Fucus,0.531,0.089,*,2
+Green_Seagrass_Brown_Fucus,GASU,Brown,,0.495,0.07,,4
+Green_Seagrass_Brown_Fucus,GASU,Green,,0.624,0.087,,4
+Green_Seagrass_and_Fucus,GASU,Brown,,0.395,0.055,,4
+Green_Seagrass_and_Fucus,GASU,Green,,0.471,0.058,,4
+Brown_Seagrass_Green_Fucus,GAFU,Green,,0.312,0.057,,6
+Brown_Seagrass_Green_Fucus,GAFU,Brown,,0.407,0.088,,6
+Green_Seagrass_and_Fucus,GAFU,Green,,0.374,0.054,,6
+Green_Seagrass_and_Fucus,GAFU,Brown,,0.397,0.053,,6
